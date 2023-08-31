@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/insight/player_with_list.dart';
 
 class FeaturedPlaylistScreen extends StatefulWidget {
@@ -57,7 +58,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text(
-                          "FEATURED",
+                          MihiAppText.featured,
                           style: TextStyle(
                             fontSize: 10,
                             fontWeight: FontWeight.w400,
@@ -65,12 +66,12 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                           ),
                         ),
                         Text(
-                          "Happy",
+                          MihiAppText.happy,
                           style: TextStyle(
                               fontSize: 30, fontWeight: FontWeight.w500),
                         ),
                         Text(
-                          "Asa Asake London Live",
+                          MihiAppText.london,
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
@@ -81,7 +82,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                           height: 10,
                         ),
                         Text(
-                          "128 TRACKS",
+                          MihiAppText.tracks,
                           style: TextStyle(
                             fontSize: 10,
                             fontWeight: FontWeight.w400,
@@ -95,7 +96,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                               width: 5,
                             ),
                             Text(
-                          "2.1m",
+                          MihiAppText.twoPointOne,
                           style: TextStyle(
                             fontSize: 8,
                             fontWeight: FontWeight.w400,
@@ -106,7 +107,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                           width: 5,
                         ),
                             Text(
-                              "Followers: 32k",
+                              MihiAppText.followers,
                               style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w400,
@@ -132,7 +133,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                   Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: Text(
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+                        MihiAppText.lorem4,
                         style: TextStyle(
                           color: whiteText
                         ),),
@@ -153,7 +154,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                             children: [
                               MihiAppAssetsPath.addCircleOutline,
                               Text(
-                          "Follow",
+                          MihiAppText.follow,
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
@@ -178,7 +179,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                             children: [
                               MihiAppAssetsPath.favorite2,
                                Text(
-                          "Favorite",
+                          MihiAppText.fav,
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
@@ -219,7 +220,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                   );
                                   },
                                 child: Text(
-                                  "Play All",
+                                  MihiAppText.pa,
                                   style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w500,
@@ -241,7 +242,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                           Row(
                             children: [
                               Text(
-                                "1.",
+                                MihiAppText.one,
                                 style: TextStyle(fontSize: 16),
                               ),
                               Image.asset(MihiAppAssetsPath.cancer),
@@ -254,7 +255,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                   Row(
                                     children: [
                                       Text(
-                                        'Music for you',
+                                        MihiAppText.m4u,
                                         style: TextStyle(
                                             color: blackText,
                                             fontSize: 14,
@@ -264,7 +265,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '05:12',
+                                        MihiAppText.pastFive,
                                         style: TextStyle(
                                           color: Brilliant,
                                           fontSize: 10,
@@ -281,7 +282,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                     ],
                                   ),
                                   Text(
-                                    'Christopher Amedi',
+                                    MihiAppText.CA,
                                     style: TextStyle(
                                         fontSize: 8,
                                         color: mithril,
@@ -311,7 +312,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                             height: 10,
                           ),
                               Text(
-                                "2.",
+                                MihiAppText.two,
                                 style: TextStyle(fontSize: 16),
                               ),
                               Image.asset(MihiAppAssetsPath.cancer),
@@ -324,7 +325,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                   Row(
                                     children: [
                                       Text(
-                                        'Seaside Cafe ',
+                                        MihiAppText.seaCafe,
                                         style: TextStyle(
                                             color: blackText,
                                             fontSize: 14,
@@ -334,7 +335,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '05:12',
+                                        MihiAppText.pastFive,
                                         style: TextStyle(
                                           color: Brilliant,
                                           fontSize: 10,
@@ -351,7 +352,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                     ],
                                   ),
                                   Text(
-                                    'Christopher Amedi',
+                                    MihiAppText.CA,
                                     style: TextStyle(
                                         fontSize: 8,
                                         color: mithril,
@@ -376,7 +377,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                           Row(
                             children: [
                               Text(
-                                "3.",
+                                MihiAppText.three,
                                 style: TextStyle(fontSize: 16),
                               ),
                               Image.asset(MihiAppAssetsPath.cancer),
@@ -389,7 +390,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                   Row(
                                     children: [
                                       Text(
-                                        'Music for you',
+                                        MihiAppText.m4u,
                                         style: TextStyle(
                                             color: blackText,
                                             fontSize: 14,
@@ -399,7 +400,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '05:12',
+                                        MihiAppText.pastFive,
                                         style: TextStyle(
                                           color: Brilliant,
                                           fontSize: 10,
@@ -416,7 +417,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                     ],
                                   ),
                                   Text(
-                                    'Christopher Amedi',
+                                    MihiAppText.CA,
                                     style: TextStyle(
                                         fontSize: 8,
                                         color: mithril,
@@ -441,7 +442,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                           Row(
                             children: [
                               Text(
-                                "4.",
+                                MihiAppText.four,
                                 style: TextStyle(fontSize: 16),
                               ),
                               Image.asset(MihiAppAssetsPath.cancer),
@@ -454,7 +455,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                   Row(
                                     children: [
                                       Text(
-                                        'Music for you',
+                                        MihiAppText.m4u,
                                         style: TextStyle(
                                             color: blackText,
                                             fontSize: 14,
@@ -464,7 +465,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '05:12',
+                                        MihiAppText.pastFive,
                                         style: TextStyle(
                                           color: Brilliant,
                                           fontSize: 10,
@@ -481,7 +482,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                     ],
                                   ),
                                   Text(
-                                    'Christopher Amedi',
+                                    MihiAppText.CA,
                                     style: TextStyle(
                                         fontSize: 8,
                                         color: mithril,
@@ -506,7 +507,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                           Row(
                             children: [
                               Text(
-                                "5.",
+                                MihiAppText.five,
                                 style: TextStyle(fontSize: 16),
                               ),
                               Image.asset(MihiAppAssetsPath.cancer),
@@ -519,7 +520,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                   Row(
                                     children: [
                                       Text(
-                                        'Music for you',
+                                        MihiAppText.m4u,
                                         style: TextStyle(
                                             color: Color(0XFF000000),
                                             fontSize: 14,
@@ -529,7 +530,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '05:12',
+                                      MihiAppText.pastFive,
                                         style: TextStyle(
                                           color: Color(0XFF0298A7),
                                           fontSize: 10,
@@ -546,7 +547,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                     ],
                                   ),
                                   Text(
-                                    'Christopher Amedi',
+                                    MihiAppText.CA,
                                     style: TextStyle(
                                         fontSize: 8,
                                         color: Color(0XFF878787),
@@ -571,7 +572,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                           Row(
                             children: [
                               Text(
-                                "6.",
+                                MihiAppText.six,
                                 style: TextStyle(fontSize: 16),
                               ),
                               Image.asset(MihiAppAssetsPath.cancer),
@@ -584,7 +585,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                   Row(
                                     children: [
                                       Text(
-                                        'Music for you',
+                                        MihiAppText.m4u,
                                         style: TextStyle(
                                             color: blackText,
                                             fontSize: 14,
@@ -594,7 +595,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '05:12',
+                                        MihiAppText.pastFive,
                                         style: TextStyle(
                                           color: Brilliant,
                                           fontSize: 10,
@@ -611,7 +612,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                     ],
                                   ),
                                   Text(
-                                    'Christopher Amedi',
+                                    MihiAppText.CA,
                                     style: TextStyle(
                                         fontSize: 8,
                                         color: mithril,
@@ -636,7 +637,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                           Row(
                             children: [
                               Text(
-                                "7.",
+                                MihiAppText.seven,
                                 style: TextStyle(fontSize: 16),
                               ),
                               Image.asset(MihiAppAssetsPath.cancer),
@@ -649,7 +650,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                   Row(
                                     children: [
                                       Text(
-                                        'Music for you',
+                                        MihiAppText.m4u,
                                         style: TextStyle(
                                             color: blackText,
                                             fontSize: 14,
@@ -659,7 +660,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '05:12',
+                                        MihiAppText.pastFive,
                                         style: TextStyle(
                                           color: Brilliant,
                                           fontSize: 10,
@@ -676,7 +677,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                     ],
                                   ),
                                   Text(
-                                    'Christopher Amedi',
+                                    MihiAppText.CA,
                                     style: TextStyle(
                                         fontSize: 8,
                                         color: mithril,
@@ -701,7 +702,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                           Row(
                             children: [
                               Text(
-                                "8.",
+                                MihiAppText.eight,
                                 style: TextStyle(fontSize: 16),
                               ),
                               Image.asset(MihiAppAssetsPath.cancer),
@@ -714,7 +715,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                   Row(
                                     children: [
                                       Text(
-                                        'Music for you',
+                                        MihiAppText.m4u,
                                         style: TextStyle(
                                             color: blackText,
                                             fontSize: 14,
@@ -724,7 +725,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '05:12',
+                                        MihiAppText.pastFive,
                                         style: TextStyle(
                                           color: Brilliant,
                                           fontSize: 10,
@@ -741,7 +742,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                     ],
                                   ),
                                   Text(
-                                    'Christopher Amedi',
+                                    MihiAppText.CA,
                                     style: TextStyle(
                                         fontSize: 8,
                                         color: mithril,

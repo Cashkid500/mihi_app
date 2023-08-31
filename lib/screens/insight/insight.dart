@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/insight/single_player_music.dart';
 
+import '../constants/text_constants.dart';
+
 class InsightScreen extends StatefulWidget {
   const InsightScreen({Key? key}) : super(key: key);
 
@@ -37,7 +39,7 @@ class _InsightScreenState extends State<InsightScreen> {
                       width: 10,
                     ),
                     Text(
-                      'My Playlist',
+                      MihiAppText.myPlaylist,
                       style: TextStyle(
                         color: blackText,
                         fontSize: 14,
@@ -60,7 +62,7 @@ class _InsightScreenState extends State<InsightScreen> {
                       width: 10,
                     ),
                     Text(
-                      'Share',
+                      MihiAppText.share,
                       style: TextStyle(
                         color: blackText,
                         fontSize: 14,
@@ -83,7 +85,7 @@ class _InsightScreenState extends State<InsightScreen> {
                       width: 10,
                     ),
                     Text(
-                      'Favourite',
+                      MihiAppText.fav,
                       style: TextStyle(
                         color: blackText,
                         fontSize: 14,
@@ -106,7 +108,7 @@ class _InsightScreenState extends State<InsightScreen> {
                       width: 10,
                     ),
                     Text(
-                      'Add to Playlist',
+                      MihiAppText.atp,
                       style: TextStyle(
                         color: blackText,
                         fontSize: 14,
@@ -129,7 +131,7 @@ class _InsightScreenState extends State<InsightScreen> {
                       width: 10,
                     ),
                     Text(
-                      'Download',
+                      MihiAppText.download,
                       style: TextStyle(
                         color: blackText,
                         fontSize: 14,
@@ -181,7 +183,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             child: Image.asset(MihiAppAssetsPath.backButton, height: 25,),
                           ),
                           Text(
-                            'My Playlist',
+                            MihiAppText.myPlaylist,
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 18,
@@ -201,7 +203,7 @@ class _InsightScreenState extends State<InsightScreen> {
                     Padding(
                       padding: const EdgeInsets.only(left: 8),
                       child: Text(
-                        'Music List',
+                        MihiAppText.ml,
                         style: TextStyle(
                             color: blackText,
                             fontWeight: FontWeight.w500,
@@ -216,7 +218,7 @@ class _InsightScreenState extends State<InsightScreen> {
                       child: Row(
                         children: [
                           Text(
-                            'Songs',
+                            MihiAppText.songs,
                             style: TextStyle(
                                 color: blackText,
                                 fontSize: 16,
@@ -226,7 +228,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             width: 30,
                           ),
                           Text(
-                            'Video',
+                            MihiAppText.videoText,
                             style: TextStyle(
                                 color: blackText,
                                 fontSize: 16,
@@ -236,7 +238,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             width: 20,
                           ),
                           Text(
-                            'Playlist',
+                            MihiAppText.playlist,
                             style: TextStyle(
                                 color: blackText,
                                 fontSize: 16,
@@ -246,7 +248,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             width: 30,
                           ),
                           Text(
-                            'Artists',
+                            MihiAppText.artists,
                             style: TextStyle(
                                 color: blackText,
                                 fontSize: 16,
@@ -256,7 +258,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             width: 20,
                           ),
                           Text(
-                            'Album',
+                            MihiAppText.album,
                             style: TextStyle(
                                 color: blackText,
                                 fontSize: 16,
@@ -304,7 +306,7 @@ class _InsightScreenState extends State<InsightScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '1.',
+                                  MihiAppText.one,
                                 ),
                               ),
                               Image.asset(MihiAppAssetsPath.cancer, height: 50,),
@@ -320,7 +322,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -336,7 +338,7 @@ class _InsightScreenState extends State<InsightScreen> {
                                   );
                                   },
                                   child: Text(
-                                    '05:12',
+                                    MihiAppText.pastFive,
                                     style: TextStyle(
                                       color: Brilliant,
                                       fontSize: 10,
@@ -357,7 +359,7 @@ class _InsightScreenState extends State<InsightScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -390,7 +392,7 @@ class _InsightScreenState extends State<InsightScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '2.',
+                                  MihiAppText.two,
                                 ),
                               ),
                               SizedBox(
@@ -409,7 +411,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -419,7 +421,7 @@ class _InsightScreenState extends State<InsightScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -439,7 +441,7 @@ class _InsightScreenState extends State<InsightScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -472,7 +474,7 @@ class _InsightScreenState extends State<InsightScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '3.',
+                                  MihiAppText.three,
                                 ),
                               ),
                               SizedBox(
@@ -491,7 +493,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -501,7 +503,7 @@ class _InsightScreenState extends State<InsightScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -521,7 +523,7 @@ class _InsightScreenState extends State<InsightScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -554,7 +556,7 @@ class _InsightScreenState extends State<InsightScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '4.',
+                                  MihiAppText.four,
                                 ),
                               ),
                               SizedBox(
@@ -573,7 +575,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -583,7 +585,7 @@ class _InsightScreenState extends State<InsightScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -603,7 +605,7 @@ class _InsightScreenState extends State<InsightScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -636,7 +638,7 @@ class _InsightScreenState extends State<InsightScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '5.',
+                                  MihiAppText.five,
                                 ),
                               ),
                               SizedBox(
@@ -659,7 +661,7 @@ class _InsightScreenState extends State<InsightScreen> {
                                 _showBottomSheet(context);
                                 },
                                   child: Text(
-                                    'Soft Lullaby',
+                                    MihiAppText.softLullaby,
                                     style: TextStyle(
                                         color: blackText,
                                         fontSize: 14,
@@ -670,7 +672,7 @@ class _InsightScreenState extends State<InsightScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -690,7 +692,7 @@ class _InsightScreenState extends State<InsightScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,

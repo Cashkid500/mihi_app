@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/insight/player_with_playlist.dart';
 
+import '../constants/text_constants.dart';
+
 class SinglePlayerScreen extends StatefulWidget {
   const SinglePlayerScreen({Key? key}) : super(key: key);
 
@@ -56,7 +58,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                               );
                               },
                               child: Text(
-                                'Listening to',
+                                MihiAppText.lt,
                                 style: TextStyle(
                                   color: whiteText,
                                   fontSize: 18,
@@ -100,7 +102,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 20),
                                 child: Text(
-                                  'Play List 1',
+                                  MihiAppText.pl1,
                                   style: TextStyle(
                                       color: whiteText,
                                       fontSize: 28,
@@ -113,7 +115,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 20),
                                 child: Text(
-                                  'Asa Asake - London Live Music Tour Album',
+                                  MihiAppText.london3,
                                   style: TextStyle(
                                     color: whiteText,
                                     fontSize: 12,
@@ -160,7 +162,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                                   Padding(
                                     padding: const EdgeInsets.only(left: 20),
                                     child: Text(
-                                      '05:12',
+                                      MihiAppText.pastFive,
                                       style: TextStyle(
                                           color: whiteText,
                                           fontSize: 10,
@@ -170,7 +172,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                                   Padding(
                                     padding: const EdgeInsets.only(right: 40.0),
                                     child: Text(
-                                      '05:12',
+                                      MihiAppText.pastFive,
                                       style: TextStyle(
                                           color: whiteText,
                                           fontSize: 10,

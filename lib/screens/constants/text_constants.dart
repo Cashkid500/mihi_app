@@ -107,4 +107,37 @@ class MihiAppText {
   static const String asake = "Asa Asake";
   static const String songs = "Songs";
   static const String more = "More";
+
+  // Playlist Texts
+  static const String myPlaylist = 'My Playlist';
+  static const String ml = 'Music List';
+  static const String album = 'Album';
+  static const String one = '1.';
+  static const String two = '2.';
+  static const String three = '3.';
+  static const String four = '4.';
+  static const String five = '5.';
+  static const String six = '6.';
+  static const String seven = '7.';
+  static const String eight = '8.';
+  static const String pastFive = '05:12';
+  static const String CA = 'Christopher Amedi';
+  static const String m4u = 'Music for you';
+  static const String seaCafe = 'Seaside Cafe ';
+  static const String pa = "Play All";
+  static const String follow = "Follow";
+  static const String lorem4 =
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,";
+  static const String followers = "Followers: 32k";
+  static const String twoPointOne = "2.1m";
+  static const String tracks = "128 TRACKS";
+  static const String london = "Asa Asake London Live";
+  static const String featured = "FEATURED";
+  static const String lt = 'Listening to';
+  static const String playlist1 = "Playlist 1";
+  static const String sea = 'Sea Side Cafe';
+  static const String fav2 = "Favorite";
+  static const String london2 = "Asa Asake - London Live Tour Album";
+  static const String london3 = 'Asa Asake - London Live Music Tour Album';
+  static const String pl1 = 'Play List 1';
 }

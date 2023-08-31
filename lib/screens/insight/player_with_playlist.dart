@@ -4,6 +4,8 @@ import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/insight/featured_playlist.dart';
 import 'package:mihi_app/screens/personalized/personalized.dart';
 
+import '../constants/text_constants.dart';
+
 class PlayerPlaylistScreen extends StatefulWidget {
   const PlayerPlaylistScreen({Key? key}) : super(key: key);
 
@@ -47,7 +49,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             ),
                           ),
                           Text(
-                            'My Playlist',
+                            MihiAppText.myPlaylist,
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 18,
@@ -67,7 +69,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                     Padding(
                       padding: const EdgeInsets.only(left: 8),
                       child: Text(
-                        'Music List',
+                        MihiAppText.ml,
                         style: TextStyle(
                             color: blackText,
                             fontWeight: FontWeight.w500,
@@ -82,7 +84,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                       child: Row(
                         children: [
                           Text(
-                            'Songs',
+                            MihiAppText.songs,
                             style: TextStyle(
                                 color: blackText,
                                 fontSize: 16,
@@ -92,7 +94,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             width: 30,
                           ),
                           Text(
-                            'Video',
+                            MihiAppText.videoText,
                             style: TextStyle(
                                 color: blackText,
                                 fontSize: 16,
@@ -102,7 +104,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             width: 20,
                           ),
                           Text(
-                            'Playlist',
+                            MihiAppText.playlist,
                             style: TextStyle(
                                 color: blackText,
                                 fontSize: 16,
@@ -112,7 +114,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             width: 30,
                           ),
                           Text(
-                            'Artists',
+                            MihiAppText.artists,
                             style: TextStyle(
                                 color: blackText,
                                 fontSize: 16,
@@ -122,7 +124,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             width: 20,
                           ),
                           Text(
-                            'Album',
+                            MihiAppText.album,
                             style: TextStyle(
                                 color: blackText,
                                 fontSize: 16,
@@ -170,7 +172,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '1.',
+                                  MihiAppText.one,
                                 ),
                               ),
                               SizedBox(
@@ -189,7 +191,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -199,7 +201,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -219,7 +221,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -252,7 +254,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '2.',
+                                  MihiAppText.two,
                                 ),
                               ),
                               SizedBox(
@@ -271,7 +273,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -281,7 +283,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -301,7 +303,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -351,7 +353,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -361,7 +363,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -381,7 +383,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -414,7 +416,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '4.',
+                                  MihiAppText.four,
                                 ),
                               ),
                               SizedBox(
@@ -433,7 +435,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -443,7 +445,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -463,7 +465,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -496,7 +498,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '5.',
+                                  MihiAppText.five,
                                 ),
                               ),
                               SizedBox(
@@ -515,7 +517,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -525,7 +527,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -545,7 +547,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -578,7 +580,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '6.',
+                                  MihiAppText.six,
                                 ),
                               ),
                               SizedBox(
@@ -597,7 +599,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -607,7 +609,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -627,7 +629,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -660,7 +662,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '7.',
+                                  MihiAppText.seven,
                                 ),
                               ),
                               SizedBox(
@@ -679,7 +681,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -689,7 +691,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -709,7 +711,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               height: 1,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: mithril,
@@ -742,7 +744,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(left: 15),
                                 child: Text(
-                                  '8.',
+                                  MihiAppText.eight,
                                 ),
                               ),
                               SizedBox(
@@ -761,7 +763,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             Row(
                               children: [
                                 Text(
-                                  'Soft Lullaby',
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       color: blackText,
                                       fontSize: 14,
@@ -771,7 +773,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                   width: 10,
                                 ),
                                 Text(
-                                  '05:12',
+                                  MihiAppText.pastFive,
                                   style: TextStyle(
                                     color: Brilliant,
                                     fontSize: 10,
@@ -791,7 +793,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                               height: 10,
                             ),
                             Text(
-                              'Christopher Amedi',
+                              MihiAppText.CA,
                               style: TextStyle(
                                   fontSize: 8,
                                   color: blackText,
@@ -849,7 +851,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Soft Lullaby',
+                            MihiAppText.softLullaby,
                             style: TextStyle(
                               color: blackText,
                               fontSize: 16,
@@ -857,7 +859,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             ),
                           ),
                           Text(
-                            "Asa Asake - London Live Tour Album",
+                            MihiAppText.london2,
                             style: TextStyle(
                               color: mithril,
                               fontSize: 12,
