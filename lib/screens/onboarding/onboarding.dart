@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/signup/sigunup.dart';
 
 
@@ -87,7 +88,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: SizedBox(
                     width: 150,
                     child: Text(
-                      "30 days Meditation Challenge",
+                      MihiAppText.days,
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: whiteText,
@@ -101,7 +102,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: SizedBox(
                       width: 250,
                       child: Text(
-                        "100+ guided meditations covering anxiety, focus, stress, gratitude and more.",
+                        MihiAppText.hundred,
                         style: TextStyle(
                             color: abyssopelagicWater,
                             fontSize: 15.0,
@@ -115,7 +116,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Text(
-                        "Skip",
+                        MihiAppText.skip,
                         style: TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w400,
@@ -131,7 +132,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               borderRadius: BorderRadius.circular(10)),
                           child: Center(
                               child: Text(
-                            "Next",
+                            MihiAppText.next,
                             style: TextStyle(
                                 fontSize: 17,
                                 fontWeight: FontWeight.w600,
@@ -214,7 +215,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: SizedBox(
                     width: 150,
                     child: Text(
-                      "Choose your top goal",
+                      MihiAppText.choose,
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: whiteText,
@@ -228,7 +229,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: SizedBox(
                       width: 250,
                       child: Text(
-                        "Practice your breathing, relax your body, listen the cool sound music make you feel better",
+                        MihiAppText.practice,
                         style: TextStyle(
                             color: abyssopelagicWater,
                             fontSize: 15.0,
@@ -242,7 +243,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Text(
-                        "Skip",
+                        MihiAppText.skip,
                         style: TextStyle(
                             fontSize: 17,
                             fontWeight: FontWeight.w400,
@@ -258,7 +259,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               borderRadius: BorderRadius.circular(10)),
                           child: Center(
                               child: Text(
-                            "Next",
+                            MihiAppText.next,
                             style: TextStyle(
                                 fontSize: 17,
                                 fontWeight: FontWeight.w600,
@@ -346,7 +347,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: SizedBox(
                     width: 200,
                     child: Text(
-                      "Listen the calming music help you sleep",
+                      MihiAppText.listen,
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: whiteText,
@@ -360,7 +361,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: SizedBox(
                       width: 250,
                       child: Text(
-                        "100+ music with the calming sound help you to fall asleep faster. MiHi can change your life.",
+                        MihiAppText.hundredplus,
                         style: TextStyle(
                             color: abyssopelagicWater,
                             fontSize: 15.0,
@@ -382,7 +383,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 borderRadius: BorderRadius.circular(10)
               ),
               child: Center(
-                child: Text("Get Started", 
+                child: Text(MihiAppText.gs, 
                 style: TextStyle(
                   fontSize: 17, fontWeight: FontWeight.w400, color: caribbeanSea
                   ),

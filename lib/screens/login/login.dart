@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/personalized/personalized.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -32,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             Center(
               child: Text(
-                "Login",
+                MihiAppText.login,
                 style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.w500, color: sundayNiqab),
               ),
             ),
@@ -41,7 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             Center(
               child: Text(
-                "Lorem Ipsum is simply dummy text of the",
+                MihiAppText.lorem,
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril),
               ),
             ),
@@ -50,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 25.0),
-              child: Text("Email",
+              child: Text(MihiAppText.email,
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril)),
             ),
            SizedBox(
@@ -65,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
           decoration: InputDecoration(
               contentPadding: EdgeInsets.all(20),
               isCollapsed: true,
-              labelText: "Enter your email here",
+              labelText: MihiAppText.eyeh,
               labelStyle: TextStyle(
                   color: mithril,
                   fontSize: 14.0,
@@ -84,7 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
            ),
            Padding(
               padding: const EdgeInsets.only(left: 25.0),
-              child: Text("Password",
+              child: Text(MihiAppText.password,
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril)),
             ),
             SizedBox(
@@ -99,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
       decoration: InputDecoration(
           contentPadding: EdgeInsets.all(20),
           isCollapsed: true,
-          labelText: "Enter password",
+          labelText: MihiAppText.ep,
           labelStyle: TextStyle(
               color: mithril,
               fontSize: 14.0,
@@ -128,7 +129,7 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 54.0,
               width: 329.0,
               child: Center(
-                child: Text("Continue the experience", style: TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: softCoral),)),
+                child: Text(MihiAppText.cte, style: TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: softCoral),)),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
@@ -151,9 +152,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         color: mithril,
                       ),
                       children: [
-                        TextSpan(text: "Don't have an account?"),
+                        TextSpan(text: MihiAppText.dont),
                         TextSpan(
-                          text: " Register here",
+                          text: MihiAppText.register,
                           style: TextStyle(
                             fontWeight: FontWeight.w400,
                             fontSize: 14,

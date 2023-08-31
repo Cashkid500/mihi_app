@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/onboarding/onboarding.dart';
 
 
@@ -98,7 +99,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         Padding(
                           padding: const EdgeInsets.only(left: 10.0, bottom: 30),
                           child: Text(
-                            "     Music For Mental Health.\n Comfort. Relaxation. Healing",
+                            MihiAppText.music,
                             style:
                                 TextStyle(color: whiteText, fontSize: 16),
                           ),

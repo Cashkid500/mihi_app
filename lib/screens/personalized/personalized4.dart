@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/navigation/navigation.dart';
 
 class Personalized4Screen extends StatefulWidget {
@@ -34,7 +35,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                   Padding(
                     padding: const EdgeInsets.only(right: 160.0),
                     child: Text(
-                      "Hello, Chris",
+                      MihiAppText.hello,
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 16.0,
@@ -79,7 +80,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 5.0, left: 10.0),
                   child: Text(
-                    "98%",
+                    MihiAppText.ninetyEight,
                     style: TextStyle(
                       fontSize: 12.0,
                       fontWeight: FontWeight.w400,
@@ -107,7 +108,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 20.0, left: 20.0, right: 10.0),
-                      child: Text("How would you want your personalized therapy playlist to be?",
+                      child: Text(MihiAppText.how,
                       style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500, color: sundayNiqab, height: 1.2),),
                     ),
                     SizedBox(height: 20.0),
@@ -123,7 +124,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(top: 0.0, right: 6.0, left: 10.0),
-                          child: Text("Based on how I feel at the moment",
+                          child: Text(MihiAppText.based,
                           style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
                         ),
                         SizedBox(width: 1.0),
@@ -135,7 +136,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Enter your feelings",
+                        Text(MihiAppText.enter,
                         style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril,),),
                         SizedBox(height: 2.0,),
                         Container(
@@ -151,7 +152,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                             children: [
                               Padding(
                               padding: const EdgeInsets.only(top: 0.0, right: 6.0, left: 15.0),
-                              child: Text("Enter your how you feel right now",
+                              child: Text(MihiAppText.enter2,
                               style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
                             ),
                             ],
@@ -161,7 +162,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                         Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                        Text("Select feelings",
+                        Text(MihiAppText.select,
                         style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril,),),
                         SizedBox(height: 5.0,),
                         Container(
@@ -177,7 +178,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                             children: [
                               Padding(
                               padding: const EdgeInsets.only(top: 0.0, right: 6.0, left: 15.0),
-                              child: Text("Select how you feel right now",
+                              child: Text(MihiAppText.select2,
                               style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
                             ),
                             Padding(
@@ -200,7 +201,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(top: 0.0, right: 6.0, left: 10.0),
-                          child: Text("Based on my medical condition",
+                          child: Text(MihiAppText.medical,
                           style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
                         ),
                         Padding(
@@ -234,7 +235,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                                   Padding(
                                     padding: const EdgeInsets.only(left: 20.0),
                                     child: Text(
-                                      "Save for me",
+                                      MihiAppText.save,
                                     style: TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w400,
@@ -266,7 +267,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                          border: Border.all(color: caribbeanSea,style: BorderStyle.solid),
                          ),
                          child:Center(
-                          child: Text("Skip", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Brilliant),))
+                          child: Text(MihiAppText.skip, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Brilliant),))
                          ),
                       ],
                     )

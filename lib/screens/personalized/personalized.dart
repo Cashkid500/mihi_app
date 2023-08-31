@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/personalized/personalized2.dart';
 
 class PersonalizedScreen extends StatefulWidget {
@@ -33,7 +34,7 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
                   Padding(
                     padding: const EdgeInsets.only(right: 160.0),
                     child: Text(
-                      "Hello, Chris",
+                      MihiAppText.hello,
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 16.0,
@@ -66,7 +67,7 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
               children: [
                 Image.asset(MihiAppAssetsPath.starSymbol),
                 SizedBox(width: 5.0),
-                Text("| Trusted and Used by 50k+ users",
+                Text(MihiAppText.trusted,
                 style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400, color: sundayNiqab),),
               ],
             ),
@@ -91,7 +92,7 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.only(top: 20.0, left: 20.0),
-                                child: Text("Would  you want a personalized  therapy playlist?\"",
+                                child: Text(MihiAppText.would,
                                 style: TextStyle(
                                  fontWeight: FontWeight.w500,
                                  fontSize: 20.0,
@@ -101,7 +102,7 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(top: 10.0, left: 20.0),
-                                  child: Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.",
+                                  child: Text(MihiAppText.lorem2,
                                   style: TextStyle(
                                  fontWeight: FontWeight.w400,
                                  fontSize: 14.0,
@@ -127,7 +128,7 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
                                               Padding(
                                                 padding: const EdgeInsets.only(left: 20.0),
                                                 child: Text(
-                                                    "Create now",
+                                                MihiAppText.create,
                                                 style: TextStyle(
                                                 fontSize: 17,
                                                 fontWeight: FontWeight.w400,
@@ -158,7 +159,7 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
                                         border: Border.all(color: caribbeanSea,style: BorderStyle.solid),
                                   ),
                                      child:Center(
-                                      child: Text("Skip", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Brilliant),))
+                                      child: Text(MihiAppText.skip, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Brilliant),))
                                   ),
                                         ],
                                           ),

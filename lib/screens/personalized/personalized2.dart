@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/personalized/personalized3.dart';
 
 class Personalized2Screen extends StatefulWidget {
@@ -34,7 +35,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                   Padding(
                     padding: const EdgeInsets.only(right: 160.0),
                     child: Text(
-                      "Hello, Chris",
+                      MihiAppText.hello,
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 16.0,
@@ -79,7 +80,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 5.0, left: 10.0),
                   child: Text(
-                    "50%",
+                    MihiAppText.fifty,
                     style: TextStyle(
                       fontSize: 12.0,
                       fontWeight: FontWeight.w400,
@@ -107,7 +108,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 20.0, left: 20.0, right: 10.0),
-                      child: Text("How would you want your personalized therapy playlist to be?",
+                      child: Text(MihiAppText.how,
                       style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500, color: sundayNiqab, height: 1.2),),
                     ),
                     SizedBox(height: 20.0),
@@ -123,12 +124,12 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(top: 25.0, right: 24.0, left: 4.0),
-                          child: Text("Based on how I feel at the moment",
+                          child: Text(MihiAppText.based,
                           style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 8.0, left: 16.0, right: 20.0),
-                          child: Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+                          child: Text(MihiAppText.lorem3,
                           style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400, color: mithril, height: 1.3),),
                         ),
                         SizedBox(height: 20.0),
@@ -142,7 +143,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                               color: bleachedSilk,),
                           ),
                           child: Center(
-                            child: Text("Recommended for introverted people",
+                            child: Text(MihiAppText.recommended,
                             style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
                           ),
                         )
@@ -162,12 +163,12 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                         children: [
                           Padding(
                           padding: const EdgeInsets.only(top: 25.0, right: 44.0,),
-                          child: Text("Based on my medical condition",
+                          child: Text(MihiAppText.medical,
                           style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 8.0, left: 16.0, right: 20.0),
-                          child: Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+                          child: Text(MihiAppText.lorem3,
                           style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400, color: mithril, height: 1.3),),
                         ),
                         SizedBox(height: 20.0),
@@ -181,7 +182,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                               color: bleachedSilk,),
                           ),
                           child: Center(
-                            child: Text("Recommended for introverted people",
+                            child: Text(MihiAppText.recommended,
                             style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
                           ),
                         )
@@ -208,7 +209,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                                   Padding(
                                     padding: const EdgeInsets.only(left: 20.0),
                                     child: Text(
-                                      "Continue",
+                                      MihiAppText.proceed,
                                     style: TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w400,
@@ -240,7 +241,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                          border: Border.all(color: caribbeanSea,style: BorderStyle.solid),
                          ),
                          child:Center(
-                          child: Text("Skip", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Brilliant),))
+                          child: Text(MihiAppText.skip, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Brilliant),))
                          ),
                       ],
                     )

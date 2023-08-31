@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/login/login.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -32,7 +33,7 @@ class _SignupScreenState extends State<SignupScreen> {
             ),
             Center(
               child: Text(
-                "Sign Up",
+                MihiAppText.su,
                 style: TextStyle(fontSize: 32.0, fontWeight: FontWeight.w500, color: sundayNiqab),
               ),
             ),
@@ -41,7 +42,7 @@ class _SignupScreenState extends State<SignupScreen> {
             ),
             Center(
               child: Text(
-                "Lorem Ipsum is simply dummy text of the",
+                MihiAppText.lorem,
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril),
               ),
             ),
@@ -50,7 +51,7 @@ class _SignupScreenState extends State<SignupScreen> {
             ),
             Padding(
               padding: const EdgeInsets.only(left: 25.0),
-              child: Text("Full Name",
+              child: Text(MihiAppText.fn,
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril)),
             ),
             SizedBox(
@@ -66,7 +67,7 @@ class _SignupScreenState extends State<SignupScreen> {
           decoration: InputDecoration(
               contentPadding: EdgeInsets.all(20),
               isCollapsed: true,
-              labelText: "Enter your name here",
+              labelText: MihiAppText.eynh,
               labelStyle: TextStyle(
                   color: mithril,
                   fontSize: 14.0,
@@ -86,7 +87,7 @@ class _SignupScreenState extends State<SignupScreen> {
       
             Padding(
               padding: const EdgeInsets.only(left: 25.0),
-              child: Text("Email",
+              child: Text(MihiAppText.email,
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril)),
             ),
            SizedBox(
@@ -101,7 +102,7 @@ class _SignupScreenState extends State<SignupScreen> {
           decoration: InputDecoration(
               contentPadding: EdgeInsets.all(20),
               isCollapsed: true,
-              labelText: "Enter your email here",
+              labelText: MihiAppText.eyeh,
               labelStyle: TextStyle(
                   color: mithril,
                   fontSize: 14.0,
@@ -120,7 +121,7 @@ class _SignupScreenState extends State<SignupScreen> {
            ),
            Padding(
               padding: const EdgeInsets.only(left: 25.0),
-              child: Text("Password",
+              child: Text(MihiAppText.password,
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril)),
             ),
             SizedBox(
@@ -135,7 +136,7 @@ class _SignupScreenState extends State<SignupScreen> {
       decoration: InputDecoration(
           contentPadding: EdgeInsets.all(20),
           isCollapsed: true,
-          labelText: "Enter password",
+          labelText: MihiAppText.ep,
           labelStyle: TextStyle(
               color: mithril,
               fontSize: 14.0,
@@ -166,7 +167,7 @@ class _SignupScreenState extends State<SignupScreen> {
               height: 54.0,
               width: 329.0,
               child: Center(
-                child: Text("Join the experience", style: TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: Color(0xffFFEEE0)),)),
+                child: Text(MihiAppText.jte, style: TextStyle(fontSize: 17, fontWeight: FontWeight.w400, color: Color(0xffFFEEE0)),)),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
@@ -189,9 +190,9 @@ class _SignupScreenState extends State<SignupScreen> {
                         color: mithril,
                       ),
                       children: [
-                        TextSpan(text: "Already have an account?"),
+                        TextSpan(text: MihiAppText.already),
                         TextSpan(
-                          text: " Sign In",
+                          text: MihiAppText.sign,
                           style: TextStyle(
                             fontWeight: FontWeight.w400,
                             fontSize: 14,
