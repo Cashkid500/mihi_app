@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/dashboard/dashboard_searchresult.dart';
 
+import '../constants/text_constants.dart';
+
 class DashboardSearchScreen extends StatefulWidget {
   const DashboardSearchScreen({Key? key}) : super(key: key);
 
@@ -64,7 +66,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                               Padding(
                                 padding: const EdgeInsets.only(top: 3.0),
                                 child: Text(
-                                  "Search",
+                                  MihiAppText.search,
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w400,
@@ -85,7 +87,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                               contentPadding:
                                   EdgeInsets.only(top: 25, left: 15),
                               isCollapsed: true,
-                              labelText: "Search",
+                              labelText: MihiAppText.search,
                               labelStyle: TextStyle(
                                 color: mithril,
                                 fontSize: 16.0,
@@ -111,7 +113,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                         left: 25,
                         child: Column(
                           children: [
-                            Text("Recent Search",
+                            Text(MihiAppText.recent,
                                 style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
@@ -184,7 +186,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                   Padding(
                     padding: const EdgeInsets.only(left: 10.0),
                     child: Text(
-                      "Popular Playlist",
+                      MihiAppText.popular,
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: blackText),
                     ),
@@ -207,14 +209,14 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                               Row(
                                 children: [
                                   Text(
-                                    "Asa Classical",
+                                    MihiAppText.asa,
                                     style: TextStyle(
                                         fontSize: 9,
                                         fontWeight: FontWeight.w500,
                                         color: Brilliant),
                                   ),
                                   Text(
-                                    "- Soft solumn anthem",
+                                    MihiAppText.anthem,
                                     style: TextStyle(
                                         fontSize: 7,
                                         fontWeight: FontWeight.w400,
@@ -236,12 +238,12 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                               ),
                               Row(
                                 children: [
-                                  Text("Asa Classical",
+                                  Text(MihiAppText.asa,
                                       style: TextStyle(
                                           fontSize: 9,
                                           fontWeight: FontWeight.w500,
                                           color: Brilliant)),
-                                  Text("- Soft solumn anthem",
+                                  Text(MihiAppText.anthem,
                                       style: TextStyle(
                                           fontSize: 7,
                                           fontWeight: FontWeight.w400,
@@ -262,12 +264,12 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                               ),
                               Row(
                                 children: [
-                                  Text("Asa Classical",
+                                  Text(MihiAppText.asa,
                                       style: TextStyle(
                                           fontSize: 9,
                                           fontWeight: FontWeight.w500,
                                           color: Brilliant)),
-                                  Text("- Soft solumn anthem",
+                                  Text(MihiAppText.anthem,
                                       style: TextStyle(
                                           fontSize: 7,
                                           fontWeight: FontWeight.w400,
@@ -295,7 +297,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                     child: Padding(
                       padding: const EdgeInsets.only(left: 10.0),
                       child: Text(
-                        "Recommended",
+                        MihiAppText.rec,
                         style:
                             TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: blackText),
                       ),
@@ -317,7 +319,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Soft Lullaby",
+                            Text(MihiAppText.softLullaby,
                                 style: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500,
@@ -326,7 +328,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                               height: 5.0,
                             ),
                             Text(
-                              "SOFT LULLABY 12:00 AM - 12:00 AM",
+                              MihiAppText.lullaby,
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -366,7 +368,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Timeless",
+                              MihiAppText.timeless,
                               style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
@@ -376,7 +378,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                               height: 5.0,
                             ),
                             Text(
-                              "Timeless 12:00 AM - 12:00 AM",
+                              MihiAppText.timelessTime,
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -416,7 +418,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Ambiance",
+                              MihiAppText.ambiance,
                               style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w500,
@@ -426,7 +428,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                               height: 5.0,
                             ),
                             Text(
-                              "Ambiance 12:00 AM - 12:00 AM",
+                              MihiAppText.ambianceTime,
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,

@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/dashboard/dashboard_notification.dart';
 
+import '../constants/text_constants.dart';
+
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({Key? key}) : super(key: key);
 
@@ -42,7 +44,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Text("Good morning Chris A.",
+                          Text(MihiAppText.morning,
                           style: TextStyle(
                             fontSize: 18.0,
                             fontWeight: FontWeight.w500,
@@ -63,7 +65,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                      SizedBox(height: 300.0),
                       Padding(
                         padding: const EdgeInsets.only(left: 10.0),
-                        child: Text("Popular Playlist",
+                        child: Text(MihiAppText.popular,
                         style: TextStyle(
                           fontSize: 16.0,
                           fontWeight: FontWeight.w400,
@@ -84,14 +86,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 8.0),
-                            child: Text("Ambience", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: whiteText),),
+                            child: Text(MihiAppText.ambience, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: whiteText),),
                           ),
                           SizedBox(width: 10.0),
-                          Text("- Soft solumn anthem", style: TextStyle(fontSize: 9, fontWeight: FontWeight.w300, color: whiteText, fontStyle: FontStyle.italic),),
+                          Text(MihiAppText.soft, style: TextStyle(fontSize: 9, fontWeight: FontWeight.w300, color: whiteText, fontStyle: FontStyle.italic),),
                           SizedBox(width: 26.0),
-                          Text("PianoRelax", style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: whiteText),),
+                          Text(MihiAppText.piano, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: whiteText),),
                           SizedBox(width: 10.0,),
-                          Text("- Soft solumn anthem", style: TextStyle(fontSize: 9, fontWeight: FontWeight.w300, color: whiteText, fontStyle: FontStyle.italic),),
+                          Text(MihiAppText.soft, style: TextStyle(fontSize: 9, fontWeight: FontWeight.w300, color: whiteText, fontStyle: FontStyle.italic),),
                         ],
                       ),
                       SizedBox(height: 50),
@@ -103,7 +105,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       },
                         child: Padding(
                           padding: const EdgeInsets.only(left: 8.0),
-                          child: Text("Recommended Playlist",  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: whiteText),),
+                          child: Text(MihiAppText.recommended2,  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: whiteText),),
                         ),
                       ),
                       SizedBox(height: 25.0),
@@ -118,9 +120,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Happy", style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
+                              Text(MihiAppText.happy, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
                               SizedBox(height: 10.0,),
-                              Text("SOFT LULLABY 12:00 AM - 12:00 AM", style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
+                              Text(MihiAppText.lullaby, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
                           SizedBox(width: 15.0,),
@@ -135,9 +137,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Cancer", style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
+                              Text(MihiAppText.cancer, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
                               SizedBox(height: 10.0,),
-                              Text("SOFT LULLABY 12:00 AM - 12:00 AM", style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
+                              Text(MihiAppText.lullaby, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
                         ],
@@ -156,9 +158,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Timeless", style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
+                              Text(MihiAppText.timeless, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
                               SizedBox(height: 10.0,),
-                              Text("Timeless 12:00 AM - 12:00 AM", style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
+                              Text(MihiAppText.timelessTime, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
                           SizedBox(width: 34.0,),
@@ -173,9 +175,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("MiHi Classical", style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
+                              Text(MihiAppText.mihi, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
                               SizedBox(height: 10.0,),
-                              Text("SOFT LULLABY 12:00 AM - 12:00 AM", style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
+                              Text(MihiAppText.lullaby, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
                         ],
@@ -194,9 +196,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Ambiance", style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
+                              Text(MihiAppText.ambiance, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
                               SizedBox(height: 10.0,),
-                              Text("Ambiance 12:00 AM - 12:00 AM", style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
+                              Text(MihiAppText.ambianceTime, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
                           SizedBox(width: 31.0,),
@@ -211,9 +213,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Sleep Therapy", style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
+                              Text(MihiAppText.sleep, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
                               SizedBox(height: 10.0,),
-                              Text("SOFT LULLABY 12:00 AM - 12:00 AM", style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
+                              Text(MihiAppText.lullaby, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
                         ],
@@ -236,7 +238,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 5.0, left: 65.0,),
-                      child: Text("Live Broadcast - MiHi Radio",
+                      child: Text(MihiAppText.live,
                       style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400, color: mithril),),
                     ),
                     Row(

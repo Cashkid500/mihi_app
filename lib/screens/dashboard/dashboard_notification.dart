@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/dashboard/dashboard_search.dart';
 
+import '../constants/text_constants.dart';
+
 class DashboardNotificationScreen extends StatefulWidget {
   const DashboardNotificationScreen({Key? key}) : super(key: key);
 
@@ -59,7 +61,7 @@ class _DashboardNotificationScreenState
                                 ),
                               ),
                               Text(
-                                "Notifications",
+                                MihiAppText.notifications,
                                 style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w400,
@@ -77,7 +79,7 @@ class _DashboardNotificationScreenState
                   Padding(
                     padding: const EdgeInsets.only(left: 15.0),
                     child: Text(
-                      "Today",
+                      MihiAppText.today,
                       style:
                           TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
                     ),
@@ -99,12 +101,12 @@ class _DashboardNotificationScreenState
                             SizedBox(
                                 width: 200,
                                 child: Text(
-                                    "Your next therapy session start soon")),
+                                    MihiAppText.nextTherapy)),
                             SizedBox(
                               height: 5.0,
                             ),
                             Text(
-                              "Soft Lullaby -  begins in 3:30Am - 4:30Am",
+                              MihiAppText.lullaby2,
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -115,7 +117,7 @@ class _DashboardNotificationScreenState
                         Padding(
                           padding:
                               const EdgeInsets.only(bottom: 30.0, left: 25),
-                          child: Text("Just now",
+                          child: Text(MihiAppText.justNow,
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
@@ -150,12 +152,12 @@ class _DashboardNotificationScreenState
                             SizedBox(
                                 width: 200,
                                 child: Text(
-                                    "Your next therapy session start soon")),
+                                    MihiAppText.nextTherapy)),
                             SizedBox(
                               height: 5.0,
                             ),
                             Text(
-                              "Soft Lullaby -  begins in 3:30Am - 4:30Am",
+                              MihiAppText.lullaby2,
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -166,7 +168,7 @@ class _DashboardNotificationScreenState
                         Padding(
                           padding:
                               const EdgeInsets.only(bottom: 30.0, left: 15),
-                          child: Text("41 mins ago",
+                          child: Text(MihiAppText.fourtyOne,
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
@@ -201,12 +203,12 @@ class _DashboardNotificationScreenState
                             SizedBox(
                                 width: 200,
                                 child: Text(
-                                    "Your next therapy session start soon")),
+                                    MihiAppText.nextTherapy)),
                             SizedBox(
                               height: 5.0,
                             ),
                             Text(
-                              "Soft Lullaby -  begins in 3:30Am - 4:30Am",
+                              MihiAppText.lullaby2,
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -217,7 +219,7 @@ class _DashboardNotificationScreenState
                         Padding(
                           padding:
                               const EdgeInsets.only(bottom: 30.0, left: 15),
-                          child: Text("41 mins ago",
+                          child: Text(MihiAppText.fourtyOne,
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
@@ -232,7 +234,7 @@ class _DashboardNotificationScreenState
                   Padding(
                     padding: const EdgeInsets.only(left: 15.0),
                     child: Text(
-                      "Yesterday",
+                      MihiAppText.yesterday,
                       style:
                           TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
                     ),
@@ -254,12 +256,12 @@ class _DashboardNotificationScreenState
                             SizedBox(
                                 width: 200,
                                 child: Text(
-                                    "Your next therapy session start soon")),
+                                    MihiAppText.nextTherapy)),
                             SizedBox(
                               height: 5.0,
                             ),
                             Text(
-                              "Soft Lullaby -  begins in 3:30Am - 4:30Am",
+                              MihiAppText.lullaby2,
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -270,7 +272,7 @@ class _DashboardNotificationScreenState
                         Padding(
                           padding: const EdgeInsets.only(bottom: 30.0, left: 4),
                           child: Text(
-                            "Tues, 12.06.22",
+                            MihiAppText.tues,
                             style: TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w400,
@@ -306,12 +308,12 @@ class _DashboardNotificationScreenState
                             SizedBox(
                                 width: 200,
                                 child: Text(
-                                    "Your next therapy session start soon")),
+                                    MihiAppText.nextTherapy)),
                             SizedBox(
                               height: 5.0,
                             ),
                             Text(
-                              "Soft Lullaby -  begins in 3:30Am - 4:30Am",
+                              MihiAppText.lullaby2,
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -321,7 +323,7 @@ class _DashboardNotificationScreenState
                         ),
                         Padding(
                           padding: const EdgeInsets.only(bottom: 30.0, left: 4),
-                          child: Text("Tues, 12.06.22",
+                          child: Text(MihiAppText.tues,
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
@@ -342,7 +344,7 @@ class _DashboardNotificationScreenState
                     child: Padding(
                       padding: const EdgeInsets.only(left: 15.0),
                       child: Text(
-                        "This week",
+                        MihiAppText.thisWeek,
                         style: TextStyle(
                             fontSize: 17, fontWeight: FontWeight.w500),
                       ),
@@ -365,12 +367,12 @@ class _DashboardNotificationScreenState
                             SizedBox(
                                 width: 200,
                                 child: Text(
-                                    "Your next therapy session start soon")),
+                                    MihiAppText.nextTherapy)),
                             SizedBox(
                               height: 5.0,
                             ),
                             Text(
-                              "Soft Lullaby -  begins in 3:30Am - 4:30Am",
+                              MihiAppText.lullaby2,
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -380,7 +382,7 @@ class _DashboardNotificationScreenState
                         ),
                         Padding(
                           padding: const EdgeInsets.only(bottom: 30.0, left: 4),
-                          child: Text("Tues, 12.06.22",
+                          child: Text(MihiAppText.tues,
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,
@@ -415,12 +417,12 @@ class _DashboardNotificationScreenState
                             SizedBox(
                                 width: 200,
                                 child: Text(
-                                    "Your next therapy session start soon")),
+                                    MihiAppText.nextTherapy)),
                             SizedBox(
                               height: 5.0,
                             ),
                             Text(
-                              "Soft Lullaby -  begins in 3:30Am - 4:30Am",
+                              MihiAppText.lullaby2,
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -430,7 +432,7 @@ class _DashboardNotificationScreenState
                         ),
                         Padding(
                           padding: const EdgeInsets.only(bottom: 30.0, left: 4),
-                          child: Text("Tues, 12.06.22",
+                          child: Text(MihiAppText.tues,
                               style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w400,

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 
+import '../constants/text_constants.dart';
+
 class DashboardSearchResultScreen extends StatefulWidget {
   const DashboardSearchResultScreen({Key? key}) : super(key: key);
 
@@ -13,12 +15,12 @@ class DashboardSearchResultScreen extends StatefulWidget {
 class _DashboardSearchResultScreenState
     extends State<DashboardSearchResultScreen> {
   List<String> items = [
-    'All',
-    'Music',
-    'Video',
-    'Playlist',
-    'Artists',
-    'Releases',
+    MihiAppText.all,
+    MihiAppText.musicText,
+    MihiAppText.videoText,
+    MihiAppText.playlist,
+    MihiAppText.artists,
+    MihiAppText.releases,
   ];
   int current = 0;
   void _showBottomSheet(BuildContext context) {
@@ -54,7 +56,7 @@ class _DashboardSearchResultScreenState
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("Soft Lullaby",
+                                    Text(MihiAppText.softLullaby,
                                         style: TextStyle(
                                             fontSize: 14,
                                             fontWeight: FontWeight.w500,
@@ -63,7 +65,7 @@ class _DashboardSearchResultScreenState
                                       height: 5.0,
                                     ),
                                     Text(
-                                      "SOFT LULLABY 12:00 AM - 12:00 AM",
+                                      MihiAppText.lullaby,
                                       style: TextStyle(
                                           fontSize: 8,
                                           fontWeight: FontWeight.w400,
@@ -100,7 +102,7 @@ class _DashboardSearchResultScreenState
                         SizedBox(
                           width: 15,
                         ),
-                        Text("Share", style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
+                        Text(MihiAppText.share, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
                       ],
                     ),
                   ),
@@ -118,7 +120,7 @@ class _DashboardSearchResultScreenState
                         SizedBox(
                           width: 15,
                         ),
-                        Text("Favourite", style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
+                        Text(MihiAppText.fav, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
                       ],
                     ),
                   ),
@@ -136,7 +138,7 @@ class _DashboardSearchResultScreenState
                         SizedBox(
                           width: 15,
                         ),
-                        Text("Add to Playlist", style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
+                        Text(MihiAppText.atp, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
                       ],
                     ),
                   ),
@@ -154,7 +156,7 @@ class _DashboardSearchResultScreenState
                         SizedBox(
                           width: 15,
                         ),
-                        Text("Comment", style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
+                        Text(MihiAppText.comment, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
                       ],
                     ),
                   ),
@@ -172,7 +174,7 @@ class _DashboardSearchResultScreenState
                         SizedBox(
                           width: 15,
                         ),
-                        Text("Download", style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
+                        Text(MihiAppText.download, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
                       ],
                     ),
                   ),
@@ -190,7 +192,7 @@ class _DashboardSearchResultScreenState
                         SizedBox(
                           width: 23,
                         ),
-                        Text("Play Next", style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
+                        Text(MihiAppText.pn, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
                       ],
                     ),
                   ),
@@ -271,7 +273,7 @@ class _DashboardSearchResultScreenState
                                 contentPadding:
                                     EdgeInsets.only(top: 10, left: 20),
                                 isCollapsed: true,
-                                labelText: "Lullaby Music",
+                                labelText: MihiAppText.lullabyMusic,
                                 labelStyle: TextStyle(
                                   color: mithril,
                                   fontSize: 16.0,
@@ -349,7 +351,7 @@ class _DashboardSearchResultScreenState
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 15.0, top: 20),
-                      child: Text("Releases",
+                      child: Text(MihiAppText.releases,
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w400,
@@ -382,13 +384,13 @@ class _DashboardSearchResultScreenState
                                   height: 10,
                                 ),
                                 Text(
-                                  "Soft Lullaby",
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w300),
                                 ),
                                 Text(
-                                  "Asa Asake",
+                                  MihiAppText.asake,
                                   style: TextStyle(
                                       fontSize: 6, fontWeight: FontWeight.w400),
                                 ),
@@ -414,12 +416,12 @@ class _DashboardSearchResultScreenState
                                   height: 10,
                                 ),
                                 Text(
-                                  "Soft Lullaby",
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w300),
                                 ),
-                                Text("Asa Asake",
+                                Text(MihiAppText.asake,
                                     style: TextStyle(
                                         fontSize: 6,
                                         fontWeight: FontWeight.w400))
@@ -445,13 +447,13 @@ class _DashboardSearchResultScreenState
                                   height: 10,
                                 ),
                                 Text(
-                                  "Soft Lullaby",
+                                  MihiAppText.softLullaby,
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w300),
                                 ),
                                 Text(
-                                  "Asa Asake",
+                                  MihiAppText.asake,
                                   style: TextStyle(
                                       fontSize: 6, fontWeight: FontWeight.w400),
                                 ),
@@ -470,7 +472,7 @@ class _DashboardSearchResultScreenState
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Songs",
+                            MihiAppText.songs,
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.w400),
                           ),
@@ -482,7 +484,7 @@ class _DashboardSearchResultScreenState
                                 _showBottomSheet(context);
                                 },
                                 child: Text(
-                                  "More",
+                                  MihiAppText.more,
                                   style: TextStyle(
                                       fontSize: 14, fontWeight: FontWeight.w400),
                                 ),
@@ -511,7 +513,7 @@ class _DashboardSearchResultScreenState
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Soft Lullaby",
+                              Text(MihiAppText.softLullaby,
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
@@ -520,7 +522,7 @@ class _DashboardSearchResultScreenState
                                 height: 5.0,
                               ),
                               Text(
-                                "SOFT LULLABY 12:00 AM - 12:00 AM",
+                                MihiAppText.lullaby,
                                 style: TextStyle(
                                     fontSize: 8,
                                     fontWeight: FontWeight.w400,
@@ -566,7 +568,7 @@ class _DashboardSearchResultScreenState
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Timeless",
+                              Text(MihiAppText.timeless,
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
@@ -575,7 +577,7 @@ class _DashboardSearchResultScreenState
                                 height: 5.0,
                               ),
                               Text(
-                                "Timeless 12:00 AM - 12:00 AM",
+                                MihiAppText.timelessTime,
                                 style: TextStyle(
                                     fontSize: 8,
                                     fontWeight: FontWeight.w500,
@@ -621,7 +623,7 @@ class _DashboardSearchResultScreenState
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text("Ambiance",
+                              Text(MihiAppText.ambiance,
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
@@ -630,7 +632,7 @@ class _DashboardSearchResultScreenState
                                 height: 5.0,
                               ),
                               Text(
-                                "Ambiance 12:00 AM - 12:00 AM",
+                                MihiAppText.ambianceTime,
                                 style: TextStyle(
                                     fontSize: 8,
                                     fontWeight: FontWeight.w400,
@@ -668,7 +670,7 @@ class _DashboardSearchResultScreenState
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Artists",
+                            MihiAppText.artists,
                             style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w400,
@@ -680,7 +682,7 @@ class _DashboardSearchResultScreenState
                               Padding(
                                 padding: const EdgeInsets.only(left: 75.0),
                                 child: Text(
-                                  "More",
+                                  MihiAppText.more,
                                   style: TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.w400,
@@ -711,7 +713,7 @@ class _DashboardSearchResultScreenState
                               children: [
                                 Image.asset(MihiAppAssetsPath.pianist),
                                 Text(
-                                  "Ambience",
+                                  MihiAppText.ambience,
                                   style: TextStyle(
                                       fontSize: 13,
                                       fontWeight: FontWeight.w400,
@@ -726,7 +728,7 @@ class _DashboardSearchResultScreenState
                               children: [
                                 Image.asset(MihiAppAssetsPath.pianist),
                                 Text(
-                                  "Ambience",
+                                  MihiAppText.ambience,
                                   style: TextStyle(
                                       fontSize: 13,
                                       fontWeight: FontWeight.w400,
@@ -741,7 +743,7 @@ class _DashboardSearchResultScreenState
                               children: [
                                 Image.asset(MihiAppAssetsPath.pianist),
                                 Text(
-                                  "Ambience",
+                                  MihiAppText.ambience,
                                   style: TextStyle(
                                       fontSize: 13,
                                       fontWeight: FontWeight.w400,
@@ -755,7 +757,7 @@ class _DashboardSearchResultScreenState
                             Column(
                               children: [
                                 Image.asset(MihiAppAssetsPath.pianist),
-                                Text("Ambience",
+                                Text(MihiAppText.ambience,
                                     style: TextStyle(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w400,
@@ -768,7 +770,7 @@ class _DashboardSearchResultScreenState
                             Column(
                               children: [
                                 Image.asset(MihiAppAssetsPath.pianist),
-                                Text("Ambience",
+                                Text(MihiAppText.ambience,
                                     style: TextStyle(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w400,

@@ -38,13 +38,17 @@ class MihiAppText {
 // Personalized Texts
   static const String hello = "Hello, Chris";
   static const String trusted = "| Trusted and Used by 50k+ users";
-  static const String would = "Would  you want a personalized  therapy playlist?\"";
-  static const String lorem2 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.";
+  static const String would =
+      "Would  you want a personalized  therapy playlist?\"";
+  static const String lorem2 =
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to.";
   static const String create = "Create now";
   static const String fifty = "50%";
-  static const String how = "How would you want your personalized therapy playlist to be?";
+  static const String how =
+      "How would you want your personalized therapy playlist to be?";
   static const String based = "Based on how I feel at the moment";
-  static const String lorem3 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ";
+  static const String lorem3 =
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ";
   static const String recommended = "Recommended for introverted people";
   static const String medical = "Based on my medical condition";
   static const String proceed = "Continue";
@@ -55,70 +59,52 @@ class MihiAppText {
   static const String enter = "Enter your feelings";
   static const String enter2 = "Enter your how you feel right now";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Dashboard Texts
+  static const String morning = "Good morning Chris A.";
+  static const String popular = "Popular Playlist";
+  static const String ambience = "Ambience";
+  static const String soft = "- Soft solumn anthem";
+  static const String piano = "PianoRelax";
+  static const String recommended2 = "Recommended Playlist";
+  static const String happy = "Happy";
+  static const String lullaby = "SOFT LULLABY 12:00 AM - 12:00 AM";
+  static const String cancer = "Cancer";
+  static const String timeless = "Timeless";
+  static const String timelessTime = "Timeless 12:00 AM - 12:00 AM";
+  static const String mihi = "MiHi Classical";
+  static const String ambiance = "Ambiance";
+  static const String ambianceTime = "Ambiance 12:00 AM - 12:00 AM";
+  static const String sleep = "Sleep Therapy";
+  static const String live = "Live Broadcast - MiHi Radio";
+  static const String notifications = "Notifications";
+  static const String today = "Today";
+  static const String nextTherapy = "Your next therapy session start soon";
+  static const String lullaby2 = "Soft Lullaby -  begins in 3:30Am - 4:30Am";
+  static const String justNow = "Just now";
+  static const String fourtyOne = "41 mins ago";
+  static const String yesterday = "Yesterday";
+  static const String tues = "Tues, 12.06.22";
+  static const String thisWeek = "This week";
+  static const String search = "Search";
+  static const String recent = "Recent Search";
+  static const String asa = "Asa Classical";
+  static const String anthem = "- Soft solumn anthem";
+  static const String rec = "Recommended";
+  static const String softLullaby = "Soft Lullaby";
+  static const String all = 'All';
+  static const String musicText = 'Music';
+  static const String videoText = 'Video';
+  static const String playlist = 'Playlist';
+  static const String artists = 'Artists';
+  static const String releases = 'Releases';
+  static const String share = "Share";
+  static const String fav = "Favourite";
+  static const String atp = "Add to Playlist";
+  static const String comment = "Comment";
+  static const String download = "Download";
+  static const String pn = "Play Next";
+  static const String lullabyMusic = "Lullaby Music";
+  static const String asake = "Asa Asake";
+  static const String songs = "Songs";
+  static const String more = "More";
 }
