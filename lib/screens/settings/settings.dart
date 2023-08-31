@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/settings/privacy_settings.dart';
 
+import '../constants/text_constants.dart';
+
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
 
@@ -42,7 +44,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(left: 2.0),
                             child: Text(
-                              "Hello, Chris",
+                              MihiAppText.hello,
                               style: TextStyle(
                                   fontWeight: FontWeight.w500, fontSize: 20.0),
                             ),
@@ -93,7 +95,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         height: 30.0,
                       ),
                       Text(
-                        "Account",
+                        MihiAppText.account,
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 20.0,
@@ -112,7 +114,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 Padding(
                                   padding: const EdgeInsets.only(right: 50.0),
                                   child: Text(
-                                    "Christopher Aniedi",
+                                    MihiAppText.CA,
                                     style: TextStyle(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 18.0),
@@ -121,7 +123,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 Padding(
                                   padding: const EdgeInsets.only(right: 65.0),
                                   child: Text(
-                                    "Personal Information",
+                                    MihiAppText.PI,
                                     style: TextStyle(
                                       fontSize: 14.0,
                                       fontWeight: FontWeight.w400,
@@ -148,7 +150,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         height: 40.0,
                       ),
                       Text(
-                        "Settings",
+                        MihiAppText.settings,
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.w500),
                       ),
@@ -169,7 +171,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(right: 55.0),
                             child: Text(
-                              "About MiHi Therapy",
+                              MihiAppText.about,
                               style: TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.w500),
                             ),
@@ -200,7 +202,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             child: Image.asset(MihiAppAssetsPath.push),
                           ),
                           Text(
-                            "Push Notification",
+                            MihiAppText.push,
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.w500),
                           ),
@@ -254,7 +256,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             child: Padding(
                               padding: const EdgeInsets.only(right: 100.0),
                               child: Text(
-                                "Privacy Policy",
+                                MihiAppText.pp,
                                 style: TextStyle(
                                     fontSize: 18, fontWeight: FontWeight.w500),
                               ),
@@ -288,7 +290,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           Padding(
                             padding: const EdgeInsets.only(right: 90.0),
                             child: Text(
-                              "Activity Report",
+                              MihiAppText.activity,
                               style: TextStyle(
                                   fontSize: 18, fontWeight: FontWeight.w500),
                             ),

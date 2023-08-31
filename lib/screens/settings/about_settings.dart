@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import '../constants/text_constants.dart';
 
 class AboutSettingsScreen extends StatefulWidget {
   const AboutSettingsScreen({Key? key}) : super(key: key);
@@ -37,7 +38,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                         child: Image.asset(MihiAppAssetsPath.rightArrow),
                       ),
                       Center(
-                        child: Text("About MiHi Therapy",
+                        child: Text(MihiAppText.about,
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
@@ -51,7 +52,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                   SizedBox(
                     height: 30.0,
                   ),
-                  Text("About MiHi Therapy",style: 
+                  Text(MihiAppText.about,style: 
                   TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w500,
@@ -71,7 +72,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                       children: [
                         SizedBox(
                           width: 118.0,
-                          child: Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                          child: Text(MihiAppText.lorem3b,
                           style: TextStyle(
                             color: whiteText,
                             fontSize: 14,
@@ -99,7 +100,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                 height: 20.0,
               ),
               Center(
-                child: Text("“ Counselling psychologists are constantly invited to reflect on their practice ”",style: 
+                child: Text(MihiAppText.counselling,style: 
                 TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
@@ -108,7 +109,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
               SizedBox(
                 height: 20.0,
               ),
-              Text("What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and",
+              Text(MihiAppText.what,
               style: TextStyle(
                 color: mithril,
                 fontSize: 12.0,
@@ -119,7 +120,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
               SizedBox(
                 height: 20,
               ),
-                  Text("What is Lorem Ipsum?\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n Why do we use it?\n It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+                  Text(MihiAppText.longLorem1,
                   style: TextStyle(
                     fontSize: 14.0,
                     fontWeight: FontWeight.w500
@@ -141,7 +142,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Image.asset(MihiAppAssetsPath.starSymbol),
-                                    Text("Rate us",
+                                    Text(MihiAppText.rateUs,
                                     style: TextStyle(
                                       fontSize: 14.0,
                                       fontWeight: FontWeight.w400

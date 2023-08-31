@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/settings/about_settings.dart';
-// import 'package:sizer/sizer.dart';
+import '../constants/text_constants.dart';
+
 
 class PrivacySettingsScreen extends StatefulWidget {
   const PrivacySettingsScreen({Key? key}) : super(key: key);
@@ -42,7 +43,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
                 Padding(
                   padding: const EdgeInsets.only(left: 96.0, top: 48.0),
                   child: Text(
-                    "Privacy Policy",
+                    MihiAppText.pp,
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w400,
@@ -57,7 +58,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
               padding: const EdgeInsets.only(left: 10.0),
               child: Center(
                 child: Text(
-                  "“Counselling psychologists are constantly invited to reflect on their practice ”",
+                  MihiAppText.counselling,
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
@@ -71,7 +72,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 10.0),
               child: Text(
-                "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and",
+                MihiAppText.what,
                 style: TextStyle(
                   color: mithril,
                   fontSize: 10.0,
@@ -99,7 +100,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
             Padding(
               padding: const EdgeInsets.only(left: 10.0),
               child: Text(
-                "What is Lorem Ipsum?\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',making it look like readable English.",
+                MihiAppText.longLorem1,
                 style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w500),
               ),
             ),
@@ -125,7 +126,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
                       ),
                       child: Center(
                         child: Text(
-                          "Decline",
+                          MihiAppText.decline,
                           style: TextStyle(
                               fontSize: 14.0, fontWeight: FontWeight.w400),
                         ),

@@ -160,4 +160,23 @@ class MihiAppText {
   static const String overview = 'Overview';
   static const String longLorem =
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type\n specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.";
+
+  // Settings Texts
+  static const String account = "Account";
+  static const String PI = "Personal Information";
+  static const String settings = "Settings";
+  static const String about = "About MiHi Therapy";
+  static const String push = "Push Notification";
+  static const String pp = "Privacy Policy";
+  static const String activity = "Activity Report";
+  static const String decline = "Decline";
+  static const String longLorem1 =
+      "What is Lorem Ipsum?\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',making it look like readable English.";
+  static const String what =
+      "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and";
+  static const String counselling =
+      "“Counselling psychologists are constantly invited to reflect on their practice ”";
+  static const rateUs = "Rate us";
+  static const String lorem3b =
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
 }
