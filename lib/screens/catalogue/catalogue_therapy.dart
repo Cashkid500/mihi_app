@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/catalogue/catalogue_therapy2.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 
+import '../constants/text_constants.dart';
+
 class CatalogueTherapyScreen extends StatefulWidget {
   const CatalogueTherapyScreen({Key? key}) : super(key: key);
 
@@ -72,7 +74,7 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                           builder: (BuildContext context) => CatalogueTherapy2Screen()));
                     },
                         child: Text(
-                          "Therapy",
+                          MihiAppText.therapy,
                           style: TextStyle(
                               fontSize: 22,
                               fontWeight: FontWeight.w500,
@@ -83,7 +85,7 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                         height: 5,
                       ),
                       Text(
-                        "Lorem Ipsum is simply dummy text of the",
+                        MihiAppText.loremIpsum,
                         style: TextStyle(
                             fontSize: 8,
                             fontWeight: FontWeight.w400,
@@ -119,14 +121,14 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Ambience",
+                                MihiAppText.ambience,
                                 style: TextStyle(
                                     color: whiteText,
                                     fontSize: 17,
                                     fontWeight: FontWeight.w500),
                               ),
                               Text(
-                                '10 songs',
+                                MihiAppText.tenSongs,
                                 style: TextStyle(
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400,
@@ -157,14 +159,14 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Relax with Nature",
+                                MihiAppText.rwn,
                                 style: TextStyle(
                                     color: whiteText,
                                     fontSize: 17,
                                     fontWeight: FontWeight.w500),
                               ),
                               Text(
-                                '10 songs',
+                                MihiAppText.tenSongs,
                                 style: TextStyle(
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400,
@@ -205,14 +207,14 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  "Ambience",
+                                  MihiAppText.ambience,
                                   style: TextStyle(
                                       color: whiteText,
                                       fontSize: 17,
                                       fontWeight: FontWeight.w500),
                                 ),
                                 Text(
-                                  '10 songs',
+                                  MihiAppText.tenSongs,
                                   style: TextStyle(
                                     fontSize: 17,
                                     fontWeight: FontWeight.w400,
@@ -243,14 +245,14 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  "Relax with Nature",
+                                  MihiAppText.rwn,
                                   style: TextStyle(
                                       color: whiteText,
                                       fontSize: 17,
                                       fontWeight: FontWeight.w500),
                                 ),
                                 Text(
-                                  '10 songs',
+                                  MihiAppText.tenSongs,
                                   style: TextStyle(
                                     fontSize: 17,
                                     fontWeight: FontWeight.w400,
@@ -287,14 +289,14 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Ambience",
+                                MihiAppText.ambience,
                                 style: TextStyle(
                                     color: whiteText,
                                     fontSize: 17,
                                     fontWeight: FontWeight.w500),
                               ),
                               Text(
-                                '10 songs',
+                                MihiAppText.tenSongs,
                                 style: TextStyle(
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400,
@@ -325,14 +327,14 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "Relax with Nature",
+                                MihiAppText.rwn,
                                 style: TextStyle(
                                     color: whiteText,
                                     fontSize: 17,
                                     fontWeight: FontWeight.w500),
                               ),
                               Text(
-                                '10 songs',
+                                MihiAppText.tenSongs,
                                 style: TextStyle(
                                   fontSize: 17,
                                   fontWeight: FontWeight.w400,

@@ -140,4 +140,24 @@ class MihiAppText {
   static const String london2 = "Asa Asake - London Live Tour Album";
   static const String london3 = 'Asa Asake - London Live Music Tour Album';
   static const String pl1 = 'Play List 1';
+
+// Catalogue Texts
+  static const String sfc = "Search for catalogue";
+  static const String mc = "Music Catalogue";
+  static const String mt = "More Therapies";
+  static const String loremIpsum = "Lorem Ipsum is simply dummy text of the";
+  static const String lofi = "MiHi LoFi";
+  static const String trend = "Today’s trending catalogue";
+  static const String therapy = "Therapy";
+  static const String tenSongs = '10 songs';
+  static const String rwn = "Relax with Nature";
+  static const String rating = 'Rating';
+  static const String fourPointTwo = '4.2';
+  static const String language = 'Language';
+  static const String english = 'English,French';
+  static const String track = 'Track';
+  static const String tenTracks = '10 Tracks';
+  static const String overview = 'Overview';
+  static const String longLorem =
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type\n specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.";
 }

@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/catalogue/catalogue_therapy.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 
+import '../constants/text_constants.dart';
+
 class CatalogueScreen extends StatefulWidget {
   const CatalogueScreen({Key? key}) : super(key: key);
 
@@ -47,7 +49,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                       Padding(
                         padding: const EdgeInsets.only(right: 35.0),
                         child: Text(
-                          "Good morning Chris A.",
+                          MihiAppText.morning,
                           style: TextStyle(
                               fontSize: 18.0,
                               fontWeight: FontWeight.w500,
@@ -78,7 +80,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                         decoration: InputDecoration(
                           contentPadding: EdgeInsets.all(20),
                           isCollapsed: true,
-                          labelText: "Search for catalogue",
+                          labelText: MihiAppText.sfc,
                           labelStyle: TextStyle(
                               color: mithril,
                               fontSize: 16.0,
@@ -100,7 +102,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                     height: 20.0,
                   ),
                   Text(
-                    "Music Catalogue",
+                    MihiAppText.mc,
                     style: TextStyle(
                         fontSize: 18.0,
                         fontWeight: FontWeight.w400,
@@ -122,7 +124,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                             Padding(
                               padding: const EdgeInsets.only(right: 105.0),
                               child: Text(
-                                "More Therapies",
+                                MihiAppText.mt,
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500, fontSize: 14.0),
                               ),
@@ -130,7 +132,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                             Padding(
                               padding: const EdgeInsets.only(right: 18.0),
                               child: Text(
-                                "Lorem Ipsum is simply dummy text of the",
+                                MihiAppText.loremIpsum,
                                 style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -160,7 +162,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                             Padding(
                               padding: const EdgeInsets.only(right: 105.0),
                               child: Text(
-                                "More Therapies",
+                                MihiAppText.mt,
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500, fontSize: 14.0),
                               ),
@@ -168,7 +170,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                             Padding(
                               padding: const EdgeInsets.only(right: 18.0),
                               child: Text(
-                                "Lorem Ipsum is simply dummy text of the",
+                                MihiAppText.loremIpsum,
                                 style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
@@ -198,7 +200,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                             Padding(
                               padding: const EdgeInsets.only(right: 142.0),
                               child: Text(
-                                "MiHi LoFi",
+                                MihiAppText.lofi,
                                 style: TextStyle(
                                     fontWeight: FontWeight.w500, fontSize: 14.0),
                               ),
@@ -206,7 +208,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                             Padding(
                               padding: const EdgeInsets.only(right: 18.0),
                               child: Text(
-                                "Lorem Ipsum is simply dummy text of the",
+                                MihiAppText.loremIpsum,
                                 style: TextStyle(
                                   fontSize: 10.0,
                                   fontWeight: FontWeight.w400,
@@ -229,7 +231,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                           builder: (BuildContext context) => CatalogueTherapyScreen()));
                     },
                     child: Text(
-                      "Today’s trending catalogue",
+                      MihiAppText.trend,
                       style: TextStyle(
                         color: whiteText,
                         fontSize: 18.0,
@@ -280,7 +282,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                                         width: 20,
                                       ),
                                       Text(
-                                        "Soft Lullaby",
+                                        MihiAppText.softLullaby,
                                         style: TextStyle(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w500,
@@ -288,7 +290,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                                         ),
                                       ),
                                       Text(
-                                        "Asa Asake London Live",
+                                        MihiAppText.london,
                                         style: TextStyle(
                                             color: whiteText,
                                             fontSize: 12,
@@ -337,7 +339,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                                         width: 20,
                                       ),
                                       Text(
-                                        "Soft Lullaby",
+                                        MihiAppText.softLullaby,
                                         style: TextStyle(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w500,
@@ -345,7 +347,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                                         ),
                                       ),
                                       Text(
-                                        "Asa Asake London Live",
+                                        MihiAppText.london,
                                         style: TextStyle(
                                             color: whiteText,
                                             fontSize: 12,
@@ -403,7 +405,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                                         width: 20,
                                       ),
                                       Text(
-                                        "Soft Lullaby",
+                                        MihiAppText.softLullaby,
                                         style: TextStyle(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w500,
@@ -411,7 +413,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                                         ),
                                       ),
                                       Text(
-                                        "Asa Asake London Live",
+                                        MihiAppText.london,
                                         style: TextStyle(
                                             color: whiteText,
                                             fontSize: 12,
@@ -461,7 +463,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                                         width: 20,
                                       ),
                                       Text(
-                                        "Soft Lullaby",
+                                        MihiAppText.softLullaby,
                                         style: TextStyle(
                                           fontSize: 14,
                                           fontWeight: FontWeight.w500,
@@ -469,7 +471,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                                         ),
                                       ),
                                       Text(
-                                        "Asa Asake London Live",
+                                        MihiAppText.london,
                                         style: TextStyle(
                                             color: whiteText,
                                             fontSize: 12,

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 
+import '../constants/text_constants.dart';
+
 class CatalogueTherapy2Screen extends StatefulWidget {
   const CatalogueTherapy2Screen({Key? key}) : super(key: key);
 
@@ -74,14 +76,14 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                             height: 10,
                           ),
                           Text(
-                            'Ambience',
+                            MihiAppText.ambience,
                             style: TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.w500,
                                 color: whiteText),
                           ),
                           Text(
-                            '10 Songs',
+                            MihiAppText.tenSongs,
                             style: TextStyle(
                                 fontSize: 17,
                                 fontWeight: FontWeight.w400,
@@ -98,7 +100,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                           Column(
                             children: [
                               Text(
-                                'Rating',
+                                MihiAppText.rating,
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
@@ -112,7 +114,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                     MainAxisAlignment.spaceAround,
                                 children: [
                                   Text(
-                                    '4.2',
+                                    MihiAppText.fourPointTwo,
                                     style: TextStyle(
                                         fontSize: 14,
                                         fontWeight: FontWeight.w500,
@@ -129,7 +131,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                           Column(
                             children: [
                               Text(
-                                'Language',
+                                MihiAppText.language,
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
@@ -139,7 +141,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                 height: 5,
                               ),
                               Text(
-                                'English,French',
+                                MihiAppText.english,
                                 style: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500,
@@ -156,7 +158,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                           Column(
                             children: [
                               Text(
-                                'Track',
+                                MihiAppText.track,
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
@@ -166,7 +168,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                 height: 5,
                               ),
                               Text(
-                                '10 Tracks',
+                                MihiAppText.tenTracks,
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w500,
@@ -189,7 +191,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Overview',
+                              MihiAppText.overview,
                               style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w400,
@@ -201,7 +203,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                             SizedBox(
                                 width: 330,
                                 child: Text(
-                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type\n specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+                                  MihiAppText.longLorem,
                                   style: TextStyle(
                                       fontSize: 12,
                                       fontWeight: FontWeight.w400,
@@ -241,7 +243,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                             Padding(
                               padding: const EdgeInsets.only(left: 20),
                               child: Text(
-                                'Play List 1',
+                                MihiAppText.pl1,
                                 style: TextStyle(
                                     color: whiteText,
                                     fontSize: 22,
@@ -254,7 +256,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                             Padding(
                               padding: const EdgeInsets.only(left: 20),
                               child: Text(
-                                'Asa Asake - London Live Music Tour Album',
+                                MihiAppText.london3,
                                 style: TextStyle(
                                   color: whiteText,
                                   fontSize: 12,
@@ -303,7 +305,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                   Padding(
                                     padding: const EdgeInsets.only(left: 15),
                                     child: Text(
-                                      '05:12',
+                                      MihiAppText.pastFive,
                                       style: TextStyle(
                                           color: whiteText,
                                           fontSize: 10,
@@ -313,7 +315,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                   Padding(
                                     padding: const EdgeInsets.only(right: 10.0),
                                     child: Text(
-                                      '05:12',
+                                      MihiAppText.pastFive,
                                       style: TextStyle(
                                           color: whiteText,
                                           fontSize: 10,
