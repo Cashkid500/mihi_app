@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/profile_settings.dart';
 
+import '../constants/text_constants.dart';
+
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
 
@@ -30,7 +32,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             SizedBox(height: 10.0),
             Text(
-              'Chris Aniedi',
+              MihiAppText.chrisAni,
               style: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 22.0,
@@ -38,7 +40,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               ),
               Text(
-                'Lagos, Nigeria',
+                MihiAppText.lag,
                 style: TextStyle(
                   color: mithril,
                   fontSize: 14.0,
@@ -63,7 +65,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         children: [
                           Image.asset(MihiAppAssetsPath.settingsImage),
                           SizedBox(height: 10.0),
-                          Text("Settings", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
+                          Text(MihiAppText.settings, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
                         ]
                       ),
                   ),
@@ -85,7 +87,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         children: [
                           Image.asset(MihiAppAssetsPath.playlist),
                           SizedBox(height: 10.0),
-                          Text("My Playlist", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
+                          Text(MihiAppText.myPlaylist, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
                         ]
                       ),
                   ),
@@ -107,7 +109,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         children: [
                           Image.asset(MihiAppAssetsPath.goal),
                           SizedBox(height: 10.0),
-                          Text("My Goal", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
+                          Text(MihiAppText.myGoal, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
                         ]
                       ),
                   ),
@@ -133,7 +135,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         children: [
                           Image.asset(MihiAppAssetsPath.group),
                           SizedBox(height: 10.0),
-                          Text("Groups", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
+                          Text(MihiAppText.groups, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
                         ]
                       ),
                   ),
@@ -155,7 +157,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         children: [
                           Image.asset(MihiAppAssetsPath.session),
                           SizedBox(height: 10.0),
-                          Text("Session", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
+                          Text(MihiAppText.session, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
                         ]
                       ),
                   ),
@@ -177,7 +179,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         children: [
                           Image.asset(MihiAppAssetsPath.invite),
                           SizedBox(height: 10.0),
-                          Text("Invite", style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
+                          Text(MihiAppText.invite, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
                         ]
                       ),
                   ),

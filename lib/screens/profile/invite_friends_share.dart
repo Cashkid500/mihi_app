@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/profile_settings2.dart';
 
+import '../constants/text_constants.dart';
+
 class InviteFriendShareScreen extends StatefulWidget {
   const InviteFriendShareScreen({Key? key}) : super(key: key);
 
@@ -58,7 +60,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                           padding:
                               const EdgeInsets.only(right: 180.0, top: 20.0),
                           child: Text(
-                            "Gmail",
+                            MihiAppText.gmail,
                             style: TextStyle(
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w400,
@@ -69,7 +71,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                           height: 2.0,
                         ),
                         Text(
-                          "attach invite link and send via email",
+                          MihiAppText.attach,
                           style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.w400,
@@ -117,7 +119,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                           padding:
                               const EdgeInsets.only(right: 150.0, top: 20.0),
                           child: Text(
-                            "WhatsApp",
+                            MihiAppText.WhatsApp,
                             style: TextStyle(
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w400,
@@ -128,7 +130,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                           height: 2.0,
                         ),
                         Text(
-                          "attach invite link and send via email",
+                          MihiAppText.attach,
                           style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.w400,
@@ -178,7 +180,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                           padding:
                               const EdgeInsets.only(right: 150.0, top: 20.0),
                           child: Text(
-                            "My contact",
+                            MihiAppText.contact,
                             style: TextStyle(
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w400,
@@ -189,7 +191,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                           height: 2.0,
                         ),
                         Text(
-                          "attach invite link and send via email",
+                          MihiAppText.attach,
                           style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.w400,
@@ -238,7 +240,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 90.0),
                   child: Text(
-                    "Invite friends",
+                    MihiAppText.inviteFriend,
                     style: TextStyle(
                         fontSize: 16.0,
                         fontWeight: FontWeight.w400,
@@ -258,7 +260,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
             Image.asset(MihiAppAssetsPath.chrisFriend),
             SizedBox(height: 154.0),
             Text(
-              "Your referral code",
+              MihiAppText.referral,
               style: TextStyle(
                   fontSize: 20.0,
                   fontWeight: FontWeight.w400,
@@ -278,7 +280,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "RVF1200P",
+                      MihiAppText.code,
                       style: TextStyle(
                           fontSize: 24.0,
                           fontWeight: FontWeight.w500,
@@ -293,7 +295,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                         ),
                         child: Center(
                           child: Text(
-                            "Copy",
+                            MihiAppText.copy,
                             style: TextStyle(
                                 fontSize: 14.0,
                                 fontWeight: FontWeight.w400,

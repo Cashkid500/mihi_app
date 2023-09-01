@@ -4,6 +4,8 @@ import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/profile_sessions2.dart';
 import 'package:mihi_app/screens/profile/profile_settings2.dart';
 
+import '../constants/text_constants.dart';
+
 class ProfileSessionsScreen extends StatefulWidget {
   const ProfileSessionsScreen({Key? key}) : super(key: key);
 
@@ -29,7 +31,7 @@ class _ProfileSessionsScreenState extends State<ProfileSessionsScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 90.0),
                   child: Text(
-                    "My Sessions",
+                    MihiAppText.mySessions,
                     style: TextStyle(
                         fontSize: 16.0,
                         fontWeight: FontWeight.w400,
@@ -67,7 +69,7 @@ class _ProfileSessionsScreenState extends State<ProfileSessionsScreen> {
                     borderRadius: BorderRadius.circular(4.0),
                     color: Color(0xff0298A7),
                   ),
-                  child: Center(child: Text("+ Add New", style: TextStyle(color: whiteText, fontSize: 12.0, fontWeight: FontWeight.w500),)),
+                  child: Center(child: Text(MihiAppText.plus, style: TextStyle(color: whiteText, fontSize: 12.0, fontWeight: FontWeight.w500),)),
                 ),
               ],
             ),
@@ -88,7 +90,7 @@ class _ProfileSessionsScreenState extends State<ProfileSessionsScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Text("Excellent! Your\n today’s plan is\n almost done", style: TextStyle(color: whiteText, fontSize: 20, fontWeight: FontWeight.w400),),
+                        Text(MihiAppText.excellent, style: TextStyle(color: whiteText, fontSize: 20, fontWeight: FontWeight.w400),),
                         Image.asset(MihiAppAssetsPath.circle)
                       ],
                     ),
@@ -97,7 +99,7 @@ class _ProfileSessionsScreenState extends State<ProfileSessionsScreen> {
             SizedBox(height: 30.0,),
             Padding(
               padding: const EdgeInsets.only(right :200.0),
-              child: Text("My Schedule", style: TextStyle(color: blackText, fontSize: 18, fontWeight: FontWeight.w600),),
+              child: Text(MihiAppText.mySchedule, style: TextStyle(color: blackText, fontSize: 18, fontWeight: FontWeight.w600),),
             ),
             SizedBox(height: 20.0,),
             Row(

@@ -4,6 +4,8 @@ import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/profile_sessions.dart';
 import 'package:mihi_app/screens/profile/profile_settings2.dart';
 
+import '../constants/text_constants.dart';
+
 class EditProfileScreen extends StatefulWidget {
   const EditProfileScreen({Key? key}) : super(key: key);
 
@@ -54,7 +56,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     Padding(
                       padding: const EdgeInsets.only(left: 20.0, top: 30.0),
                       child: Text(
-                        "Upload from media",
+                        MihiAppText.upload,
                         style: TextStyle(
                             color: blackText,
                             fontWeight: FontWeight.w400,
@@ -91,7 +93,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     Padding(
                       padding: const EdgeInsets.only(left: 20.0, top: 40.0),
                       child: Text(
-                        "Take live photo",
+                        MihiAppText.photo,
                         style: TextStyle(
                             color: blackText,
                             fontWeight: FontWeight.w400,
@@ -129,7 +131,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 90.0),
                   child: Text(
-                    "Edit Profile",
+                    MihiAppText.editProfile,
                     style: TextStyle(
                         fontSize: 16.0,
                         fontWeight: FontWeight.w400,
@@ -139,7 +141,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 80.0),
                   child: Text(
-                    "Update",
+                    MihiAppText.update,
                     style: TextStyle(
                         fontSize: 18.0,
                         fontWeight: FontWeight.w500,
@@ -181,7 +183,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                       child: Padding(
                         padding: const EdgeInsets.only(top: 13.0),
                         child: Text(
-                          "Chris Aniedi",
+                          MihiAppText.chrisAni,
                           style: TextStyle(
                               fontSize: 18.0,
                               fontWeight: FontWeight.w500,
@@ -193,7 +195,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                       height: 10.0,
                     ),
                     Text(
-                      "Lagos, Nigeria",
+                      MihiAppText.lag,
                       style: TextStyle(
                           fontSize: 14.0,
                           fontWeight: FontWeight.w400,
@@ -208,7 +210,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             ),
             Padding(
               padding: const EdgeInsets.only(right: 255.0),
-              child: Text("Full Name",
+              child: Text(MihiAppText.fn,
                   style: TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400,
@@ -226,7 +228,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(20),
                     isCollapsed: true,
-                    labelText: "Christopher Aniedi",
+                    labelText: MihiAppText.chrisAni,
                     labelStyle: TextStyle(
                         color: mithril,
                         fontSize: 16.0,
@@ -246,7 +248,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             ),
             Padding(
               padding: const EdgeInsets.only(right: 225.0),
-              child: Text("Email Address",
+              child: Text(MihiAppText.emailAdress,
                   style: TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400,
@@ -269,7 +271,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(20),
                     isCollapsed: true,
-                    labelText: "chrisaniedi@mihitherapy.com",
+                    labelText: MihiAppText.mail,
                     labelStyle: TextStyle(
                         color: mithril,
                         fontSize: 16.0,
@@ -289,7 +291,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             ),
             Padding(
               padding: const EdgeInsets.only(right: 225.0),
-              child: Text("Phone Number",
+              child: Text(MihiAppText.phoneNumber,
                   style: TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400,
@@ -310,7 +312,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(20),
                     isCollapsed: true,
-                    labelText: "+234 900 000 0000",
+                    labelText: MihiAppText.number,
                     labelStyle: TextStyle(
                         color: mithril,
                         fontSize: 16.0,
@@ -330,7 +332,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             ),
             Padding(
               padding: const EdgeInsets.only(right: 265.0),
-              child: Text("Address",
+              child: Text(MihiAppText.addy,
                   style: TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400,
@@ -351,7 +353,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(20),
                     isCollapsed: true,
-                    labelText: "Lekki, Lagos",
+                    labelText: MihiAppText.lekki,
                     labelStyle: TextStyle(
                         color: mithril,
                         fontSize: 16.0,

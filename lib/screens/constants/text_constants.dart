@@ -179,4 +179,62 @@ class MihiAppText {
   static const rateUs = "Rate us";
   static const String lorem3b =
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+
+  // Profile Texts
+  static const String chrisAni = 'Chris Aniedi';
+  static const String lag = 'Lagos, Nigeria';
+  static const String myGoal = "My Goal";
+  static const String groups = "Groups";
+  static const String session = "Session";
+  static const String invite = "Invite";
+  static const String upload = "Upload from media";
+  static const String photo = "Take live photo";
+  static const String editProfile = "Edit Profile";
+  static const String update = "Update";
+  static const String emailAdress = "Email Address";
+  static const String mail = "chrisaniedi@mihitherapy.com";
+  static const String phoneNumber = "Phone Number";
+  static const String number = "+234 900 000 0000";
+  static const String addy = "Address";
+  static const String lekki = "Lekki, Lagos";
+  static const String inviteFriend = "Invite friends";
+  static const String invite2 = "Invite your friends";
+  static const String loremIpsum5 =
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since ";
+  static const String referral = "Your referral code";
+  static const String code = "RVF1200P";
+  static const String copy = "Copy";
+  static const String attach = "attach invite link and send via email";
+  static const String contact = "My contact";
+  static const String WhatsApp = "WhatsApp";
+  static const String gmail = "Gmail";
+  static const String mySessions = "My Sessions";
+  static const String plus = "+ Add New";
+  static const String excellent =
+      "Excellent! Your\n today’s plan is\n almost done";
+  static const String mySchedule = "my Schedule";
+  static const String allSchedule = "All Schedule";
+  static const String musicTherapy = "Music Therapy";
+  static const String timeDate = "6:30pm | 14th June";
+  static const String title = "Title";
+  static const String lookup = "Music Therapy Lookup";
+  static const String date = "Date";
+  static const String thursday = "Thursday, 30th of July 2022";
+  static const String time = "Time";
+  static const String eleven = "11.00";
+  static const String twelve = "12.00";
+  static const String thirteen = "13.00";
+  static const String fourteen = "14.00";
+  static const String fifteen = "15.00";
+  static const String sixteen = "16.00";
+  static const String addSession = "Add Session";
+  static const String myProfile = "My Profile";
+  static const String myFeelings = "My feelings";
+  static const String dashboard = "Dashboard";
+  static const String payments = "Payments";
+  static const String notification = "Notification";
+  static const String privacy = "Privacy";
+  static const String myAccount = "My Account";
+  static const String switch2 = "Switch to other account";
+  static const String logout = "Logout";
 }

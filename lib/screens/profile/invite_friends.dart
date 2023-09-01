@@ -4,6 +4,8 @@ import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/invite_friends_share.dart';
 import 'package:mihi_app/screens/profile/profile_settings2.dart';
 
+import '../constants/text_constants.dart';
+
 class InviteFriendsScreen extends StatefulWidget {
   const InviteFriendsScreen({Key? key}) : super(key: key);
 
@@ -32,7 +34,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 90.0),
                   child: Text(
-                    "Invite friends",
+                    MihiAppText.inviteFriend,
                     style: TextStyle(
                         fontSize: 16.0,
                         fontWeight: FontWeight.w400,
@@ -52,7 +54,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
             Image.asset(MihiAppAssetsPath.chrisFriend),
             SizedBox(height: 30.0),
             Text(
-              "Invite your friends",
+              MihiAppText.invite2,
               style: TextStyle(
                   fontSize: 26.0,
                   fontWeight: FontWeight.w500,
@@ -64,7 +66,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
               child: Padding(
                 padding: const EdgeInsets.only(left: 8.0, right: 8.0),
                 child: Text(
-                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since ",
+                  MihiAppText.loremIpsum5,
                   style: TextStyle(
                       fontSize: 15.0,
                       fontWeight: FontWeight.w400,
@@ -80,7 +82,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                         );
                         },
               child: Text(
-                "Your referral code",
+                MihiAppText.referral,
                 style: TextStyle(
                     fontSize: 20.0,
                     fontWeight: FontWeight.w400,
@@ -101,7 +103,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "RVF1200P",
+                      MihiAppText.code,
                       style: TextStyle(
                           fontSize: 24.0,
                           fontWeight: FontWeight.w500,
@@ -116,7 +118,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                         ),
                         child: Center(
                           child: Text(
-                            "Copy",
+                            MihiAppText.copy,
                             style: TextStyle(
                                 fontSize: 14.0,
                                 fontWeight: FontWeight.w400,

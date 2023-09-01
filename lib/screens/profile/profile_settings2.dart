@@ -3,6 +3,8 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/edit_profile.dart';
 
+import '../constants/text_constants.dart';
+
 class ProfileSettings2Screen extends StatefulWidget {
   const ProfileSettings2Screen({Key? key}) : super(key: key);
 
@@ -28,11 +30,11 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 40.0, left: 90.0),
-                child: Text("My Profile", style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril),),
+                child: Text(MihiAppText.myProfile, style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril),),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 40.0, left: 80.0),
-                child: Text("Update", style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500, color: spaceInvader),),
+                child: Text(MihiAppText.update, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500, color: spaceInvader),),
               ),
             ],
           ),
@@ -50,10 +52,10 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(top: 13.0),
-                    child: Text("Chris Aniedi", style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500, color: sundayNiqab),),
+                    child: Text(MihiAppText.chrisAni, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w500, color: sundayNiqab),),
                   ),
                   SizedBox(height: 10.0,),
-                  Text("Lagos, Nigeria", style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400, color: sundayNiqab),),
+                  Text(MihiAppText.lag, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400, color: sundayNiqab),),
                 ],
               ),
               Padding(
@@ -65,7 +67,7 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
           SizedBox(height: 40.0,),
           Padding(
             padding: const EdgeInsets.only(right: 240.0),
-            child: Text("My feelings", style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: mithril),),
+            child: Text(MihiAppText.myFeelings, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: mithril),),
           ),
           SizedBox(height: 20.0,),
           Row(
@@ -81,7 +83,7 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
           SizedBox(height: 30.0,),
           Padding(
             padding: const EdgeInsets.only(right: 240.0),
-            child: Text("Dashboard", style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: mithril),),
+            child: Text(MihiAppText.dashboard, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: mithril),),
           ),
           SizedBox(height: 20.0,),
           Row(
@@ -92,7 +94,7 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
                 child: Image.asset(MihiAppAssetsPath.payment),
               ),
               SizedBox(width: 20.0,),
-              Text("Payments", style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: blackText),),
+              Text(MihiAppText.payments, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: blackText),),
               Padding(
                 padding: const EdgeInsets.only(top: 10.0, left: 180.0),
                 child: Image.asset(MihiAppAssetsPath.leftArrow),
@@ -113,7 +115,7 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
                 child: Image.asset(MihiAppAssetsPath.notification2),
               ),
               SizedBox(width: 20.0,),
-              Text("Notification", style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: blackText),),
+              Text(MihiAppText.notification, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: blackText),),
               SizedBox(width: 150,),
                 Container(
                             width: 40,
@@ -146,7 +148,7 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
                 child: Image.asset(MihiAppAssetsPath.privacy),
               ),
               SizedBox(width: 20.0,),
-              Text("Privacy", style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: blackText),),
+              Text(MihiAppText.privacy, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: blackText),),
               GestureDetector(
                    onTap: () {
             Navigator.of(context).push(
@@ -163,17 +165,17 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
           SizedBox(height: 40.0,),
           Padding(
             padding: const EdgeInsets.only(right: 240.0),
-            child: Text("My Account", style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: mithril,),),
+            child: Text(MihiAppText.myAccount, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: mithril,),),
           ),
           SizedBox(height: 20.0,),
           Padding(
             padding: const EdgeInsets.only(right: 142.0),
-            child: Text("Switch to other account", style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: Brilliant,),),
+            child: Text(MihiAppText.switch2, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: Brilliant,),),
           ),
           SizedBox(height: 20.0,),
           Padding(
             padding: const EdgeInsets.only(right: 270.0),
-            child: Text("Logout", style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: redText,),),
+            child: Text(MihiAppText.logout, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: redText,),),
           ),
         ],
        ),

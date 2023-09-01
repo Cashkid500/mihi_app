@@ -4,6 +4,8 @@ import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/profile_sessions3.dart';
 import 'package:mihi_app/screens/profile/profile_settings2.dart';
 
+import '../constants/text_constants.dart';
+
 class ProfileSessions2Screen extends StatefulWidget {
   const ProfileSessions2Screen({Key? key}) : super(key: key);
 
@@ -32,7 +34,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 90.0),
                   child: Text(
-                    "My Sessions",
+                    MihiAppText.mySessions,
                     style: TextStyle(
                         fontSize: 16.0,
                         fontWeight: FontWeight.w400,
@@ -54,7 +56,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
             Padding(
               padding: const EdgeInsets.only(right: 210.0),
               child: Text(
-                "All Schedule",
+                MihiAppText.allSchedule,
                 style: TextStyle(
                     fontSize: 22.0,
                     fontWeight: FontWeight.w500,
@@ -95,7 +97,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                       Padding(
                         padding: const EdgeInsets.only(top: 18.0),
                         child: Text(
-                          "Music Therapy",
+                          MihiAppText.musicTherapy,
                           style: TextStyle(
                               fontSize: 16.0,
                               fontWeight: FontWeight.w500,
@@ -108,7 +110,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                       Padding(
                         padding: const EdgeInsets.only(left: 14.0),
                         child: Text(
-                          "6:30pm | 14th June",
+                          MihiAppText.timeDate,
                           style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.w400,
@@ -167,7 +169,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                       Padding(
                         padding: const EdgeInsets.only(top: 18.0),
                         child: Text(
-                          "Music Therapy",
+                          MihiAppText.musicTherapy,
                           style: TextStyle(
                               fontSize: 16.0,
                               fontWeight: FontWeight.w500,
@@ -180,7 +182,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                       Padding(
                         padding: const EdgeInsets.only(left: 14.0),
                         child: Text(
-                          "6:30pm | 14th June",
+                          MihiAppText.timeDate,
                           style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.w400,
@@ -239,7 +241,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                       Padding(
                         padding: const EdgeInsets.only(top: 18.0),
                         child: Text(
-                          "Music Therapy",
+                          MihiAppText.musicTherapy,
                           style: TextStyle(
                               fontSize: 16.0,
                               fontWeight: FontWeight.w500,
@@ -252,7 +254,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                       Padding(
                         padding: const EdgeInsets.only(left: 14.0),
                         child: Text(
-                          "6:30pm | 14th June",
+                          MihiAppText.timeDate,
                           style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.w400,
@@ -311,7 +313,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                       Padding(
                         padding: const EdgeInsets.only(top: 18.0),
                         child: Text(
-                          "Music Therapy",
+                          MihiAppText.musicTherapy,
                           style: TextStyle(
                               fontSize: 16.0,
                               fontWeight: FontWeight.w500,
@@ -324,7 +326,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                       Padding(
                         padding: const EdgeInsets.only(left: 14.0),
                         child: Text(
-                          "6:30pm | 14th June",
+                          MihiAppText.timeDate,
                           style: TextStyle(
                               fontSize: 14.0,
                               fontWeight: FontWeight.w400,
@@ -388,7 +390,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                         Padding(
                           padding: const EdgeInsets.only(top: 18.0),
                           child: Text(
-                            "Music Therapy",
+                            MihiAppText.musicTherapy,
                             style: TextStyle(
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w500,
@@ -401,7 +403,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                         Padding(
                           padding: const EdgeInsets.only(left: 14.0),
                           child: Text(
-                            "6:30pm | 14th June",
+                          MihiAppText.timeDate,
                             style: TextStyle(
                                 fontSize: 14.0,
                                 fontWeight: FontWeight.w400,

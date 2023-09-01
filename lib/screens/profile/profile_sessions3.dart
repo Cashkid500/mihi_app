@@ -4,6 +4,8 @@ import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/invite_friends.dart';
 import 'package:mihi_app/screens/profile/profile_settings2.dart';
 
+import '../constants/text_constants.dart';
+
 class ProfileSessions3Screen extends StatefulWidget {
   const ProfileSessions3Screen({Key? key}) : super(key: key);
 
@@ -32,7 +34,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 90.0),
                   child: Text(
-                    "My Sessions",
+                    MihiAppText.mySessions,
                     style: TextStyle(
                         fontSize: 16.0,
                         fontWeight: FontWeight.w400,
@@ -54,7 +56,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
             Padding(
               padding: const EdgeInsets.only(right: 290.0),
               child: Text(
-                "Title",
+                MihiAppText.title,
                 style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w400,
@@ -73,7 +75,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(20),
                     isCollapsed: true,
-                    labelText: "Music Therapy Lookup",
+                    labelText: MihiAppText.lookup,
                     labelStyle: TextStyle(
                         color: jet,
                         fontSize: 16.0,
@@ -93,7 +95,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
             Padding(
               padding: const EdgeInsets.only(right: 290.0),
               child: Text(
-                "Date",
+                MihiAppText.date,
                 style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w400,
@@ -112,7 +114,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.all(20),
                     isCollapsed: true,
-                    labelText: "Thursday, 30th of July 2022",
+                    labelText: MihiAppText.thursday,
                     labelStyle: TextStyle(
                         color: jet,
                         fontSize: 16.0,
@@ -133,7 +135,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
             Padding(
               padding: const EdgeInsets.only(right: 290.0),
               child: Text(
-                "Time",
+                MihiAppText.time,
                 style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w400,
@@ -157,7 +159,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                     ),
                     child: Center(
                         child: Text(
-                      "11.00",
+                      MihiAppText.eleven                         ,
                       style: TextStyle(
                           color: whiteText,
                           fontSize: 19,
@@ -168,7 +170,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 Padding(
                   padding: const EdgeInsets.only(right: 30.0),
                   child: Text(
-                    "12.00",
+                    MihiAppText.twelve,
                     style: TextStyle(
                         color: blackText,
                         fontSize: 19,
@@ -195,7 +197,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                     ),
                     child: Center(
                         child: Text(
-                      "13.00",
+                      MihiAppText.thirteen,
                       style: TextStyle(
                           color: mithril,
                           fontSize: 19,
@@ -206,7 +208,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 Padding(
                   padding: const EdgeInsets.only(right: 30.0),
                   child: Text(
-                    "14.00",
+                    MihiAppText.fourteen,
                     style: TextStyle(
                         color: blackText,
                         fontSize: 19,
@@ -225,7 +227,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 children: [
                   Center(
                       child: Text(
-                    "15.00",
+                    MihiAppText.fifteen,
                     style: TextStyle(
                         color: mithril,
                         fontSize: 19,
@@ -241,7 +243,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                       ),
                       child: Center(
                           child: Text(
-                        "16.00",
+                        MihiAppText.sixteen,
                         style: TextStyle(
                             color: mithril,
                             fontSize: 19,
@@ -267,7 +269,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 ),
                 child: Center(
                     child: Text(
-                  "Add Session",
+                  MihiAppText.addSession,
                   style: TextStyle(
                       color: softCoral,
                       fontSize: 20,
