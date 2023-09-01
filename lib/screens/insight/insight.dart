@@ -13,7 +13,7 @@ class InsightScreen extends StatefulWidget {
 }
 
 class _InsightScreenState extends State<InsightScreen> {
-   void _showBottomSheet(BuildContext context) {
+  void _showBottomSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,
       builder: (BuildContext context) {
@@ -151,8 +151,10 @@ class _InsightScreenState extends State<InsightScreen> {
       },
     );
   }
+
   @override
   Widget build(BuildContext context) {
+    String numberpath = "1";
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
@@ -180,7 +182,10 @@ class _InsightScreenState extends State<InsightScreen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 8, bottom: 5),
-                            child: Image.asset(MihiAppAssetsPath.backButton, height: 25,),
+                            child: Image.asset(
+                              MihiAppAssetsPath.backButton,
+                              height: 25,
+                            ),
                           ),
                           Text(
                             MihiAppText.myPlaylist,
@@ -295,413 +300,348 @@ class _InsightScreenState extends State<InsightScreen> {
                     SizedBox(
                       height: 20,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width: 90,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 15),
-                                child: Text(
-                                  MihiAppText.one,
-                                ),
-                              ),
-                              Image.asset(MihiAppAssetsPath.cancer, height: 50,),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  MihiAppText.softLullaby,
-                                  style: TextStyle(
-                                      color: blackText,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w500),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                  Navigator.of(context).push(
-                                  MaterialPageRoute(builder: (BuildContext context) =>SinglePlayerScreen())
-                                  );
-                                  },
-                                  child: Text(
-                                    MihiAppText.pastFive,
-                                    style: TextStyle(
-                                      color: Brilliant,
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 120,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 8),
-                                  child: MihiAppAssetsPath.moreGrey,
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            Text(
-                              MihiAppText.CA,
-                              style: TextStyle(
-                                  fontSize: 8,
-                                  color: mithril,
-                                  fontWeight: FontWeight.w500),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 15, right: 15,),
-                      child: Container(
-                        height: MediaQuery.of(context).size.height / 23,
-                        width: 338,
-                        child: Divider(
-                          height: 1.0,
-                          thickness: 1.0,
-                          color: mithril,
-                        ),
-                      ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width: 90,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 15),
-                                child: Text(
-                                  MihiAppText.two,
-                                ),
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Image.asset(MihiAppAssetsPath.cancer, height: 50,),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  MihiAppText.softLullaby,
-                                  style: TextStyle(
-                                      color: blackText,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w500),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Text(
-                                  MihiAppText.pastFive,
-                                  style: TextStyle(
-                                    color: Brilliant,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 120,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 8),
-                                  child: MihiAppAssetsPath.moreGrey,
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            Text(
-                              MihiAppText.CA,
-                              style: TextStyle(
-                                  fontSize: 8,
-                                  color: mithril,
-                                  fontWeight: FontWeight.w500),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Container(
-                        height: MediaQuery.of(context).size.height / 23,
-                        width: 338,
-                        child: Divider(
-                          height: 1.0,
-                          thickness: 1.0,
-                          color: mithril,
-                        ),
-                      ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width: 90,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 15),
-                                child: Text(
-                                  MihiAppText.three,
-                                ),
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Image.asset(MihiAppAssetsPath.cancer, height: 50,),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  MihiAppText.softLullaby,
-                                  style: TextStyle(
-                                      color: blackText,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w500),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Text(
-                                  MihiAppText.pastFive,
-                                  style: TextStyle(
-                                    color: Brilliant,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 120,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 8),
-                                  child: MihiAppAssetsPath.moreGrey,
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            Text(
-                              MihiAppText.CA,
-                              style: TextStyle(
-                                  fontSize: 8,
-                                  color: mithril,
-                                  fontWeight: FontWeight.w500),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Container(
-                        height: MediaQuery.of(context).size.height / 23,
-                        width: 338,
-                        child: Divider(
-                          height: 1.0,
-                          thickness: 1.0,
-                          color: mithril,
-                        ),
-                      ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width: 90,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 15),
-                                child: Text(
-                                  MihiAppText.four,
-                                ),
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Image.asset(MihiAppAssetsPath.cancer, height: 50,),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  MihiAppText.softLullaby,
-                                  style: TextStyle(
-                                      color: blackText,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w500),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Text(
-                                  MihiAppText.pastFive,
-                                  style: TextStyle(
-                                    color: Brilliant,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 120,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 8),
-                                  child: MihiAppAssetsPath.moreGrey,
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            Text(
-                              MihiAppText.CA,
-                              style: TextStyle(
-                                  fontSize: 8,
-                                  color: mithril,
-                                  fontWeight: FontWeight.w500),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Container(
-                        height: MediaQuery.of(context).size.height / 23,
-                        width: 338,
-                        child: Divider(
-                          height: 1.0,
-                          thickness: 1.0,
-                          color: mithril,
-                        ),
-                      ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width: 90,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 15),
-                                child: Text(
-                                  MihiAppText.five,
-                                ),
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Image.asset(MihiAppAssetsPath.cancer, height: 50,),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                GestureDetector(
-                                  onTap: () {
-                                _showBottomSheet(context);
-                                },
-                                  child: Text(
-                                    MihiAppText.softLullaby,
-                                    style: TextStyle(
-                                        color: blackText,
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w500),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Text(
-                                  MihiAppText.pastFive,
-                                  style: TextStyle(
-                                    color: Brilliant,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 120,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 8),
-                                  child: MihiAppAssetsPath.moreGrey,
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 1,
-                            ),
-                            Text(
-                              MihiAppText.CA,
-                              style: TextStyle(
-                                  fontSize: 8,
-                                  color: mithril,
-                                  fontWeight: FontWeight.w500),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
+                    Playlist1(numberpath: "1"),
+                    Dividing(),
+                    Playlist1(numberpath: "2"),
+                    Dividing(),
+                    Playlist1(numberpath: "3"),
+                    Dividing(),
+                    Playlist1(numberpath: "4"),
+                    Dividing(),
+                    Playlist1(numberpath: "5"),
+                    // Row(
+                    //   mainAxisAlignment: MainAxisAlignment.start,
+                    //   children: [
+                    //     SizedBox(
+                    //       width: 90,
+                    //       child: Row(
+                    //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    //         children: [
+                    //           Padding(
+                    //             padding: const EdgeInsets.only(left: 15),
+                    //             child: Text(
+                    //               MihiAppText.two,
+                    //             ),
+                    //           ),
+                    //           SizedBox(
+                    //             width: 10,
+                    //           ),
+                    //           Image.asset(
+                    //             MihiAppAssetsPath.cancer,
+                    //             height: 50,
+                    //           ),
+                    //         ],
+                    //       ),
+                    //     ),
+                    //     SizedBox(
+                    //       width: 10,
+                    //     ),
+                    //     Column(
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       children: [
+                    //         Row(
+                    //           children: [
+                    //             Text(
+                    //               MihiAppText.softLullaby,
+                    //               style: TextStyle(
+                    //                   color: blackText,
+                    //                   fontSize: 14,
+                    //                   fontWeight: FontWeight.w500),
+                    //             ),
+                    //             SizedBox(
+                    //               width: 10,
+                    //             ),
+                    //             Text(
+                    //               MihiAppText.pastFive,
+                    //               style: TextStyle(
+                    //                 color: Brilliant,
+                    //                 fontSize: 10,
+                    //                 fontWeight: FontWeight.w500,
+                    //               ),
+                    //             ),
+                    //             SizedBox(
+                    //               width: 120,
+                    //             ),
+                    //             Padding(
+                    //               padding: const EdgeInsets.only(top: 8),
+                    //               child: MihiAppAssetsPath.moreGrey,
+                    //             )
+                    //           ],
+                    //         ),
+                    //         SizedBox(
+                    //           height: 1,
+                    //         ),
+                    //         Text(
+                    //           MihiAppText.CA,
+                    //           style: TextStyle(
+                    //               fontSize: 8,
+                    //               color: mithril,
+                    //               fontWeight: FontWeight.w500),
+                    //         ),
+                    //       ],
+                    //     )
+                    //   ],
+                    // ),
+                    // Padding(
+                    //   padding: const EdgeInsets.only(left: 15, right: 15),
+                    //   child: Container(
+                    //     height: MediaQuery.of(context).size.height / 23,
+                    //     width: 338,
+                    //     child: Divider(
+                    //       height: 1.0,
+                    //       thickness: 1.0,
+                    //       color: mithril,
+                    //     ),
+                    //   ),
+                    // ),
+                    // Row(
+                    //   mainAxisAlignment: MainAxisAlignment.start,
+                    //   children: [
+                    //     SizedBox(
+                    //       width: 90,
+                    //       child: Row(
+                    //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    //         children: [
+                    //           Padding(
+                    //             padding: const EdgeInsets.only(left: 15),
+                    //             child: Text(
+                    //               MihiAppText.three,
+                    //             ),
+                    //           ),
+                    //           SizedBox(
+                    //             width: 10,
+                    //           ),
+                    //           Image.asset(
+                    //             MihiAppAssetsPath.cancer,
+                    //             height: 50,
+                    //           ),
+                    //         ],
+                    //       ),
+                    //     ),
+                    //     SizedBox(
+                    //       width: 10,
+                    //     ),
+                    //     Column(
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       children: [
+                    //         Row(
+                    //           children: [
+                    //             Text(
+                    //               MihiAppText.softLullaby,
+                    //               style: TextStyle(
+                    //                   color: blackText,
+                    //                   fontSize: 14,
+                    //                   fontWeight: FontWeight.w500),
+                    //             ),
+                    //             SizedBox(
+                    //               width: 10,
+                    //             ),
+                    //             Text(
+                    //               MihiAppText.pastFive,
+                    //               style: TextStyle(
+                    //                 color: Brilliant,
+                    //                 fontSize: 10,
+                    //                 fontWeight: FontWeight.w500,
+                    //               ),
+                    //             ),
+                    //             SizedBox(
+                    //               width: 120,
+                    //             ),
+                    //             Padding(
+                    //               padding: const EdgeInsets.only(top: 8),
+                    //               child: MihiAppAssetsPath.moreGrey,
+                    //             )
+                    //           ],
+                    //         ),
+                    //         SizedBox(
+                    //           height: 1,
+                    //         ),
+                    //         Text(
+                    //           MihiAppText.CA,
+                    //           style: TextStyle(
+                    //               fontSize: 8,
+                    //               color: mithril,
+                    //               fontWeight: FontWeight.w500),
+                    //         ),
+                    //       ],
+                    //     )
+                    //   ],
+                    // ),
+                    // Padding(
+                    //   padding: const EdgeInsets.only(left: 15, right: 15),
+                    //   child: Container(
+                    //     height: MediaQuery.of(context).size.height / 23,
+                    //     width: 338,
+                    //     child: Divider(
+                    //       height: 1.0,
+                    //       thickness: 1.0,
+                    //       color: mithril,
+                    //     ),
+                    //   ),
+                    // ),
+                    // Row(
+                    //   mainAxisAlignment: MainAxisAlignment.start,
+                    //   children: [
+                    //     SizedBox(
+                    //       width: 90,
+                    //       child: Row(
+                    //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    //         children: [
+                    //           Padding(
+                    //             padding: const EdgeInsets.only(left: 15),
+                    //             child: Text(
+                    //               MihiAppText.four,
+                    //             ),
+                    //           ),
+                    //           SizedBox(
+                    //             width: 10,
+                    //           ),
+                    //           Image.asset(
+                    //             MihiAppAssetsPath.cancer,
+                    //             height: 50,
+                    //           ),
+                    //         ],
+                    //       ),
+                    //     ),
+                    //     SizedBox(
+                    //       width: 10,
+                    //     ),
+                    //     Column(
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       children: [
+                    //         Row(
+                    //           children: [
+                    //             Text(
+                    //               MihiAppText.softLullaby,
+                    //               style: TextStyle(
+                    //                   color: blackText,
+                    //                   fontSize: 14,
+                    //                   fontWeight: FontWeight.w500),
+                    //             ),
+                    //             SizedBox(
+                    //               width: 10,
+                    //             ),
+                    //             Text(
+                    //               MihiAppText.pastFive,
+                    //               style: TextStyle(
+                    //                 color: Brilliant,
+                    //                 fontSize: 10,
+                    //                 fontWeight: FontWeight.w500,
+                    //               ),
+                    //             ),
+                    //             SizedBox(
+                    //               width: 120,
+                    //             ),
+                    //             Padding(
+                    //               padding: const EdgeInsets.only(top: 8),
+                    //               child: MihiAppAssetsPath.moreGrey,
+                    //             )
+                    //           ],
+                    //         ),
+                    //         SizedBox(
+                    //           height: 1,
+                    //         ),
+                    //         Text(
+                    //           MihiAppText.CA,
+                    //           style: TextStyle(
+                    //               fontSize: 8,
+                    //               color: mithril,
+                    //               fontWeight: FontWeight.w500),
+                    //         ),
+                    //       ],
+                    //     )
+                    //   ],
+                    // ),
+                    // Padding(
+                    //   padding: const EdgeInsets.only(left: 15, right: 15),
+                    //   child: Container(
+                    //     height: MediaQuery.of(context).size.height / 23,
+                    //     width: 338,
+                    //     child: Divider(
+                    //       height: 1.0,
+                    //       thickness: 1.0,
+                    //       color: mithril,
+                    //     ),
+                    //   ),
+                    // ),
+                    // Row(
+                    //   mainAxisAlignment: MainAxisAlignment.start,
+                    //   children: [
+                    //     SizedBox(
+                    //       width: 90,
+                    //       child: Row(
+                    //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    //         children: [
+                    //           Padding(
+                    //             padding: const EdgeInsets.only(left: 15),
+                    //             child: Text(
+                    //               MihiAppText.five,
+                    //             ),
+                    //           ),
+                    //           SizedBox(
+                    //             width: 10,
+                    //           ),
+                    //           Image.asset(
+                    //             MihiAppAssetsPath.cancer,
+                    //             height: 50,
+                    //           ),
+                    //         ],
+                    //       ),
+                    //     ),
+                    //     SizedBox(
+                    //       width: 10,
+                    //     ),
+                    //     Column(
+                    //       crossAxisAlignment: CrossAxisAlignment.start,
+                    //       children: [
+                    //         Row(
+                    //           children: [
+                    //             GestureDetector(
+                    //               onTap: () {
+                    //                 _showBottomSheet(context);
+                    //               },
+                    //               child: Text(
+                    //                 MihiAppText.softLullaby,
+                    //                 style: TextStyle(
+                    //                     color: blackText,
+                    //                     fontSize: 14,
+                    //                     fontWeight: FontWeight.w500),
+                    //               ),
+                    //             ),
+                    //             SizedBox(
+                    //               width: 10,
+                    //             ),
+                    //             Text(
+                    //               MihiAppText.pastFive,
+                    //               style: TextStyle(
+                    //                 color: Brilliant,
+                    //                 fontSize: 10,
+                    //                 fontWeight: FontWeight.w500,
+                    //               ),
+                    //             ),
+                    //             SizedBox(
+                    //               width: 120,
+                    //             ),
+                    //             Padding(
+                    //               padding: const EdgeInsets.only(top: 8),
+                    //               child: MihiAppAssetsPath.moreGrey,
+                    //             )
+                    //           ],
+                    //         ),
+                    //         SizedBox(
+                    //           height: 1,
+                    //         ),
+                    //         Text(
+                    //           MihiAppText.CA,
+                    //           style: TextStyle(
+                    //               fontSize: 8,
+                    //               color: mithril,
+                    //               fontWeight: FontWeight.w500),
+                    //         ),
+                    //       ],
+                    //     )
+                    //   ],
+                    // ),
                   ],
                 ),
               ),
@@ -709,6 +649,119 @@ class _InsightScreenState extends State<InsightScreen> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class Dividing extends StatelessWidget {
+  const Dividing({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(
+        left: 15,
+        right: 15,
+      ),
+      child: Container(
+        height: MediaQuery.of(context).size.height / 23,
+        width: 338,
+        child: Divider(
+          height: 1.0,
+          thickness: 1.0,
+          color: mithril,
+        ),
+      ),
+    );
+  }
+}
+
+class Playlist1 extends StatelessWidget {
+  const Playlist1({
+    super.key,
+    required this.numberpath,
+  });
+
+  final String numberpath;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        SizedBox(
+          width: 90,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(left: 15),
+                child: Text(
+                  numberpath,
+                ),
+              ),
+              Image.asset(
+                MihiAppAssetsPath.cancer,
+                height: 50,
+              ),
+            ],
+          ),
+        ),
+        SizedBox(
+          width: 10,
+        ),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Text(
+                  MihiAppText.softLullaby,
+                  style: TextStyle(
+                      color: blackText,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            SinglePlayerScreen()));
+                  },
+                  child: Text(
+                    MihiAppText.pastFive,
+                    style: TextStyle(
+                      color: Brilliant,
+                      fontSize: 10,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 120,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 8),
+                  child: MihiAppAssetsPath.moreGrey,
+                )
+              ],
+            ),
+            SizedBox(
+              height: 1,
+            ),
+            Text(
+              MihiAppText.CA,
+              style: TextStyle(
+                  fontSize: 8, color: mithril, fontWeight: FontWeight.w500),
+            ),
+          ],
+        )
+      ],
     );
   }
 }
