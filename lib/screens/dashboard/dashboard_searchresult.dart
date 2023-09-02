@@ -365,101 +365,9 @@ class _DashboardSearchResultScreenState
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Container(
-                            height: 110.0,
-                            width: 100.0,
-                            decoration: BoxDecoration(
-                                color: bleachedSilk.withOpacity(0.4),
-                                border: Border.all(
-                                  color: crowberryBlue2.withOpacity(0.4),
-                                ),
-                                borderRadius: BorderRadius.circular(12)),
-                            child: Column(
-                              children: [
-                                SizedBox(
-                                  height: 15.0,
-                                ),
-                                Image.asset(MihiAppAssetsPath.happy),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Text(
-                                  MihiAppText.softLullaby,
-                                  style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w300),
-                                ),
-                                Text(
-                                  MihiAppText.asake,
-                                  style: TextStyle(
-                                      fontSize: 6, fontWeight: FontWeight.w400),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            height: 110.0,
-                            width: 100.0,
-                            decoration: BoxDecoration(
-                                color: bleachedSilk.withOpacity(0.4),
-                                border: Border.all(
-                                  color: crowberryBlue2.withOpacity(0.4),
-                                ),
-                                borderRadius: BorderRadius.circular(12)),
-                            child: Column(
-                              children: [
-                                SizedBox(
-                                  height: 15.0,
-                                ),
-                                Image.asset(MihiAppAssetsPath.happy),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Text(
-                                  MihiAppText.softLullaby,
-                                  style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w300),
-                                ),
-                                Text(MihiAppText.asake,
-                                    style: TextStyle(
-                                        fontSize: 6,
-                                        fontWeight: FontWeight.w400))
-                              ],
-                            ),
-                          ),
-                          Container(
-                            height: 110.0,
-                            width: 100.0,
-                            decoration: BoxDecoration(
-                                color: bleachedSilk.withOpacity(0.4),
-                                border: Border.all(
-                                  color: crowberryBlue2.withOpacity(0.4),
-                                ),
-                                borderRadius: BorderRadius.circular(12)),
-                            child: Column(
-                              children: [
-                                SizedBox(
-                                  height: 15.0,
-                                ),
-                                Image.asset(MihiAppAssetsPath.happy),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Text(
-                                  MihiAppText.softLullaby,
-                                  style: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w300),
-                                ),
-                                Text(
-                                  MihiAppText.asake,
-                                  style: TextStyle(
-                                      fontSize: 6, fontWeight: FontWeight.w400),
-                                ),
-                              ],
-                            ),
-                          )
+                          Container1(),
+                          Container1(),
+                          Container1(),
                         ],
                       ),
                     ),
@@ -709,74 +617,15 @@ class _DashboardSearchResultScreenState
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Column(
-                              children: [
-                                Image.asset(MihiAppAssetsPath.pianist),
-                                Text(
-                                  MihiAppText.ambience,
-                                  style: TextStyle(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w400,
-                                      color: blackText),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20.0,
-                            ),
-                            Column(
-                              children: [
-                                Image.asset(MihiAppAssetsPath.pianist),
-                                Text(
-                                  MihiAppText.ambience,
-                                  style: TextStyle(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w400,
-                                      color: blackText),
-                                ),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20.0,
-                            ),
-                            Column(
-                              children: [
-                                Image.asset(MihiAppAssetsPath.pianist),
-                                Text(
-                                  MihiAppText.ambience,
-                                  style: TextStyle(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w400,
-                                      color: blackText),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20.0,
-                            ),
-                            Column(
-                              children: [
-                                Image.asset(MihiAppAssetsPath.pianist),
-                                Text(MihiAppText.ambience,
-                                    style: TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.w400,
-                                        color: blackText)),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 20.0,
-                            ),
-                            Column(
-                              children: [
-                                Image.asset(MihiAppAssetsPath.pianist),
-                                Text(MihiAppText.ambience,
-                                    style: TextStyle(
-                                        fontSize: 13,
-                                        fontWeight: FontWeight.w400,
-                                        color: blackText)),
-                              ],
-                            ),
+                            BottomImage(),
+                            SizedBox(width: 20.0,),
+                            BottomImage(),
+                            SizedBox(width: 20.0,),
+                            BottomImage(),
+                            SizedBox(width: 20.0,),
+                            BottomImage(),
+                            SizedBox(width: 20.0,),
+                            BottomImage(),
                             SizedBox(
                               width: 20.0,
                             ),
@@ -793,6 +642,70 @@ class _DashboardSearchResultScreenState
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class BottomImage extends StatelessWidget {
+  const BottomImage({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Image.asset(MihiAppAssetsPath.pianist),
+        Text(
+          MihiAppText.ambience,
+          style: TextStyle(
+              fontSize: 13,
+              fontWeight: FontWeight.w400,
+              color: blackText),
+        )
+      ],
+    );
+  }
+}
+
+class Container1 extends StatelessWidget {
+  const Container1({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 110.0,
+      width: 100.0,
+      decoration: BoxDecoration(
+          color: bleachedSilk.withOpacity(0.4),
+          border: Border.all(
+            color: crowberryBlue2.withOpacity(0.4),
+          ),
+          borderRadius: BorderRadius.circular(12)),
+      child: Column(
+        children: [
+          SizedBox(
+            height: 15.0,
+          ),
+          Image.asset(MihiAppAssetsPath.happy),
+          SizedBox(
+            height: 10,
+          ),
+          Text(
+            MihiAppText.softLullaby,
+            style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w300),
+          ),
+          Text(
+            MihiAppText.asake,
+            style: TextStyle(
+                fontSize: 6, fontWeight: FontWeight.w400),
+          ),
+        ],
       ),
     );
   }

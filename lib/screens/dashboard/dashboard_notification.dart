@@ -126,108 +126,10 @@ class _DashboardNotificationScreenState
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20.0),
-                    child: Container(
-                      height: MediaQuery.of(context).size.height / 13,
-                      width: MediaQuery.of(context).size.width / 1.1,
-                      child: Divider(
-                        height: 1.0,
-                        thickness: 1.0,
-                        color: mithril,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15.0),
-                    child: Row(
-                      children: [
-                        Image.asset(MihiAppAssetsPath.woman),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                                width: 200,
-                                child: Text(
-                                    MihiAppText.nextTherapy)),
-                            SizedBox(
-                              height: 5.0,
-                            ),
-                            Text(
-                              MihiAppText.lullaby2,
-                              style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w400,
-                                  color: Brilliant),
-                            )
-                          ],
-                        ),
-                        Padding(
-                          padding:
-                              const EdgeInsets.only(bottom: 30.0, left: 15),
-                          child: Text(MihiAppText.fourtyOne,
-                              style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w400,
-                                  color: blackText)),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20.0),
-                    child: Container(
-                      height: MediaQuery.of(context).size.height / 13,
-                      width: MediaQuery.of(context).size.width / 1.1,
-                      child: Divider(
-                        height: 1.0,
-                        thickness: 1.0,
-                        color: mithril,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15.0),
-                    child: Row(
-                      children: [
-                        Image.asset(MihiAppAssetsPath.woman),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                                width: 200,
-                                child: Text(
-                                    MihiAppText.nextTherapy)),
-                            SizedBox(
-                              height: 5.0,
-                            ),
-                            Text(
-                              MihiAppText.lullaby2,
-                              style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w400,
-                                  color: Brilliant),
-                            )
-                          ],
-                        ),
-                        Padding(
-                          padding:
-                              const EdgeInsets.only(bottom: 30.0, left: 15),
-                          child: Text(MihiAppText.fourtyOne,
-                              style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w400,
-                                  color: blackText)),
-                        ),
-                      ],
-                    ),
-                  ),
+                  Divide(),
+                  Today41(),
+                  Divide(),
+                  Today41(),
                   SizedBox(
                     height: 60.0,
                   ),
@@ -242,96 +144,9 @@ class _DashboardNotificationScreenState
                   SizedBox(
                     height: 20.0,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15.0),
-                    child: Row(
-                      children: [
-                        Image.asset(MihiAppAssetsPath.woman),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                                width: 200,
-                                child: Text(
-                                    MihiAppText.nextTherapy)),
-                            SizedBox(
-                              height: 5.0,
-                            ),
-                            Text(
-                              MihiAppText.lullaby2,
-                              style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w400,
-                                  color: Brilliant),
-                            )
-                          ],
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 30.0, left: 4),
-                          child: Text(
-                            MihiAppText.tues,
-                            style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w400,
-                                color: blackText),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20.0),
-                    child: Container(
-                      height: MediaQuery.of(context).size.height / 13,
-                      width: MediaQuery.of(context).size.width / 1.1,
-                      child: Divider(
-                        height: 1.0,
-                        thickness: 1.0,
-                        color: mithril,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15.0),
-                    child: Row(
-                      children: [
-                        Image.asset(MihiAppAssetsPath.woman),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                                width: 200,
-                                child: Text(
-                                    MihiAppText.nextTherapy)),
-                            SizedBox(
-                              height: 5.0,
-                            ),
-                            Text(
-                              MihiAppText.lullaby2,
-                              style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w400,
-                                  color: Brilliant),
-                            )
-                          ],
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 30.0, left: 4),
-                          child: Text(MihiAppText.tues,
-                              style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w400,
-                                  color: blackText)),
-                        ),
-                      ],
-                    ),
-                  ),
+                  YesterdayPath(),
+                  Divide(),
+                  YesterdayPath(),
                   SizedBox(
                     height: 60.0,
                   ),
@@ -350,113 +165,136 @@ class _DashboardNotificationScreenState
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 20.0,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15.0),
-                    child: Row(
-                      children: [
-                        Image.asset(MihiAppAssetsPath.woman),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                                width: 200,
-                                child: Text(
-                                    MihiAppText.nextTherapy)),
-                            SizedBox(
-                              height: 5.0,
-                            ),
-                            Text(
-                              MihiAppText.lullaby2,
-                              style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w400,
-                                  color: Brilliant),
-                            )
-                          ],
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 30.0, left: 4),
-                          child: Text(MihiAppText.tues,
-                              style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w400,
-                                  color: blackText)),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20.0),
-                    child: Container(
-                      height: MediaQuery.of(context).size.height / 13,
-                      width: MediaQuery.of(context).size.width / 1.1,
-                      child: Divider(
-                        height: 1.0,
-                        thickness: 1.0,
-                        color: mithril,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15.0),
-                    child: Row(
-                      children: [
-                        Image.asset(MihiAppAssetsPath.woman),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                                width: 200,
-                                child: Text(
-                                    MihiAppText.nextTherapy)),
-                            SizedBox(
-                              height: 5.0,
-                            ),
-                            Text(
-                              MihiAppText.lullaby2,
-                              style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w400,
-                                  color: Brilliant),
-                            )
-                          ],
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 30.0, left: 4),
-                          child: Text(MihiAppText.tues,
-                              style: TextStyle(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w400,
-                                  color: blackText)),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 20.0),
-                    child: Container(
-                      height: MediaQuery.of(context).size.height / 13,
-                      width: MediaQuery.of(context).size.width / 1.1,
-                      child: Divider(
-                        height: 1.0,
-                        thickness: 1.0,
-                        color: mithril,
-                      ),
-                    ),
-                  ),
+                  SizedBox(height: 20.0,),
+                  YesterdayPath(),
+                  Divide(),
+                  YesterdayPath(),
+                  Divide(),
                 ],
               ),
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class YesterdayPath extends StatelessWidget {
+  const YesterdayPath({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 15.0),
+      child: Row(
+        children: [
+          Image.asset(MihiAppAssetsPath.woman),
+          SizedBox(
+            width: 10.0,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                  width: 200,
+                  child: Text(
+                      MihiAppText.nextTherapy)),
+              SizedBox(
+                height: 5.0,
+              ),
+              Text(
+                MihiAppText.lullaby2,
+                style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w400,
+                    color: Brilliant),
+              )
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 30.0, left: 4),
+            child: Text(
+              MihiAppText.tues,
+              style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w400,
+                  color: blackText),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Today41 extends StatelessWidget {
+  const Today41({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 15.0),
+      child: Row(
+        children: [
+          Image.asset(MihiAppAssetsPath.woman),
+          SizedBox(
+            width: 10.0,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                  width: 200,
+                  child: Text(
+                      MihiAppText.nextTherapy)),
+              SizedBox(
+                height: 5.0,
+              ),
+              Text(
+                MihiAppText.lullaby2,
+                style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w400,
+                    color: Brilliant),
+              )
+            ],
+          ),
+          Padding(
+            padding:
+                const EdgeInsets.only(bottom: 30.0, left: 15),
+            child: Text(MihiAppText.fourtyOne,
+                style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w400,
+                    color: blackText)),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Divide extends StatelessWidget {
+  const Divide({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 20.0),
+      child: Container(
+        height: MediaQuery.of(context).size.height / 13,
+        width: MediaQuery.of(context).size.width / 1.1,
+        child: Divider(
+          height: 1.0,
+          thickness: 1.0,
+          color: mithril,
         ),
       ),
     );
