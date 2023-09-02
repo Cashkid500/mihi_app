@@ -3,12 +3,14 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 
 import '../constants/text_constants.dart';
+import 'featured_playlist.dart';
 
 class PlayerWithPlaylistScreen extends StatefulWidget {
   const PlayerWithPlaylistScreen({Key? key}) : super(key: key);
 
   @override
-  State<PlayerWithPlaylistScreen> createState() => _PlayerWithPlaylistScreenState();
+  State<PlayerWithPlaylistScreen> createState() =>
+      _PlayerWithPlaylistScreenState();
 }
 
 class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
@@ -150,8 +152,10 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
       },
     );
   }
+
   @override
   Widget build(BuildContext context) {
+    String list = "2.";
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
@@ -165,8 +169,8 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage(
-                        MihiAppAssetsPath.playerWithListBackground),
+                    image:
+                        AssetImage(MihiAppAssetsPath.playerWithListBackground),
                     fit: BoxFit.cover),
               ),
               child: Container(
@@ -186,7 +190,8 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(left: 10),
-                          child: Image.asset(MihiAppAssetsPath.backButton, height: 25),
+                          child: Image.asset(MihiAppAssetsPath.backButton,
+                              height: 25),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 20),
@@ -292,79 +297,11 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                                                 const EdgeInsets.only(top: 8),
                                             child: GestureDetector(
                                               onTap: () {
-                                              _showBottomSheet(context);
+                                                _showBottomSheet(context);
                                               },
                                               child: MihiAppAssetsPath.moreGrey,
-                                          ),
-                                          ),
-                                        ],
-                                      ),
-                                      Text(
-                                        MihiAppText.CA,
-                                        style: TextStyle(
-                                            fontSize: 8,
-                                            color: mithril,
-                                            fontWeight: FontWeight.w500),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Container(
-                                width: MediaQuery.of(context).size.width,
-                                height: 1,
-                                decoration:
-                                    BoxDecoration(color: mithril),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    MihiAppText.two,
-                                    style: TextStyle(fontSize: 16),
-                                  ),
-                                  Image.asset(MihiAppAssetsPath.cancer),
-                                  SizedBox(
-                                    width: 5,
-                                  ),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Row(
-                                        children: [
-                                          Text(
-                                            MihiAppText.sea,
-                                            style: TextStyle(
-                                                color: blackText,
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w500),
-                                          ),
-                                          SizedBox(
-                                            width: 10,
-                                          ),
-                                          Text(
-                                            MihiAppText.pastFive,
-                                            style: TextStyle(
-                                              color: Brilliant,
-                                              fontSize: 10,
-                                              fontWeight: FontWeight.w500,
                                             ),
                                           ),
-                                          SizedBox(
-                                            width: 130,
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(top: 8),
-                                            child: MihiAppAssetsPath.moreGrey,
-                                          )
                                         ],
                                       ),
                                       Text(
@@ -378,392 +315,169 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                                   ),
                                 ],
                               ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Container(
-                                width: MediaQuery.of(context).size.width,
-                                height: 1,
-                                decoration:
-                                    BoxDecoration(color: mithril),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    MihiAppText.three,
-                                    style: TextStyle(fontSize: 16),
-                                  ),
-                                  Image.asset(MihiAppAssetsPath.cancer),
-                                  SizedBox(
-                                    width: 5,
-                                  ),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Row(
-                                        children: [
-                                          Text(
-                                            MihiAppText.sea,
-                                            style: TextStyle(
-                                                color: blackText,
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w500),
-                                          ),
-                                          SizedBox(
-                                            width: 10,
-                                          ),
-                                          Text(
-                                            MihiAppText.pastFive,
-                                            style: TextStyle(
-                                              color: Brilliant,
-                                              fontSize: 10,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            width: 130,
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(top: 8),
-                                            child: MihiAppAssetsPath.moreGrey,
-                                          )
-                                        ],
-                                      ),
-                                      Text(
-                                        MihiAppText.CA,
-                                        style: TextStyle(
-                                            fontSize: 8,
-                                            color: mithril,
-                                            fontWeight: FontWeight.w500),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Container(
-                                width: MediaQuery.of(context).size.width,
-                                height: 1,
-                                decoration:
-                                    BoxDecoration(color: mithril),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    MihiAppText.four,
-                                    style: TextStyle(fontSize: 16),
-                                  ),
-                                  Image.asset(MihiAppAssetsPath.cancer),
-                                  SizedBox(
-                                    width: 5,
-                                  ),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Row(
-                                        children: [
-                                          Text(
-                                            MihiAppText.m4u,
-                                            style: TextStyle(
-                                                color: blackText,
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w500),
-                                          ),
-                                          SizedBox(
-                                            width: 10,
-                                          ),
-                                          Text(
-                                            MihiAppText.pastFive,
-                                            style: TextStyle(
-                                              color: Brilliant,
-                                              fontSize: 10,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            width: 130,
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(top: 8),
-                                            child: MihiAppAssetsPath.moreGrey,
-                                          )
-                                        ],
-                                      ),
-                                      Text(
-                                        MihiAppText.CA,
-                                        style: TextStyle(
-                                            fontSize: 8,
-                                            color: mithril,
-                                            fontWeight: FontWeight.w500),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Container(
-                                width: MediaQuery.of(context).size.width,
-                                height: 1,
-                                decoration:
-                                    BoxDecoration(color: mithril),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    MihiAppText.five,
-                                    style: TextStyle(fontSize: 16),
-                                  ),
-                                  Image.asset(MihiAppAssetsPath.cancer),
-                                  SizedBox(
-                                    width: 5,
-                                  ),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Row(
-                                        children: [
-                                          Text(
-                                            MihiAppText.m4u,
-                                            style: TextStyle(
-                                                color: blackText,
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w500),
-                                          ),
-                                          SizedBox(
-                                            width: 10,
-                                          ),
-                                          Text(
-                                            MihiAppText.pastFive,
-                                            style: TextStyle(
-                                              color: Brilliant,
-                                              fontSize: 10,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            width: 130,
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(top: 8),
-                                            child: MihiAppAssetsPath.moreGrey,
-                                          )
-                                        ],
-                                      ),
-                                      Text(
-                                        MihiAppText.CA,
-                                        style: TextStyle(
-                                            fontSize: 8,
-                                            color: mithril,
-                                            fontWeight: FontWeight.w500),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Container(
-                                width: MediaQuery.of(context).size.width,
-                                height: 1,
-                                decoration:
-                                    BoxDecoration(color: mithril),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    MihiAppText.six,
-                                    style: TextStyle(fontSize: 16),
-                                  ),
-                                  Image.asset(MihiAppAssetsPath.cancer),
-                                  SizedBox(
-                                    width: 5,
-                                  ),
-                                  Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Row(
-                                        children: [
-                                          Text(
-                                            MihiAppText.m4u,
-                                            style: TextStyle(
-                                                color: blackText,
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w500),
-                                          ),
-                                          SizedBox(
-                                            width: 10,
-                                          ),
-                                          Text(
-                                            MihiAppText.pastFive,
-                                            style: TextStyle(
-                                              color: Brilliant,
-                                              fontSize: 10,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            width: 130,
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(top: 8),
-                                            child: MihiAppAssetsPath.moreGrey,
-                                          )
-                                        ],
-                                      ),
-                                      Text(
-                                        MihiAppText.CA,
-                                        style: TextStyle(
-                                            fontSize: 8,
-                                            color: mithril,
-                                            fontWeight: FontWeight.w500),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ), 
+                              SizedBox(height: 5,),
+                              DividingLine(),
+                              SizedBox(height: 5,),
+                              SeaSideCafe(list: MihiAppText.two),
+                              SizedBox(height: 5,),
+                              DividingLine(),
+                              SizedBox(height: 5,),
+                              SeaSideCafe(list: MihiAppText.three),
+                              SizedBox(height: 5,),
+                              DividingLine(),
+                              SizedBox(height: 5,),
+                              FirstRowDetails(listpath: MihiAppText.four),
+                              SizedBox(height: 5,),
+                              DividingLine(),
+                              SizedBox(height: 5,),
+                              FirstRowDetails(listpath: MihiAppText.five),
+                              SizedBox(height: 5,),
+                              DividingLine(),
+                              SizedBox(height: 5,),
+                              FirstRowDetails(listpath: MihiAppText.six),
+                              SizedBox(height: 5,),
                             ],
                           ),
                         ),
                         Container(
                           height: 169,
-                        width: 362,
-                        decoration: BoxDecoration(
-                          color: Colors.blueGrey.withOpacity(0.5),
-                          borderRadius: BorderRadius.circular(30),
-                          border: Border.all(color: Colors.black),
-                          gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomLeft,
-                            colors: [whiteText, crowberryBlue2],
-                            stops: [0.05, 2.0],
+                          width: 362,
+                          decoration: BoxDecoration(
+                            color: Colors.blueGrey.withOpacity(0.5),
+                            borderRadius: BorderRadius.circular(30),
+                            border: Border.all(color: Colors.black),
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomLeft,
+                              colors: [whiteText, crowberryBlue2],
+                              stops: [0.05, 2.0],
+                            ),
                           ),
-                        ),
                           child: Column(
                             children: [
-                              SizedBox(height: 20,),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  MihiAppAssetsPath.download,
-                                  MihiAppAssetsPath.favorite,
-                                  MihiAppAssetsPath.addToPlaylist,
-                                  MihiAppAssetsPath.share,
-                                ]
-                              ),
-                              SizedBox(height: 5,),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children: [
-                                  Text(MihiAppText.download, style: TextStyle(fontSize: 9, fontWeight: FontWeight.w400, color: Color(0xff000000)),),
-                                  Text(MihiAppText.fav2, style: TextStyle(fontSize: 9, fontWeight: FontWeight.w400, color: Color(0xff000000)),),
-                                  Text(MihiAppText.atp, style: TextStyle(fontSize: 8, fontWeight: FontWeight.w400, color: Color(0xff000000)),),
-                                  Text(MihiAppText.share, style: TextStyle(fontSize: 9, fontWeight: FontWeight.w400, color: Color(0xff000000)),),
-                                ]
-                              ),
                               SizedBox(
                                 height: 20,
                               ),
                               Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 10),
-                                  child: Container(
-                                    width: 174,
-                                    height: 5,
-                                    decoration: BoxDecoration(
-                                      color: Brilliant,
-                                      borderRadius: BorderRadius.circular(16),
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    MihiAppAssetsPath.download,
+                                    MihiAppAssetsPath.favorite,
+                                    MihiAppAssetsPath.addToPlaylist,
+                                    MihiAppAssetsPath.share,
+                                  ]),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Text(
+                                      MihiAppText.download,
+                                      style: TextStyle(
+                                          fontSize: 9,
+                                          fontWeight: FontWeight.w400,
+                                          color: Color(0xff000000)),
                                     ),
-                                  ),
-                                ),
-                                Container(
-                                  width: 120,
-                                  height: 5,
-                                  decoration: BoxDecoration(
-                                    color: whiteText,
-                                    borderRadius: BorderRadius.circular(16),
-                                  ),
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 5,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 25.0),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                    Text(
+                                      MihiAppText.fav2,
+                                      style: TextStyle(
+                                          fontSize: 9,
+                                          fontWeight: FontWeight.w400,
+                                          color: Color(0xff000000)),
+                                    ),
+                                    Text(
+                                      MihiAppText.atp,
+                                      style: TextStyle(
+                                          fontSize: 8,
+                                          fontWeight: FontWeight.w400,
+                                          color: Color(0xff000000)),
+                                    ),
+                                    Text(
+                                      MihiAppText.share,
+                                      style: TextStyle(
+                                          fontSize: 9,
+                                          fontWeight: FontWeight.w400,
+                                          color: Color(0xff000000)),
+                                    ),
+                                  ]),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.only(left: 15),
-                                    child: Text(
-                                      MihiAppText.pastFive,
-                                      style: TextStyle(
-                                          color: whiteText,
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.w400),
+                                    padding: const EdgeInsets.only(left: 10),
+                                    child: Container(
+                                      width: 174,
+                                      height: 5,
+                                      decoration: BoxDecoration(
+                                        color: Brilliant,
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
                                     ),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(right: 10.0),
-                                    child: Text(
-                                      MihiAppText.pastFive,
-                                      style: TextStyle(
-                                          color: whiteText,
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.w400),
+                                  Container(
+                                    width: 120,
+                                    height: 5,
+                                    decoration: BoxDecoration(
+                                      color: whiteText,
+                                      borderRadius: BorderRadius.circular(16),
                                     ),
-                                  ),
+                                  )
                                 ],
                               ),
-                            ),
-                              SizedBox(height: 10,),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                children:[
-                                  MihiAppAssetsPath.repeatBlue,
-                                  MihiAppAssetsPath.previousBlue,
-                                  MihiAppAssetsPath.pauseBlue,
-                                  MihiAppAssetsPath.nextBlue,
-                                  MihiAppAssetsPath.shuffleBlue,
-                                ]
+                              SizedBox(
+                                height: 5,
                               ),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 25.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 15),
+                                      child: Text(
+                                        MihiAppText.pastFive,
+                                        style: TextStyle(
+                                            color: whiteText,
+                                            fontSize: 10,
+                                            fontWeight: FontWeight.w400),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.only(right: 10.0),
+                                      child: Text(
+                                        MihiAppText.pastFive,
+                                        style: TextStyle(
+                                            color: whiteText,
+                                            fontSize: 10,
+                                            fontWeight: FontWeight.w400),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    MihiAppAssetsPath.repeatBlue,
+                                    MihiAppAssetsPath.previousBlue,
+                                    MihiAppAssetsPath.pauseBlue,
+                                    MihiAppAssetsPath.nextBlue,
+                                    MihiAppAssetsPath.shuffleBlue,
+                                  ]),
                             ],
                           ),
                         )
@@ -776,6 +490,75 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class SeaSideCafe extends StatelessWidget {
+  const SeaSideCafe({
+    super.key,
+    required this.list,
+  });
+
+  final String list;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Text(
+          list,
+          style: TextStyle(fontSize: 16),
+        ),
+        Image.asset(MihiAppAssetsPath.cancer),
+        SizedBox(
+          width: 5,
+        ),
+        Column(
+          crossAxisAlignment:
+              CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Text(
+                  MihiAppText.sea,
+                  style: TextStyle(
+                      color: blackText,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500),
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  MihiAppText.pastFive,
+                  style: TextStyle(
+                    color: Brilliant,
+                    fontSize: 10,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+                SizedBox(
+                  width: 130,
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.only(top: 8),
+                  child: MihiAppAssetsPath.moreGrey,
+                )
+              ],
+            ),
+            Text(
+              MihiAppText.CA,
+              style: TextStyle(
+                  fontSize: 8,
+                  color: mithril,
+                  fontWeight: FontWeight.w500),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }

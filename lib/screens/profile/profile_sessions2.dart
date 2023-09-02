@@ -66,293 +66,13 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
             SizedBox(
               height: 30.0,
             ),
-            Container(
-              height: 77.0,
-              width: 338.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(14.0),
-                color: whiteText,
-                border: Border.all(color: mithril),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
-                    child: Container(
-                      height: 45.0,
-                      width: 45.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50.0),
-                        color: icyLilac,
-                        border: Border.all(color: Brilliant),
-                      ),
-                      child: Image.asset(MihiAppAssetsPath.coil),
-                    ),
-                  ),
-                  SizedBox(width: 5.0),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 18.0),
-                        child: Text(
-                          MihiAppText.musicTherapy,
-                          style: TextStyle(
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.w500,
-                              color: blackText),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5.0,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 14.0),
-                        child: Text(
-                          MihiAppText.timeDate,
-                          style: TextStyle(
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.w400,
-                              color: mithril),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 70.0,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
-                    child: Container(
-                      height: 45.0,
-                      width: 45.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50.0),
-                        border: Border.all(color: mithril),
-                      ),
-                      child: Image.asset(MihiAppAssetsPath.notification3),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            Container1(),
             SizedBox(height: 20.0),
-            Container(
-              height: 77.0,
-              width: 338.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(14.0),
-                color: whiteText,
-                border: Border.all(color: mithril)
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
-                    child: Container(
-                      height: 45.0,
-                      width: 45.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50.0),
-                        color: icyLilac,
-                        border: Border.all(color: Brilliant),
-                      ),
-                      child: Image.asset(MihiAppAssetsPath.coil),
-                    ),
-                  ),
-                  SizedBox(width: 5.0),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 18.0),
-                        child: Text(
-                          MihiAppText.musicTherapy,
-                          style: TextStyle(
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.w500,
-                              color: blackText),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5.0,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 14.0),
-                        child: Text(
-                          MihiAppText.timeDate,
-                          style: TextStyle(
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.w400,
-                              color: mithril),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 70.0,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
-                    child: Container(
-                      height: 45.0,
-                      width: 45.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50.0),
-                        color: Brilliant,
-                      ),
-                      child: Image.asset(MihiAppAssetsPath.notification3),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            Container2(),
             SizedBox(height: 20.0),
-            Container(
-              height: 77.0,
-              width: 338.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(14.0),
-                color: whiteText,
-                border: Border.all(color: mithril)
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
-                    child: Container(
-                      height: 45.0,
-                      width: 45.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50.0),
-                        color: icyLilac,
-                        border: Border.all(color: Brilliant),
-                      ),
-                      child: Image.asset(MihiAppAssetsPath.coil),
-                    ),
-                  ),
-                  SizedBox(width: 5.0),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 18.0),
-                        child: Text(
-                          MihiAppText.musicTherapy,
-                          style: TextStyle(
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.w500,
-                              color: blackText),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5.0,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 14.0),
-                        child: Text(
-                          MihiAppText.timeDate,
-                          style: TextStyle(
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.w400,
-                              color: mithril),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 70.0,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
-                    child: Container(
-                      height: 45.0,
-                      width: 45.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50.0),
-                        border: Border.all(color: mithril),
-                      ),
-                      child: Image.asset(MihiAppAssetsPath.notification3),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            Container1(),
             SizedBox(height: 20.0),
-            Container(
-              height: 77.0,
-              width: 338.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(14.0),
-                color: whiteText,
-                border: Border.all(color: mithril)
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
-                    child: Container(
-                      height: 45.0,
-                      width: 45.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50.0),
-                        color: icyLilac,
-                        border: Border.all(color: Brilliant),
-                      ),
-                      child: Image.asset(MihiAppAssetsPath.coil),
-                    ),
-                  ),
-                  SizedBox(width: 5.0),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 18.0),
-                        child: Text(
-                          MihiAppText.musicTherapy,
-                          style: TextStyle(
-                              fontSize: 16.0,
-                              fontWeight: FontWeight.w500,
-                              color: blackText),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5.0,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 14.0),
-                        child: Text(
-                          MihiAppText.timeDate,
-                          style: TextStyle(
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.w400,
-                              color: mithril),
-                        ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 70.0,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
-                    child: Container(
-                      height: 45.0,
-                      width: 45.0,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50.0),
-                        color: Brilliant,
-                      ),
-                      child: Image.asset(MihiAppAssetsPath.notification3),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            Container2(),
             SizedBox(height: 20.0),
             GestureDetector(
               onTap: () {
@@ -360,79 +80,172 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
               MaterialPageRoute(builder: (BuildContext context) =>ProfileSessions3Screen())
               );
               },
-              child: Container(
-                height: 77.0,
-                width: 338.0,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(14.0),
-                    color: whiteText,
-                    border: Border.all(color: mithril)),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10.0),
-                      child: Container(
-                        height: 45.0,
-                        width: 45.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50.0),
-                          color: whiteout,
-                          border: Border.all(color: Brilliant),
-                        ),
-                        child: Image.asset(MihiAppAssetsPath.coil),
-                      ),
-                    ),
-                    SizedBox(width: 5.0),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(top: 18.0),
-                          child: Text(
-                            MihiAppText.musicTherapy,
-                            style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.w500,
-                                color: blackText),
-                          ),
-                        ),
-                        SizedBox(
-                          height: 5.0,
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 14.0),
-                          child: Text(
-                          MihiAppText.timeDate,
-                            style: TextStyle(
-                                fontSize: 14.0,
-                                fontWeight: FontWeight.w400,
-                                color: mithril),
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      width: 70.0,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 10.0),
-                      child: Container(
-                        height: 45.0,
-                        width: 45.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50.0),
-                          border: Border.all(color: mithril),
-                        ),
-                        child: Image.asset(MihiAppAssetsPath.notification3),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              child: Container1(),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class Container2 extends StatelessWidget {
+  const Container2({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 77.0,
+      width: 338.0,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(14.0),
+        color: whiteText,
+        border: Border.all(color: mithril)
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 10.0),
+            child: Container(
+              height: 45.0,
+              width: 45.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50.0),
+                color: icyLilac,
+                border: Border.all(color: Brilliant),
+              ),
+              child: Image.asset(MihiAppAssetsPath.coil),
+            ),
+          ),
+          SizedBox(width: 5.0),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 18.0),
+                child: Text(
+                  MihiAppText.musicTherapy,
+                  style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w500,
+                      color: blackText),
+                ),
+              ),
+              SizedBox(
+                height: 5.0,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 14.0),
+                child: Text(
+                  MihiAppText.timeDate,
+                  style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w400,
+                      color: mithril),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            width: 70.0,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10.0),
+            child: Container(
+              height: 45.0,
+              width: 45.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50.0),
+                color: Brilliant,
+              ),
+              child: Image.asset(MihiAppAssetsPath.notification3),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Container1 extends StatelessWidget {
+  const Container1({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 77.0,
+      width: 338.0,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(14.0),
+        color: whiteText,
+        border: Border.all(color: mithril),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 10.0),
+            child: Container(
+              height: 45.0,
+              width: 45.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50.0),
+                color: icyLilac,
+                border: Border.all(color: Brilliant),
+              ),
+              child: Image.asset(MihiAppAssetsPath.coil),
+            ),
+          ),
+          SizedBox(width: 5.0),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 18.0),
+                child: Text(
+                  MihiAppText.musicTherapy,
+                  style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w500,
+                      color: blackText),
+                ),
+              ),
+              SizedBox(
+                height: 5.0,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 14.0),
+                child: Text(
+                  MihiAppText.timeDate,
+                  style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w400,
+                      color: mithril),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            width: 70.0,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10.0),
+            child: Container(
+              height: 45.0,
+              width: 45.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50.0),
+                border: Border.all(color: mithril),
+              ),
+              child: Image.asset(MihiAppAssetsPath.notification3),
+            ),
+          ),
+        ],
       ),
     );
   }

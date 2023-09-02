@@ -97,260 +97,111 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                 SizedBox(
                   height: 20,
                 ),
-                Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Container(
-                          height: 190.0,
-                          width: 155.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                              image: AssetImage(
-                                  MihiAppAssetsPath.ambiance),
-                              fit: BoxFit.cover,
-                              colorFilter: ColorFilter.mode(
-                                blackText.withOpacity(
-                                    0.5), // Adjust opacity here (0.0 to 1.0)
-                                BlendMode.srcOver,
-                              ),
-                            ),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                MihiAppText.ambience,
-                                style: TextStyle(
-                                    color: whiteText,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              Text(
-                                MihiAppText.tenSongs,
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w400,
-                                  color: whiteText,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          height: 190.0,
-                          width: 155.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                              image: AssetImage(
-                                  MihiAppAssetsPath.nature),
-                              fit: BoxFit.cover,
-                              colorFilter: ColorFilter.mode(
-                                blackText.withOpacity(
-                                    0.5), // Adjust opacity here (0.0 to 1.0)
-                                BlendMode.srcOver,
-                              ),
-                            ),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                MihiAppText.rwn,
-                                style: TextStyle(
-                                    color: whiteText,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              Text(
-                                MihiAppText.tenSongs,
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w400,
-                                  color: whiteText,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
+                Row1(),
                     Padding(
                       padding: EdgeInsets.only(
                         top: 15,
                         bottom: 15,
                       ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Container(
-                            height: 190.0,
-                            width: 155.0,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
-                              image: DecorationImage(
-                                image: AssetImage(
-                                    MihiAppAssetsPath.ambiance),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                  blackText.withOpacity(
-                                      0.5), // Adjust opacity here (0.0 to 1.0)
-                                  BlendMode.srcOver,
-                                ),
-                              ),
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  MihiAppText.ambience,
-                                  style: TextStyle(
-                                      color: whiteText,
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.w500),
-                                ),
-                                Text(
-                                  MihiAppText.tenSongs,
-                                  style: TextStyle(
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w400,
-                                    color: whiteText,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            height: 190.0,
-                            width: 155.0,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(15),
-                              image: DecorationImage(
-                                image: AssetImage(
-                                    MihiAppAssetsPath.nature),
-                                fit: BoxFit.cover,
-                                colorFilter: ColorFilter.mode(
-                                  Colors.black.withOpacity(
-                                      0.5), // Adjust opacity here (0.0 to 1.0)
-                                  BlendMode.srcOver,
-                                ),
-                              ),
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  MihiAppText.rwn,
-                                  style: TextStyle(
-                                      color: whiteText,
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.w500),
-                                ),
-                                Text(
-                                  MihiAppText.tenSongs,
-                                  style: TextStyle(
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w400,
-                                    color: whiteText,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
+                      child: Row1(),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Container(
-                          height: 190.0,
-                          width: 155.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                              image: AssetImage(
-                                  MihiAppAssetsPath.ambiance),
-                              fit: BoxFit.cover,
-                              colorFilter: ColorFilter.mode(
-                                Colors.black.withOpacity(
-                                    0.5), // Adjust opacity here (0.0 to 1.0)
-                                BlendMode.srcOver,
-                              ),
-                            ),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                MihiAppText.ambience,
-                                style: TextStyle(
-                                    color: whiteText,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              Text(
-                                MihiAppText.tenSongs,
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w400,
-                                  color: whiteText,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          height: 190.0,
-                          width: 155.0,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                              image: AssetImage(
-                                  MihiAppAssetsPath.nature),
-                              fit: BoxFit.cover,
-                              colorFilter: ColorFilter.mode(
-                                Colors.black.withOpacity(
-                                    0.5), // Adjust opacity here (0.0 to 1.0)
-                                BlendMode.srcOver,
-                              ),
-                            ),
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                MihiAppText.rwn,
-                                style: TextStyle(
-                                    color: whiteText,
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500),
-                              ),
-                              Text(
-                                MihiAppText.tenSongs,
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.w400,
-                                  color: whiteText,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
+                    Row1(),
               ],
             ),
           ),
         ),
       ),
     );
+  }
+}
+
+class Row1 extends StatelessWidget {
+  const Row1({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Container(
+              height: 190.0,
+              width: 155.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                image: DecorationImage(
+                  image: AssetImage(
+                      MihiAppAssetsPath.ambiance),
+                  fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(
+                    blackText.withOpacity(
+                        0.5), // Adjust opacity here (0.0 to 1.0)
+                    BlendMode.srcOver,
+                  ),
+                ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    MihiAppText.ambience,
+                    style: TextStyle(
+                        color: whiteText,
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500),
+                  ),
+                  Text(
+                    MihiAppText.tenSongs,
+                    style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w400,
+                      color: whiteText,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              height: 190.0,
+              width: 155.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                image: DecorationImage(
+                  image: AssetImage(
+                      MihiAppAssetsPath.nature),
+                  fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(
+                    blackText.withOpacity(
+                        0.5), // Adjust opacity here (0.0 to 1.0)
+                    BlendMode.srcOver,
+                  ),
+                ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    MihiAppText.rwn,
+                    style: TextStyle(
+                        color: whiteText,
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500),
+                  ),
+                  Text(
+                    MihiAppText.tenSongs,
+                    style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w400,
+                      color: whiteText,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        );
   }
 }

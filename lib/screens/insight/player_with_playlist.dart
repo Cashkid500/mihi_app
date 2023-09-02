@@ -162,9 +162,9 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                     SizedBox(
                       height: 20,
                     ),
-                  Playlist1(numberpath: "1"),
+                  Playlist1(numberpath: MihiAppText.one),
                   Dividing(),
-                  Playlist1(numberpath: "2"),
+                  Playlist1(numberpath: MihiAppText.two),
                   Dividing(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -246,96 +246,16 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                         ),
                       ),
                     ),
-                  Playlist1(numberpath: "4"),
+                  Playlist1(numberpath: MihiAppText.four),
                   Dividing(),
-                  Playlist1(numberpath: "5"),
+                  Playlist1(numberpath: MihiAppText.five),
                   Dividing(),
-                  Playlist1(numberpath: "6"),
+                  Playlist1(numberpath: MihiAppText.six),
                   Dividing(),
-                  Playlist1(numberpath: "7"),
+                  Playlist1(numberpath: MihiAppText.seven),
                   Dividing(),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width: 90,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 15),
-                                child: Text(
-                                  MihiAppText.eight,
-                                ),
-                              ),
-                              SizedBox(
-                                width: 1,
-                              ),
-                              Image.asset(MihiAppAssetsPath.cancer),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Text(
-                                  MihiAppText.softLullaby,
-                                  style: TextStyle(
-                                      color: blackText,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w500),
-                                ),
-                                SizedBox(
-                                  width: 10,
-                                ),
-                                Text(
-                                  MihiAppText.pastFive,
-                                  style: TextStyle(
-                                    color: Brilliant,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 120,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 8),
-                                  child: MihiAppAssetsPath.moreGrey,
-                                )
-                              ],
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              MihiAppText.CA,
-                              style: TextStyle(
-                                  fontSize: 8,
-                                  color: blackText,
-                                  fontWeight: FontWeight.w500),
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 15, right: 15),
-                      child: Container(
-                        height: MediaQuery.of(context).size.height / 20,
-                        width: 338,
-                        child: Divider(
-                          height: 1.0,
-                          thickness: 1.0,
-                          color: mithril,
-                        ),
-                      ),
-                    ),
+                  Playlist1(numberpath: MihiAppText.eight),
+                  Dividing(),
                   ],
                 ),
               ),
