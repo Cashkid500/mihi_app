@@ -204,7 +204,11 @@ class _InsightScreenState extends State<InsightScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(right: 8),
-                            child: Icon(Icons.more_vert),
+                            child: GestureDetector(
+                            onTap: () {
+                                  _showBottomSheet(context);
+                                },
+                            child: Icon(Icons.more_vert)),
                           )
                         ],
                       ),
