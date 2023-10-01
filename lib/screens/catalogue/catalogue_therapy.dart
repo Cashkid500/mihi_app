@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mihi_app/screens/catalogue/catalogue.dart';
 import 'package:mihi_app/screens/catalogue/catalogue_therapy2.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
-
 import '../constants/text_constants.dart';
 
 class CatalogueTherapyScreen extends StatefulWidget {
@@ -43,9 +43,16 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                                     border:
                                         Border.all(color: whiteText),
                                     borderRadius: BorderRadius.circular(8)),
-                                child: Image.asset(
-                                  MihiAppAssetsPath.rightArrow2,
-                                  height: 25,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                            builder: (BuildContext context) => CatalogueScreen()));
+                                  },
+                                  child: Image.asset(
+                                    MihiAppAssetsPath.rightArrow2,
+                                    height: 25,
+                                  ),
                                 )),
                             Text(
                               "Music Catalogue",

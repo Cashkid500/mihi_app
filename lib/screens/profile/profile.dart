@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/profile/invite_friends.dart';
+import 'package:mihi_app/screens/profile/profile_sessions.dart';
 import 'package:mihi_app/screens/profile/profile_settings.dart';
-
 import '../constants/text_constants.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -51,23 +52,30 @@ class _ProfileScreenState extends State<ProfileScreen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 15.0),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    decoration: BoxDecoration(
-                      color: whiteText,
-                              borderRadius: BorderRadius.circular(5),
-                              border: Border.all(
-                                color: icyLilac,),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(MihiAppAssetsPath.settingsImage),
-                          SizedBox(height: 10.0),
-                          Text(MihiAppText.settings, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
-                        ]
-                      ),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              ProfileSettingsScreen()));
+                    },
+                    child: Container(
+                      height: 90,
+                      width: 90,
+                      decoration: BoxDecoration(
+                        color: whiteText,
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border.all(
+                                  color: icyLilac,),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(MihiAppAssetsPath.settingsImage),
+                            SizedBox(height: 10.0),
+                            Text(MihiAppText.settings, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
+                          ]
+                        ),
+                    ),
                   ),
                 ),
                 SizedBox(width: 10.0),
@@ -143,60 +151,65 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 SizedBox(width: 10.0),
                 Padding(
                   padding: const EdgeInsets.only(left: 15.0),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    decoration: BoxDecoration(
-                      color: whiteText,
-                              borderRadius: BorderRadius.circular(5),
-                              border: Border.all(
-                                color: icyLilac,),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(MihiAppAssetsPath.session),
-                          SizedBox(height: 10.0),
-                          Text(MihiAppText.session, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
-                        ]
-                      ),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => ProfileSessionsScreen()));
+                    },
+                    child: Container(
+                      height: 90,
+                      width: 90,
+                      decoration: BoxDecoration(
+                        color: whiteText,
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border.all(
+                                  color: icyLilac,),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(MihiAppAssetsPath.session),
+                            SizedBox(height: 10.0),
+                            Text(MihiAppText.session, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
+                          ]
+                        ),
+                    ),
                   ),
                 ),
                 SizedBox(width: 10.0),
                 Padding(
                   padding: const EdgeInsets.only(left: 15.0),
-                  child: Container(
-                    height: 90,
-                    width: 90,
-                    decoration: BoxDecoration(
-                      color: whiteText,
-                              borderRadius: BorderRadius.circular(5),
-                              border: Border.all(
-                                color: icyLilac,),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(MihiAppAssetsPath.invite),
-                          SizedBox(height: 10.0),
-                          Text(MihiAppText.invite, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
-                        ]
-                      ),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => InviteFriendsScreen()));
+                    },
+                    child: Container(
+                      height: 90,
+                      width: 90,
+                      decoration: BoxDecoration(
+                        color: whiteText,
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border.all(
+                                  color: icyLilac,),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(MihiAppAssetsPath.invite),
+                            SizedBox(height: 10.0),
+                            Text(MihiAppText.invite, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
+                          ]
+                        ),
+                    ),
                   ),
                 ),
               ],
             ),
             SizedBox(height: 30.0),
-            GestureDetector(
-              onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) =>ProfileSettingsScreen())
-            );
-          },
-              child: Padding(
-                padding: const EdgeInsets.all(0.0),
-                child: Image.asset(MihiAppAssetsPath.productivity),
-              ),
+            Padding(
+              padding: const EdgeInsets.all(0.0),
+              child: Image.asset(MihiAppAssetsPath.productivity),
             ),
             ],
             ),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/profile/profile.dart';
 import 'package:mihi_app/screens/profile/profile_sessions2.dart';
 import 'package:mihi_app/screens/profile/profile_settings2.dart';
-
 import '../constants/text_constants.dart';
 
 class ProfileSessionsScreen extends StatefulWidget {
@@ -26,7 +26,12 @@ class _ProfileSessionsScreenState extends State<ProfileSessionsScreen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 10.0),
-                  child: Image.asset(MihiAppAssetsPath.backButton, height: 25,),
+                  child: GestureDetector(
+                  onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) => ProfileScreen()));
+                      },
+                  child: Image.asset(MihiAppAssetsPath.backButton, height: 25,)),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 90.0),

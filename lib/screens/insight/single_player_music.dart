@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/insight/insight.dart';
 import 'package:mihi_app/screens/insight/player_with_playlist.dart';
-
 import '../constants/text_constants.dart';
 
 class SinglePlayerScreen extends StatefulWidget {
@@ -13,7 +13,7 @@ class SinglePlayerScreen extends StatefulWidget {
 }
 
 class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
-   
+  
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -49,7 +49,13 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                               padding:
                                   const EdgeInsets.only(bottom: 10, left: 10),
                               child:
-                                  Image.asset(MihiAppAssetsPath.backButton, height: 25),
+                                  GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                            builder: (BuildContext context) => InsightScreen()));
+                                  },
+                                  child: Image.asset(MihiAppAssetsPath.backButton, height: 25)),
                             ),
                             GestureDetector(
                               onTap: () {

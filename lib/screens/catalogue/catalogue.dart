@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/catalogue/catalogue_therapy.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
-
 import '../constants/text_constants.dart';
 
 class CatalogueScreen extends StatefulWidget {
@@ -18,7 +17,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
-         child: Container(
+        child: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height + 150,
         decoration: BoxDecoration(

@@ -3,6 +3,7 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/personalized/personalized.dart';
+import 'package:mihi_app/screens/signup/sigunup.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -80,10 +81,10 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       ),
     ),
-           SizedBox(
+          SizedBox(
             height: 15.0,
-           ),
-           Padding(
+          ),
+          Padding(
               padding: const EdgeInsets.only(left: 25.0),
               child: Text(MihiAppText.password,
                 style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril)),
@@ -136,7 +137,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   end: Alignment.bottomLeft,
                   colors: [Brilliant, crowberryBlue2],
                 ),
-               borderRadius: BorderRadius.circular(10) 
+              borderRadius: BorderRadius.circular(10) 
               ),
             ),
           ),
@@ -144,25 +145,31 @@ class _LoginScreenState extends State<LoginScreen> {
       SizedBox(
         height: 250,
         child: Center(
-          child: RichText(
-            text: TextSpan(
-                      style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 14,
-                        color: mithril,
-                      ),
-                      children: [
-                        TextSpan(text: MihiAppText.dont),
-                        TextSpan(
-                          text: MihiAppText.register,
-                          style: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: greenToneInk,
-                          ),
+          child: GestureDetector(
+            onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) => SignupScreen()));
+                  },
+            child: RichText(
+              text: TextSpan(
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: mithril,
                         ),
-                      ],
-                    ),
+                        children: [
+                          TextSpan(text: MihiAppText.dont),
+                          TextSpan(
+                            text: MihiAppText.register,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w400,
+                              fontSize: 14,
+                              color: greenToneInk,
+                            ),
+                          ),
+                        ],
+                      ),
+            ),
           ),
         ),
       ),

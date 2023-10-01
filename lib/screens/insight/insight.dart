@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/dashboard/dashboard.dart';
 import 'package:mihi_app/screens/insight/single_player_music.dart';
-
 import '../constants/text_constants.dart';
 
 class InsightScreen extends StatefulWidget {
@@ -182,9 +182,16 @@ class _InsightScreenState extends State<InsightScreen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 8, bottom: 5),
-                            child: Image.asset(
-                              MihiAppAssetsPath.backButton,
-                              height: 25,
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        DashboardScreen()));
+                              },
+                              child: Image.asset(
+                                MihiAppAssetsPath.backButton,
+                                height: 25,
+                              ),
                             ),
                           ),
                           Text(

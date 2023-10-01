@@ -15,7 +15,7 @@ class NavigationScreen extends StatefulWidget {
 
 class _NavigationScreenState extends State<NavigationScreen> {
   TextEditingController emailController = TextEditingController();
-   int _selectedIndex = 0;
+  int _selectedIndex = 0;
   final List<Widget> _screens = [
     const DashboardScreen(),
     const ProfileScreen(),

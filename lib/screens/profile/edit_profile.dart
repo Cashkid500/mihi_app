@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/profile_sessions.dart';
+import 'package:mihi_app/screens/profile/profile_settings.dart';
 import 'package:mihi_app/screens/profile/profile_settings2.dart';
-
 import '../constants/text_constants.dart';
 
 class EditProfileScreen extends StatefulWidget {
@@ -126,7 +126,12 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 10.0),
-                  child: Image.asset(MihiAppAssetsPath.backButton, height: 25.0,),
+                  child: GestureDetector(
+                  onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) => ProfileSettingsScreen()));
+                      },
+                  child: Image.asset(MihiAppAssetsPath.backButton, height: 25.0,)),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 90.0),
@@ -174,21 +179,14 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    GestureDetector(
-                        onTap: () {
-                        Navigator.of(context).push(
-                        MaterialPageRoute(builder: (BuildContext context) =>ProfileSessionsScreen())
-                        );
-                        },
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 13.0),
-                        child: Text(
-                          MihiAppText.chrisAni,
-                          style: TextStyle(
-                              fontSize: 18.0,
-                              fontWeight: FontWeight.w500,
-                              color: sundayNiqab),
-                        ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 13.0),
+                      child: Text(
+                        MihiAppText.chrisAni,
+                        style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w500,
+                            color: sundayNiqab),
                       ),
                     ),
                     SizedBox(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/edit_profile.dart';
-
+import 'package:mihi_app/screens/profile/profile.dart';
 import '../constants/text_constants.dart';
 
 class ProfileSettings2Screen extends StatefulWidget {
@@ -19,14 +19,19 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
-       child: Column(
+      child: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 40.0, left: 10.0),
-                child: Image.asset(MihiAppAssetsPath.backButton, height: 25.0,),
+                child: GestureDetector(
+                onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) => ProfileScreen()));
+                      },
+                child: Image.asset(MihiAppAssetsPath.backButton, height: 25.0,)),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 40.0, left: 90.0),
@@ -60,7 +65,13 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 20.0, left: 110.0),
-                child: Image.asset(MihiAppAssetsPath.edit),
+                child: GestureDetector(
+                onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                EditProfileScreen()));
+                      },
+                child: Image.asset(MihiAppAssetsPath.edit)),
               ),
             ], 
           ),
@@ -149,16 +160,9 @@ class _ProfileSettings2ScreenState extends State<ProfileSettings2Screen> {
               ),
               SizedBox(width: 20.0,),
               Text(MihiAppText.privacy, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: blackText),),
-              GestureDetector(
-                   onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) =>EditProfileScreen())
-            );
-          },
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 10.0, left: 200.0),
-                  child: Image.asset(MihiAppAssetsPath.leftArrow),
-                ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10.0, left: 200.0),
+                child: Image.asset(MihiAppAssetsPath.leftArrow),
               ),
             ],
           ),

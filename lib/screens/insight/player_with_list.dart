@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
-
 import '../constants/text_constants.dart';
 import 'featured_playlist.dart';
 
@@ -189,9 +188,15 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(left: 10),
-                          child: Image.asset(MihiAppAssetsPath.backButton,
-                              height: 25),
+                          padding: const EdgeInsets.only(left: 10, top: 10),
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (BuildContext context) => FeaturedPlaylistScreen()));
+                            },
+                            child: Image.asset(MihiAppAssetsPath.backButton,
+                                height: 25),
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 20),
@@ -205,7 +210,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(right: 10),
+                          padding: const EdgeInsets.only(right: 10, top: 10),
                           child: MihiAppAssetsPath.more,
                         )
                       ],

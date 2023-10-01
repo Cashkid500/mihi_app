@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/settings/about_settings.dart';
+import 'package:mihi_app/screens/settings/settings.dart';
 import '../constants/text_constants.dart';
 
 
@@ -38,7 +39,12 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
                       color: Color.fromARGB(223, 235, 232, 232),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Image.asset(MihiAppAssetsPath.rightArrow),
+                    child: GestureDetector(
+                    onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) => SettingsScreen()));
+                        },  
+                    child: Image.asset(MihiAppAssetsPath.rightArrow)),
                   ),
                 ),
                 Padding(

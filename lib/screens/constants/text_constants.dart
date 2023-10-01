@@ -212,7 +212,7 @@ class MihiAppText {
   static const String plus = "+ Add New";
   static const String excellent =
       "Excellent! Your\n today’s plan is\n almost done";
-  static const String mySchedule = "my Schedule";
+  static const String mySchedule = "My Schedule";
   static const String allSchedule = "All Schedule";
   static const String musicTherapy = "Music Therapy";
   static const String timeDate = "6:30pm | 14th June";

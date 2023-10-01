@@ -3,6 +3,7 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/insight/player_with_list.dart';
+import 'package:mihi_app/screens/insight/player_with_playlist.dart';
 
 class FeaturedPlaylistScreen extends StatefulWidget {
   const FeaturedPlaylistScreen({Key? key}) : super(key: key);
@@ -24,11 +25,16 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
               height: 15,
             ),
             Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.only(left: 10.0, right: 10.0, top: 25.0, bottom: 10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Image.asset(MihiAppAssetsPath.backButton, height: 25),
+                  GestureDetector(
+                  onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) => PlayerPlaylistScreen()));
+                      },
+                  child: Image.asset(MihiAppAssetsPath.backButton, height: 25)),
                   SizedBox(
                     width: 48,
                     child: Row(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/profile/invite_friends.dart';
 import 'package:mihi_app/screens/profile/profile_settings2.dart';
-
 import '../constants/text_constants.dart';
 
 class InviteFriendShareScreen extends StatefulWidget {
@@ -232,9 +232,15 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 10.0),
-                  child: Image.asset(
-                    MihiAppAssetsPath.backButton,
-                    height: 25,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => InviteFriendsScreen()));
+                    },
+                    child: Image.asset(
+                      MihiAppAssetsPath.backButton,
+                      height: 25,
+                    ),
                   ),
                 ),
                 Padding(

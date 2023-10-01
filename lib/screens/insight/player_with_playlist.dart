@@ -3,6 +3,7 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/insight/featured_playlist.dart';
 import 'package:mihi_app/screens/insight/insight.dart';
+import 'package:mihi_app/screens/insight/single_player_music.dart';
 import 'package:mihi_app/screens/personalized/personalized.dart';
 
 import '../constants/text_constants.dart';
@@ -44,9 +45,15 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(left: 8, bottom: 5),
-                            child: Image.asset(
-                              MihiAppAssetsPath.backButton,
-                              height: 25,
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (BuildContext context) => SinglePlayerScreen()));
+                              },
+                              child: Image.asset(
+                                MihiAppAssetsPath.backButton,
+                                height: 25,
+                              ),
                             ),
                           ),
                           Text(

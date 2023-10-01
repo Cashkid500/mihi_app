@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/dashboard/dashboard_notification.dart';
-
 import '../constants/text_constants.dart';
 
 class DashboardScreen extends StatefulWidget {

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/invite_friends.dart';
+import 'package:mihi_app/screens/profile/profile_sessions2.dart';
 import 'package:mihi_app/screens/profile/profile_settings2.dart';
-
 import '../constants/text_constants.dart';
 
 class ProfileSessions3Screen extends StatefulWidget {
@@ -26,9 +26,16 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 10.0),
-                  child: Image.asset(
-                    MihiAppAssetsPath.backButton,
-                    height: 25,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              ProfileSessions2Screen()));
+                    },
+                    child: Image.asset(
+                      MihiAppAssetsPath.backButton,
+                      height: 25,
+                    ),
                   ),
                 ),
                 Padding(
@@ -255,27 +262,21 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
             SizedBox(
               height: 60.0,
             ),
-            GestureDetector(
-              onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => InviteFriendsScreen()));
-              },
-              child: Container(
-                height: 55,
-                width: 330,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: Brilliant,
-                ),
-                child: Center(
-                    child: Text(
-                  MihiAppText.addSession,
-                  style: TextStyle(
-                      color: softCoral,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w400),
-                )),
+            Container(
+              height: 55,
+              width: 330,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Brilliant,
               ),
+              child: Center(
+                  child: Text(
+                MihiAppText.addSession,
+                style: TextStyle(
+                    color: softCoral,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400),
+              )),
             )
           ],
         ),

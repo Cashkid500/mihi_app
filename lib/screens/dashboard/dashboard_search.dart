@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/dashboard/dashboard_notification.dart';
 import 'package:mihi_app/screens/dashboard/dashboard_searchresult.dart';
-
 import '../constants/text_constants.dart';
 
 class DashboardSearchScreen extends StatefulWidget {
@@ -61,8 +61,15 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                                       border:
                                           Border.all(color: whiteText),
                                       borderRadius: BorderRadius.circular(10)),
-                                  child: Image.asset(
-                                    MihiAppAssetsPath.rightArrow2,)),
+                                  child: GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) => DashboardNotificationScreen()));
+                                    },
+                                    child: Image.asset(
+                                      MihiAppAssetsPath.rightArrow2,),
+                                  )),
                               Padding(
                                 padding: const EdgeInsets.only(top: 3.0),
                                 child: Text(
