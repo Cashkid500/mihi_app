@@ -208,7 +208,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             onTap: () {
                                   _showBottomSheet(context);
                                 },
-                            child: Icon(Icons.more_vert)),
+                            child: MihiAppAssetsPath.more),
                           )
                         ],
                       ),
