@@ -3,7 +3,6 @@ import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/profile/profile.dart';
 import 'package:mihi_app/screens/profile/profile_sessions2.dart';
-import 'package:mihi_app/screens/profile/profile_settings2.dart';
 import '../constants/text_constants.dart';
 
 class ProfileSessionsScreen extends StatefulWidget {

@@ -154,7 +154,6 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
 
   @override
   Widget build(BuildContext context) {
-    String list = "2.";
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(

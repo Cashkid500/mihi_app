@@ -107,6 +107,9 @@ class MihiAppText {
   static const String asake = "Asa Asake";
   static const String songs = "Songs";
   static const String more = "More";
+  static const String violin = "Violin";
+  static const String timing = "Mihi Timing";
+  static const String mihiLullaby = "MiHi Lullaby";
 
   // Playlist Texts
   static const String myPlaylist = 'My Playlist';

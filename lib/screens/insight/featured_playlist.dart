@@ -15,7 +15,6 @@ class FeaturedPlaylistScreen extends StatefulWidget {
 class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
   @override
   Widget build(BuildContext context) {
-    String listpath = "1.";
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(

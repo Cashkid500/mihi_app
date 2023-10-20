@@ -154,7 +154,6 @@ class _InsightScreenState extends State<InsightScreen> {
 
   @override
   Widget build(BuildContext context) {
-    String numberpath = "1";
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(

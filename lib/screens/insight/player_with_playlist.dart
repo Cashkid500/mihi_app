@@ -4,8 +4,6 @@ import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/insight/featured_playlist.dart';
 import 'package:mihi_app/screens/insight/insight.dart';
 import 'package:mihi_app/screens/insight/single_player_music.dart';
-import 'package:mihi_app/screens/personalized/personalized.dart';
-
 import '../constants/text_constants.dart';
 
 class PlayerPlaylistScreen extends StatefulWidget {

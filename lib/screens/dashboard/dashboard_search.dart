@@ -14,11 +14,11 @@ class DashboardSearchScreen extends StatefulWidget {
 
 class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
   List<String> items = [
-    'MiHi Lullaby',
-    'Asa Asake',
-    'Mihi Timing',
-    'MiHi Classical',
-    'Violin',
+    MihiAppText.mihiLullaby,
+    MihiAppText.asake,
+    MihiAppText.timing,
+    MihiAppText.mihi,
+    MihiAppText.violin,
   ];
   int current = 0;
   @override

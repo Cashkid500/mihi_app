@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
-import 'package:mihi_app/screens/profile/profile_sessions.dart';
 import 'package:mihi_app/screens/profile/profile_settings.dart';
-import 'package:mihi_app/screens/profile/profile_settings2.dart';
 import '../constants/text_constants.dart';
 
 class EditProfileScreen extends StatefulWidget {
