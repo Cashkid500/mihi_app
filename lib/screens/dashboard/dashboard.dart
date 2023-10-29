@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/dashboard/dashboard_notification.dart';
+import 'package:mihi_app/screens/dashboard/dashboard_search.dart';
 import '../constants/text_constants.dart';
 
 class DashboardScreen extends StatefulWidget {
@@ -39,7 +40,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(height: 32.0),
+                      SizedBox(height: 40.0),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -54,8 +55,22 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
-                                Image.asset(MihiAppAssetsPath.searchImage, height: 25,),
-                                Image.asset(MihiAppAssetsPath.notificationImage, height: 25,),
+                                GestureDetector(
+                                onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  DashboardSearchScreen()));
+                                    },
+                                child: Image.asset(MihiAppAssetsPath.searchImage, height: 25,)),
+                                GestureDetector(
+                                onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  DashboardNotificationScreen()));
+                                    },
+                                child: Image.asset(MihiAppAssetsPath.notificationImage, height: 25,)),
                               ],
                             ),
                           ),
@@ -96,16 +111,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         ],
                       ),
                       SizedBox(height: 50),
-                      GestureDetector(
-                        onTap: () {
-                        Navigator.of(context).push(
-                        MaterialPageRoute(builder: (BuildContext context) =>DashboardNotificationScreen())
-                      );
-                      },
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 8.0),
-                          child: Text(MihiAppText.recommended2,  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: whiteText),),
-                        ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8.0),
+                        child: Text(MihiAppText.recommended2,  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: whiteText),),
                       ),
                       SizedBox(height: 25.0),
                       Row(

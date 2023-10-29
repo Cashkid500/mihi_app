@@ -89,53 +89,23 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                       padding: const EdgeInsets.only(left: 15),
                       child: Row(
                         children: [
-                          Text(
-                            MihiAppText.songs,
-                            style: TextStyle(
-                                color: blackText,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400),
-                          ),
+                          RowWidget(rowTextPath: MihiAppText.songs),
                           SizedBox(
                             width: 30,
                           ),
-                          Text(
-                            MihiAppText.videoText,
-                            style: TextStyle(
-                                color: blackText,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400),
-                          ),
+                          RowWidget(rowTextPath: MihiAppText.videoText),
                           SizedBox(
                             width: 20,
                           ),
-                          Text(
-                            MihiAppText.playlist,
-                            style: TextStyle(
-                                color: blackText,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400),
-                          ),
+                          RowWidget(rowTextPath: MihiAppText.playlist),
                           SizedBox(
                             width: 30,
                           ),
-                          Text(
-                            MihiAppText.artists,
-                            style: TextStyle(
-                                color: blackText,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400),
-                          ),
+                          RowWidget(rowTextPath: MihiAppText.artists),
                           SizedBox(
                             width: 20,
                           ),
-                          Text(
-                            MihiAppText.album,
-                            style: TextStyle(
-                                color: blackText,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400),
-                          ),
+                          RowWidget(rowTextPath: MihiAppText.album),
                         ],
                       ),
                     ),

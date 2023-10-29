@@ -75,18 +75,12 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => CatalogueTherapy2Screen()));
-                    },
-                        child: Text(
-                          MihiAppText.therapy,
-                          style: TextStyle(
-                              fontSize: 22,
-                              fontWeight: FontWeight.w500,
-                              color: blackText),
-                        ),
+                      Text(
+                        MihiAppText.therapy,
+                        style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.w500,
+                            color: blackText),
                       ),
                       SizedBox(
                         height: 5,
@@ -132,42 +126,48 @@ class Row1 extends StatelessWidget {
     return Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Container(
-              height: 190.0,
-              width: 155.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                image: DecorationImage(
-                  image: AssetImage(
-                      MihiAppAssetsPath.ambiance),
-                  fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(
-                    blackText.withOpacity(
-                        0.5), // Adjust opacity here (0.0 to 1.0)
-                    BlendMode.srcOver,
-                  ),
-                ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    MihiAppText.ambience,
-                    style: TextStyle(
-                        color: whiteText,
-                        fontSize: 17,
-                        fontWeight: FontWeight.w500),
-                  ),
-                  Text(
-                    MihiAppText.tenSongs,
-                    style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.w400,
-                      color: whiteText,
+            GestureDetector(
+              onTap: () {
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (BuildContext context) => CatalogueTherapy2Screen()));
+          },
+              child: Container(
+                height: 190.0,
+                width: 155.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
+                    image: AssetImage(
+                        MihiAppAssetsPath.ambiance),
+                    fit: BoxFit.cover,
+                    colorFilter: ColorFilter.mode(
+                      blackText.withOpacity(
+                          0.5), // Adjust opacity here (0.0 to 1.0)
+                      BlendMode.srcOver,
                     ),
                   ),
-                ],
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      MihiAppText.ambience,
+                      style: TextStyle(
+                          color: whiteText,
+                          fontSize: 17,
+                          fontWeight: FontWeight.w500),
+                    ),
+                    Text(
+                      MihiAppText.tenSongs,
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w400,
+                        color: whiteText,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
             Container(

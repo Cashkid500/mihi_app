@@ -55,7 +55,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                                         MaterialPageRoute(
                                             builder: (BuildContext context) => InsightScreen()));
                                   },
-                                  child: Image.asset(MihiAppAssetsPath.backButton, height: 25)),
+                                  child: Image.asset(MihiAppAssetsPath.backButton, height: 25,)),
                             ),
                             GestureDetector(
                               onTap: () {

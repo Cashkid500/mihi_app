@@ -51,7 +51,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                         ),),
                       ),
                       SizedBox(
-                        width: 70,
+                        width: 10,
                       ),
                     ],
                   ),

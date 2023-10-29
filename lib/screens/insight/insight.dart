@@ -204,10 +204,10 @@ class _InsightScreenState extends State<InsightScreen> {
                           Padding(
                             padding: const EdgeInsets.only(right: 8),
                             child: GestureDetector(
-                            onTap: () {
+                                onTap: () {
                                   _showBottomSheet(context);
                                 },
-                            child: MihiAppAssetsPath.more),
+                                child: MihiAppAssetsPath.more),
                           )
                         ],
                       ),
@@ -232,53 +232,23 @@ class _InsightScreenState extends State<InsightScreen> {
                       padding: const EdgeInsets.only(left: 15),
                       child: Row(
                         children: [
-                          Text(
-                            MihiAppText.songs,
-                            style: TextStyle(
-                                color: blackText,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400),
-                          ),
+                          RowWidget(rowTextPath: MihiAppText.songs),
                           SizedBox(
                             width: 30,
                           ),
-                          Text(
-                            MihiAppText.videoText,
-                            style: TextStyle(
-                                color: blackText,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400),
-                          ),
+                          RowWidget(rowTextPath: MihiAppText.videoText),
                           SizedBox(
                             width: 20,
                           ),
-                          Text(
-                            MihiAppText.playlist,
-                            style: TextStyle(
-                                color: blackText,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400),
-                          ),
+                          RowWidget(rowTextPath: MihiAppText.playlist),
                           SizedBox(
                             width: 30,
                           ),
-                          Text(
-                            MihiAppText.artists,
-                            style: TextStyle(
-                                color: blackText,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400),
-                          ),
+                          RowWidget(rowTextPath: MihiAppText.artists),
                           SizedBox(
                             width: 20,
                           ),
-                          Text(
-                            MihiAppText.album,
-                            style: TextStyle(
-                                color: blackText,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400),
-                          ),
+                          RowWidget(rowTextPath: MihiAppText.album),
                         ],
                       ),
                     ),
@@ -318,7 +288,7 @@ class _InsightScreenState extends State<InsightScreen> {
                     Dividing(),
                     Playlist1(numberpath: MihiAppText.four),
                     Dividing(),
-                    Playlist1(numberpath: MihiAppText.five), 
+                    Playlist1(numberpath: MihiAppText.five),
                   ],
                 ),
               ),
@@ -326,6 +296,26 @@ class _InsightScreenState extends State<InsightScreen> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class RowWidget extends StatelessWidget {
+  const RowWidget({
+    super.key,
+    required this.rowTextPath,
+  });
+
+  final String rowTextPath;
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      rowTextPath,
+      style: TextStyle(
+          color: blackText,
+          fontSize: 16,
+          fontWeight: FontWeight.w400),
     );
   }
 }

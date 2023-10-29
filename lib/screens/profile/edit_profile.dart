@@ -45,8 +45,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                           borderRadius: BorderRadius.circular(16),
                           image: DecorationImage(
                               image: Image(
-                                      image: AssetImage(
-                                          MihiAppAssetsPath.upload))
+                                      image:
+                                          AssetImage(MihiAppAssetsPath.upload))
                                   .image),
                         ),
                       ),
@@ -82,8 +82,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                           borderRadius: BorderRadius.circular(16),
                           image: DecorationImage(
                               image: Image(
-                                      image: AssetImage(
-                                          MihiAppAssetsPath.camera))
+                                      image:
+                                          AssetImage(MihiAppAssetsPath.camera))
                                   .image),
                         ),
                       ),
@@ -125,14 +125,18 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 10.0),
                   child: GestureDetector(
-                  onTap: () {
+                      onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) => ProfileSettingsScreen()));
+                            builder: (BuildContext context) =>
+                                ProfileSettingsScreen()));
                       },
-                  child: Image.asset(MihiAppAssetsPath.backButton, height: 25.0,)),
+                      child: Image.asset(
+                        MihiAppAssetsPath.backButton,
+                        height: 25.0,
+                      )),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 40.0, left: 90.0),
+                  padding: const EdgeInsets.only(top: 40.0, left: 100.0),
                   child: Text(
                     MihiAppText.editProfile,
                     style: TextStyle(
@@ -156,20 +160,31 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             SizedBox(
               height: 60.0,
             ),
+
+            // Profile Image
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                GestureDetector(
-                  onTap: () {
-                    _showBottomSheet(context);
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 10.0),
-                    child: Image.asset(
-                      MihiAppAssetsPath.chrisAniedi,
-                      height: 80.0,
+                Stack(
+                  children: [
+                    CircleAvatar(
+                      radius: 50.0,
+                      backgroundImage:
+                          AssetImage(MihiAppAssetsPath.chrisAniedi),
                     ),
-                  ),
+                    Positioned(
+                      bottom: 8.0,
+                      right: 5.0,
+                      child: GestureDetector(
+                          onTap: () {
+                            _showBottomSheet(context);
+                          },
+                          child: Icon(
+                            Icons.camera_alt,
+                            color: Colors.teal,
+                          )),
+                    )
+                  ],
                 ),
                 SizedBox(
                   width: 20.0,
@@ -204,128 +219,48 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             SizedBox(
               height: 40.0,
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 255.0),
-              child: Text(MihiAppText.fn,
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w400,
-                      color: mithril)),
-            ),
+
+            // Full Name
+            TextWidget(textPath2: MihiAppText.fn),
             SizedBox(
               height: 5.0,
             ),
-            SizedBox(
-              width: 340,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 5.0),
-                child: TextField(
-                  keyboardType: TextInputType.multiline,
-                  decoration: InputDecoration(
-                    contentPadding: EdgeInsets.all(20),
-                    isCollapsed: true,
-                    labelText: MihiAppText.chrisAni,
-                    labelStyle: TextStyle(
-                        color: mithril,
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.w400),
-                    filled: true,
-                    fillColor: bleachedSilk,
-                    enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(8),
-                        borderSide: BorderSide(color: mithril)),
-                    suffixIcon: Image.asset(MihiAppAssetsPath.greenTick),
-                  ),
-                ),
-              ),
-            ),
+            TextField2(hintTextPath: MihiAppText.chrisAni, suffixIconPath: MihiAppAssetsPath.greenTick),
             SizedBox(
               height: 25.0,
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 225.0),
-              child: Text(MihiAppText.emailAdress,
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w400,
-                      color: mithril)),
-            ),
+
+            // Email Address
+            TextWidget2(emailPath: MihiAppText.emailAdress),
             SizedBox(
               height: 10.0,
             ),
             SizedBox(
               height: 2.0,
             ),
-            SizedBox(
-              width: 340,
-              child: Padding(
-                padding: const EdgeInsets.only(
-                  left: 5.0,
-                ),
-                child: TextField(
-                  keyboardType: TextInputType.multiline,
-                  decoration: InputDecoration(
-                    contentPadding: EdgeInsets.all(20),
-                    isCollapsed: true,
-                    labelText: MihiAppText.mail,
-                    labelStyle: TextStyle(
-                        color: mithril,
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.w400),
-                    filled: true,
-                    fillColor: Color(0xffF2F2F2),
-                    enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(8),
-                        borderSide: BorderSide(color: mithril)),
-                    suffixIcon: Image.asset(MihiAppAssetsPath.edit2),
-                  ),
-                ),
-              ),
-            ),
+            TextField2(
+                hintTextPath: MihiAppText.mail,
+                suffixIconPath: MihiAppAssetsPath.edit2),
             SizedBox(
               height: 25.0,
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 225.0),
-              child: Text(MihiAppText.phoneNumber,
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w400,
-                      color: mithril)),
-            ),
+
+            // Phone Number
+            TextWidget2(emailPath: MihiAppText.phoneNumber),
             SizedBox(
               height: 10.0,
             ),
             SizedBox(
               height: 2.0,
             ),
-            SizedBox(
-              width: 340,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 5.0),
-                child: TextField(
-                  keyboardType: TextInputType.multiline,
-                  decoration: InputDecoration(
-                    contentPadding: EdgeInsets.all(20),
-                    isCollapsed: true,
-                    labelText: MihiAppText.number,
-                    labelStyle: TextStyle(
-                        color: mithril,
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.w400),
-                    filled: true,
-                    fillColor: bleachedSilk,
-                    enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(8),
-                        borderSide: BorderSide(color: mithril)),
-                    suffixIcon: Image.asset(MihiAppAssetsPath.edit2),
-                  ),
-                ),
-              ),
-            ),
+            TextField2(
+                hintTextPath: MihiAppText.number,
+                suffixIconPath: MihiAppAssetsPath.edit2),
             SizedBox(
               height: 25.0,
             ),
+
+            // Address
             Padding(
               padding: const EdgeInsets.only(right: 265.0),
               child: Text(MihiAppText.addy,
@@ -340,33 +275,89 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             SizedBox(
               height: 2.0,
             ),
-            SizedBox(
-              width: 340,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 5.0),
-                child: TextField(
-                  keyboardType: TextInputType.multiline,
-                  decoration: InputDecoration(
-                    contentPadding: EdgeInsets.all(20),
-                    isCollapsed: true,
-                    labelText: MihiAppText.lekki,
-                    labelStyle: TextStyle(
-                        color: mithril,
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.w400),
-                    filled: true,
-                    fillColor: bleachedSilk,
-                    enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(8),
-                        borderSide: BorderSide(color: mithril)),
-                    suffixIcon: Image.asset(MihiAppAssetsPath.edit2),
-                  ),
-                ),
-              ),
-            ),
+            TextField2(
+                hintTextPath: MihiAppText.lekki,
+                suffixIconPath: MihiAppAssetsPath.edit2),
           ],
         ),
       ),
+    );
+  }
+}
+
+class TextField2 extends StatelessWidget {
+  const TextField2({
+    super.key,
+    required this.hintTextPath,
+    required this.suffixIconPath,
+  });
+
+  final String hintTextPath;
+  final String suffixIconPath;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 340,
+      child: Padding(
+        padding: const EdgeInsets.only(left: 5.0),
+        child: TextField(
+          keyboardType: TextInputType.multiline,
+          decoration: InputDecoration(
+            contentPadding: EdgeInsets.all(20),
+            isCollapsed: true,
+            hintText: hintTextPath,
+            hintStyle: TextStyle(
+                color: mithril,
+                fontSize: 16.0,
+                fontWeight: FontWeight.w400),
+            filled: true,
+            fillColor: bleachedSilk,
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8),
+                borderSide: BorderSide(color: mithril)),
+            suffixIcon: Image.asset(suffixIconPath),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class TextWidget2 extends StatelessWidget {
+  const TextWidget2({
+    super.key,
+    required this.emailPath,
+  });
+
+  final String emailPath;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(right: 225.0),
+      child: Text(emailPath,
+          style: TextStyle(
+              fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril)),
+    );
+  }
+}
+
+class TextWidget extends StatelessWidget {
+  const TextWidget({
+    super.key,
+    required this.textPath2,
+  });
+
+  final String textPath2;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(right: 255.0),
+      child: Text(textPath2,
+          style: TextStyle(
+              fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril)),
     );
   }
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/login/login.dart';
 import 'package:mihi_app/screens/profile/edit_profile.dart';
 import 'package:mihi_app/screens/profile/profile.dart';
-import 'package:mihi_app/screens/profile/profile_settings2.dart';
 import '../constants/text_constants.dart';
 
 class ProfileSettingsScreen extends StatefulWidget {
@@ -160,16 +160,9 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
               ),
               SizedBox(width: 20.0,),
               Text(MihiAppText.privacy, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: blackText),),
-              GestureDetector(
-                  onTap: () {
-            Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) =>ProfileSettings2Screen())
-            );
-          },
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 10.0, left: 200.0),
-                  child: Image.asset(MihiAppAssetsPath.leftArrow),
-                ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10.0, left: 200.0),
+                child: Image.asset(MihiAppAssetsPath.leftArrow),
               ),
             ],
           ),
@@ -186,7 +179,12 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
           SizedBox(height: 20.0,),
           Padding(
             padding: const EdgeInsets.only(right: 270.0),
-            child: Text(MihiAppText.logout, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: redText,),),
+            child: GestureDetector(
+            onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (BuildContext context) => LoginScreen()));
+                  },
+            child: Text(MihiAppText.logout, style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w400, color: redText,),)),
           ),
         ],
        ),

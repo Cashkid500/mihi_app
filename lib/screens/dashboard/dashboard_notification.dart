@@ -158,19 +158,12 @@ class _DashboardNotificationScreenState
                   SizedBox(
                     height: 60.0,
                   ),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) =>
-                              DashboardSearchScreen()));
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 15.0),
-                      child: Text(
-                        MihiAppText.thisWeek,
-                        style: TextStyle(
-                            fontSize: 17, fontWeight: FontWeight.w500),
-                      ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15.0),
+                    child: Text(
+                      MihiAppText.thisWeek,
+                      style: TextStyle(
+                          fontSize: 17, fontWeight: FontWeight.w500),
                     ),
                   ),
                   SizedBox(height: 20.0,),

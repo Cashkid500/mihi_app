@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/catalogue/catalogue_therapy.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/dashboard/dashboard_notification.dart';
+import 'package:mihi_app/screens/dashboard/dashboard_search.dart';
 import '../constants/text_constants.dart';
 
 class CatalogueScreen extends StatefulWidget {
@@ -60,8 +62,22 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
-                            Image.asset(MihiAppAssetsPath.search, height: 25,),
-                            Image.asset(MihiAppAssetsPath.notification, height: 25,),
+                            GestureDetector(
+                            onTap: () {
+                                    Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                            builder: (BuildContext context) =>
+                                                DashboardSearchScreen()));
+                                  },
+                            child: Image.asset(MihiAppAssetsPath.search, height: 25,)),
+                            GestureDetector(
+                            onTap: () {
+                                    Navigator.of(context).push(
+                                        MaterialPageRoute(
+                                            builder: (BuildContext context) =>
+                                                DashboardNotificationScreen()));
+                                  },
+                            child: Image.asset(MihiAppAssetsPath.notification, height: 25,)),
                           ],
                         ),
                       ),
@@ -79,8 +95,8 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                         decoration: InputDecoration(
                           contentPadding: EdgeInsets.all(20),
                           isCollapsed: true,
-                          labelText: MihiAppText.sfc,
-                          labelStyle: TextStyle(
+                          hintText: MihiAppText.sfc,
+                          hintStyle: TextStyle(
                               color: mithril,
                               fontSize: 16.0,
                               fontWeight: FontWeight.w400),

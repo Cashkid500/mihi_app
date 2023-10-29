@@ -47,7 +47,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 40.0, left: 80.0),
+                  padding: const EdgeInsets.only(top: 40.0, left: 100.0),
                   child: Image.asset(
                     MihiAppAssetsPath.chrisAniedi,
                     height: 30.0,
