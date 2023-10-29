@@ -56,6 +56,8 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(
               height: 40.0,
             ),
+
+            // Enter your email address
             Text1(textPath: MihiAppText.email),
             SizedBox(
               height: 10.0,
@@ -66,6 +68,8 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(
               height: 15.0,
             ),
+
+            // Enter your password
             Text1(textPath: MihiAppText.password),
             SizedBox(
               height: 10.0,

@@ -53,6 +53,8 @@ class _SignupScreenState extends State<SignupScreen> {
             SizedBox(
               height: 40.0,
             ),
+
+            // Enter your full name here
             Text1(textPath: MihiAppText.fn),
             SizedBox(
               height: 10.0,
@@ -63,6 +65,8 @@ class _SignupScreenState extends State<SignupScreen> {
             SizedBox(
               height: 15.0,
             ),
+
+            // Enter your email address
             Text1(textPath: MihiAppText.email),
             SizedBox(
               height: 10.0,
@@ -73,6 +77,8 @@ class _SignupScreenState extends State<SignupScreen> {
             SizedBox(
               height: 15.0,
             ),
+
+            // Enter your password
             Text1(textPath: MihiAppText.password),
             SizedBox(
               height: 10.0,
