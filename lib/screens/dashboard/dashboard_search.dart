@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
-import 'package:mihi_app/screens/dashboard/dashboard_notification.dart';
+import 'package:mihi_app/screens/dashboard/dashboard.dart';
 import 'package:mihi_app/screens/dashboard/dashboard_searchresult.dart';
 import '../constants/text_constants.dart';
 
@@ -65,7 +65,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                                     onTap: () {
                                       Navigator.of(context).push(
                                           MaterialPageRoute(
-                                              builder: (BuildContext context) => DashboardNotificationScreen()));
+                                              builder: (BuildContext context) => DashboardScreen()));
                                     },
                                     child: Image.asset(
                                       MihiAppAssetsPath.rightArrow2,),
@@ -92,10 +92,10 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                           keyboardType: TextInputType.multiline,
                           decoration: InputDecoration(
                               contentPadding:
-                                  EdgeInsets.only(top: 25, left: 15),
+                                  EdgeInsets.only(top: 15, left: 15),
                               isCollapsed: true,
-                              labelText: MihiAppText.search,
-                              labelStyle: TextStyle(
+                              hintText: MihiAppText.search,
+                              hintStyle: TextStyle(
                                 color: mithril,
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w400,

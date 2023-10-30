@@ -279,10 +279,10 @@ class _DashboardSearchResultScreenState
                             keyboardType: TextInputType.multiline,
                             decoration: InputDecoration(
                                 contentPadding:
-                                    EdgeInsets.only(top: 10, left: 20),
+                                    EdgeInsets.only(top: 15, left: 20),
                                 isCollapsed: true,
-                                labelText: MihiAppText.lullabyMusic,
-                                labelStyle: TextStyle(
+                                hintText: MihiAppText.lullabyMusic,
+                                hintStyle: TextStyle(
                                   color: mithril,
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.w400,
@@ -295,7 +295,14 @@ class _DashboardSearchResultScreenState
                                     color: whiteText,
                                   ),
                                 ),
-                                suffixIcon: Icon(Icons.close)),
+                                suffixIcon: GestureDetector(
+                                onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  DashboardSearchResultScreen()));
+                                    },
+                                child: Icon(Icons.close))),
                           ),
                         ),
                         Padding(
