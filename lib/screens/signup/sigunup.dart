@@ -12,6 +12,7 @@ class SignupScreen extends StatefulWidget {
 }
 
 class _SignupScreenState extends State<SignupScreen> {
+  bool passwordObscured = true;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -83,7 +84,14 @@ class _SignupScreenState extends State<SignupScreen> {
             SizedBox(
               height: 10.0,
             ),
-            PasswordField(),
+            PasswordField(
+              updateObscured: () {
+                setState(() {
+                  passwordObscured = !passwordObscured;
+                });
+              },
+              passwordObscured: passwordObscured,
+            ),
             SizedBox(
               height: 60.0,
             ),
@@ -174,8 +182,12 @@ class Text1 extends StatelessWidget {
 }
 
 class PasswordField extends StatelessWidget {
+  final bool passwordObscured;
+  final Function() updateObscured;
   const PasswordField({
     super.key,
+    required this.passwordObscured,
+    required this.updateObscured,
   });
 
   @override
@@ -186,7 +198,7 @@ class PasswordField extends StatelessWidget {
         padding: const EdgeInsets.only(left: 20.0),
         child: TextField(
           keyboardType: TextInputType.multiline,
-          obscureText: true,
+          obscureText: passwordObscured,
           decoration: InputDecoration(
             contentPadding: EdgeInsets.all(20),
             isCollapsed: true,
@@ -199,7 +211,14 @@ class PasswordField extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(color: mithril)),
             prefixIcon: Image.asset(MihiAppAssetsPath.signupprefix3),
-            suffixIcon: Image.asset(MihiAppAssetsPath.signupsuffix1),
+            // suffixIcon: Image.asset(MihiAppAssetsPath.signupsuffix1),
+            suffixIcon: IconButton(
+              onPressed: updateObscured,
+              icon: Icon(
+                passwordObscured ? Icons.visibility_off : Icons.visibility,
+                color: mithril,
+              ),
+            ),
           ),
         ),
       ),

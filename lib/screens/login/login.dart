@@ -14,7 +14,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   TextEditingController emailController = TextEditingController();
-
+  bool passwordObscured = true;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -74,7 +74,14 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(
               height: 10.0,
             ),
-            PasswordField(),
+            PasswordField(
+              updateObscured: () {
+                setState(() {
+                  passwordObscured = !passwordObscured;
+                });
+              },
+              passwordObscured: passwordObscured,
+            ),
             SizedBox(
               height: 60.0,
             ),
