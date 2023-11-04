@@ -25,7 +25,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
-              height: 30,
+              height: 5,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
