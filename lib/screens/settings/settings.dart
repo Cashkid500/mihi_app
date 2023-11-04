@@ -93,6 +93,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       SizedBox(
                         height: 30.0,
                       ),
+
+                      // Account
                       Text(
                         MihiAppText.account,
                         style: TextStyle(
@@ -140,7 +142,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child:
-                                  Image.asset(MihiAppAssetsPath.leftArrow),
+                                  // Image.asset(MihiAppAssetsPath.leftArrow),
+                                  Icon(Icons.arrow_forward_ios, color: mithril, size: 15,),
                             ),
                           ],
                         ),
@@ -148,6 +151,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       SizedBox(
                         height: 40.0,
                       ),
+
+                      // Settings
                       Text(
                         MihiAppText.settings,
                         style: TextStyle(
@@ -182,7 +187,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               color: Color.fromARGB(223, 235, 232, 232),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Image.asset(MihiAppAssetsPath.leftArrow),
+                            child: 
+                            // Image.asset(MihiAppAssetsPath.leftArrow),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: mithril,
+                              size: 15,
+                            ),
                           ),
                         ],
                       ),
@@ -268,7 +279,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               color: Color.fromARGB(223, 235, 232, 232),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Image.asset(MihiAppAssetsPath.leftArrow),
+                            child: 
+                            // Image.asset(MihiAppAssetsPath.leftArrow),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: mithril,
+                              size: 15,
+                            ),
                           ),
                         ],
                       ),
@@ -302,7 +319,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child:
-                                  Image.asset(MihiAppAssetsPath.leftArrow),
+                                  // Image.asset(MihiAppAssetsPath.leftArrow),
+                                  Icon(
+                              Icons.arrow_forward_ios,
+                              color: mithril,
+                              size: 15,
+                            ),
                                   ),
                         ],
                       ),
