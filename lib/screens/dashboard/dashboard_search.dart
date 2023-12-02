@@ -65,7 +65,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                                     onTap: () {
                                       Navigator.of(context).push(
                                           MaterialPageRoute(
-                                              builder: (BuildContext context) => DashboardScreen()));
+                                              builder: (BuildContext context) => const DashboardScreen()));
                                     },
                                     child: Image.asset(
                                       MihiAppAssetsPath.rightArrow2,),
@@ -299,7 +299,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                   GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => DashboardSearchResultScreen()));
+                          builder: (BuildContext context) => const DashboardSearchResultScreen()));
                     },
                     child: Padding(
                       padding: const EdgeInsets.only(left: 10.0),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
 import 'package:mihi_app/screens/dashboard/dashboard.dart';
-import 'package:mihi_app/screens/dashboard/dashboard_search.dart';
 import '../constants/text_constants.dart';
 
 class DashboardNotificationScreen extends StatefulWidget {
@@ -60,7 +59,7 @@ class _DashboardNotificationScreenState
                                   onTap: () {
                                     Navigator.of(context).push(
                                         MaterialPageRoute(
-                                            builder: (BuildContext context) =>
+                                            builder: (BuildContext context) => const
                                                 DashboardScreen()));
                                   },
                                   child: Image.asset(

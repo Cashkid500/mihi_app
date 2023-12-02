@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/profile/profile_sessions.dart';
 import 'package:mihi_app/screens/profile/profile_sessions3.dart';
-import '../constants/text_constants.dart';
 
 class ProfileSessions2Screen extends StatefulWidget {
   const ProfileSessions2Screen({Key? key}) : super(key: key);
@@ -28,7 +28,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                   child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => ProfileSessionsScreen()));
+                          builder: (BuildContext context) => const ProfileSessionsScreen()));
                     },
                     child: Image.asset(
                       MihiAppAssetsPath.backButton,
@@ -82,7 +82,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
             GestureDetector(
               onTap: () {
               Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) =>ProfileSessions3Screen())
+              MaterialPageRoute(builder: (BuildContext context) => const ProfileSessions3Screen())
               );
               },
               child: Container1(),

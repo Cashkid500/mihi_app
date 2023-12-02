@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/settings/privacy_settings.dart';
-import '../constants/text_constants.dart';
 
 class AboutSettingsScreen extends StatefulWidget {
   const AboutSettingsScreen({Key? key}) : super(key: key);
@@ -39,7 +39,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                         child: GestureDetector(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) => PrivacySettingsScreen()));
+                              builder: (BuildContext context) => const PrivacySettingsScreen()));
                         },
                         child: Image.asset(MihiAppAssetsPath.rightArrow)),
                       ),
@@ -48,7 +48,8 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w400,
-                        ),),
+                        ),
+                      ),
                       ),
                       SizedBox(
                         width: 10,
@@ -62,7 +63,8 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                   TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w500,
-                  ),),
+                  ),
+                  ),
                   SizedBox(
                     height: 10.0,
                   ),
@@ -110,7 +112,8 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                 TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
-                ),),
+                ),
+              ),
               ),
               SizedBox(
                 height: 20.0,
@@ -154,7 +157,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                                       fontWeight: FontWeight.w400
                                     ),
                                     ),
-                                   ],
+                                  ],
                                 ),
                               ),
                       ),
@@ -166,7 +169,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(14),
                             color: Brilliant
-                           ),
+                          ),
                           child: 
                           Image.asset(MihiAppAssetsPath.message),
                         ),

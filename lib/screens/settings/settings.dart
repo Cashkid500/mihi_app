@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/settings/privacy_settings.dart';
-import '../constants/text_constants.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -83,7 +83,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     color: whiteText,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(40),
-                        topRight: Radius.circular(40))),
+                        topRight: Radius.circular(40)),
+                        ),
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Column(
@@ -142,7 +143,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child:
-                                  // Image.asset(MihiAppAssetsPath.leftArrow),
                                   Icon(Icons.arrow_forward_ios, color: mithril, size: 15,),
                             ),
                           ],
@@ -188,7 +188,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: 
-                            // Image.asset(MihiAppAssetsPath.leftArrow),
                             Icon(
                               Icons.arrow_forward_ios,
                               color: mithril,
@@ -280,7 +279,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: 
-                            // Image.asset(MihiAppAssetsPath.leftArrow),
                             Icon(
                               Icons.arrow_forward_ios,
                               color: mithril,
@@ -319,20 +317,20 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                               child:
-                                  // Image.asset(MihiAppAssetsPath.leftArrow),
                                   Icon(
                               Icons.arrow_forward_ios,
                               color: mithril,
                               size: 15,
                             ),
-                                  ),
+                          ),
                         ],
                       ),
                     ],
                   ),
                 ),
               ),
-            ]),
+            ]
+          ),
       ),
     );
   }

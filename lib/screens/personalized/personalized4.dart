@@ -224,7 +224,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                           child: GestureDetector(
                              onTap: () {
                             Navigator.of(context).push(
-                            MaterialPageRoute(builder: (BuildContext context) =>NavigationScreen())
+                            MaterialPageRoute(builder: (BuildContext context) => const NavigationScreen())
                             );
                             },
                             child: Container(

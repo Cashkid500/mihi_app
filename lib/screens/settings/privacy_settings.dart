@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/settings/about_settings.dart';
 import 'package:mihi_app/screens/settings/settings.dart';
-import '../constants/text_constants.dart';
 
 
 class PrivacySettingsScreen extends StatefulWidget {
@@ -42,9 +42,10 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
                     child: GestureDetector(
                     onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (BuildContext context) => SettingsScreen()));
+                              builder: (BuildContext context) => const SettingsScreen()));
                         },  
-                    child: Image.asset(MihiAppAssetsPath.rightArrow)),
+                    child: Image.asset(MihiAppAssetsPath.rightArrow),
+                    ),
                   ),
                 ),
                 Padding(
@@ -117,7 +118,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => AboutSettingsScreen()));
+                    builder: (BuildContext context) => const AboutSettingsScreen()));
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,

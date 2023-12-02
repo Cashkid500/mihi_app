@@ -98,7 +98,7 @@ class _SignupScreenState extends State<SignupScreen> {
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => LoginScreen()));
+                    builder: (BuildContext context) => const LoginScreen()));
               },
               child: Center(
                 child: Container(
@@ -111,7 +111,8 @@ class _SignupScreenState extends State<SignupScreen> {
                         fontSize: 17,
                         fontWeight: FontWeight.w400,
                         color: Color(0xffFFEEE0)),
-                  )),
+                  ),
+                  ),
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
                         begin: Alignment.bottomCenter,
@@ -128,7 +129,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 child: GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (BuildContext context) => LoginScreen()));
+                        builder: (BuildContext context) => const LoginScreen()));
                   },
                   child: RichText(
                     text: TextSpan(
@@ -211,7 +212,6 @@ class PasswordField extends StatelessWidget {
                 borderRadius: BorderRadius.circular(8),
                 borderSide: BorderSide(color: mithril)),
             prefixIcon: Image.asset(MihiAppAssetsPath.signupprefix3),
-            // suffixIcon: Image.asset(MihiAppAssetsPath.signupsuffix1),
             suffixIcon: IconButton(
               onPressed: updateObscured,
               icon: Icon(

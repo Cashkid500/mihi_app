@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/profile/profile_sessions2.dart';
-import '../constants/text_constants.dart';
 
 class ProfileSessions3Screen extends StatefulWidget {
   const ProfileSessions3Screen({Key? key}) : super(key: key);
@@ -27,7 +27,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                   child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) =>
+                          builder: (BuildContext context) => const
                               ProfileSessions2Screen()));
                     },
                     child: Image.asset(
@@ -169,7 +169,8 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                           color: whiteText,
                           fontSize: 19,
                           fontWeight: FontWeight.w500),
-                    )),
+                    ),
+                  ),
                   ),
                 ),
                 Padding(
@@ -207,7 +208,8 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                           color: mithril,
                           fontSize: 19,
                           fontWeight: FontWeight.w500),
-                    )),
+                    ),
+                  ),
                   ),
                 ),
                 Padding(
@@ -237,7 +239,8 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                         color: mithril,
                         fontSize: 19,
                         fontWeight: FontWeight.w500),
-                  )),
+                  ),
+                ),
                   Container(
                       height: 55,
                       width: 120,
@@ -253,7 +256,9 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                             color: mithril,
                             fontSize: 19,
                             fontWeight: FontWeight.w500),
-                      ))),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -274,7 +279,8 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                     color: softCoral,
                     fontSize: 20,
                     fontWeight: FontWeight.w400),
-              )),
+              ),
+            ),
             )
           ],
         ),

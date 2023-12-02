@@ -260,7 +260,7 @@ class _DashboardSearchResultScreenState
                                         Navigator.of(context).push(
                                             MaterialPageRoute(
                                                 builder:
-                                                    (BuildContext context) => DashboardSearchScreen()));
+                                                    (BuildContext context) => const DashboardSearchScreen()));
                                       },
                                       child: Image.asset(
                                         MihiAppAssetsPath.rightArrow2,),
@@ -299,7 +299,7 @@ class _DashboardSearchResultScreenState
                                 onTap: () {
                                       Navigator.of(context).push(
                                           MaterialPageRoute(
-                                              builder: (BuildContext context) =>
+                                              builder: (BuildContext context) => const
                                                   DashboardSearchResultScreen()));
                                     },
                                 child: Icon(Icons.close))),

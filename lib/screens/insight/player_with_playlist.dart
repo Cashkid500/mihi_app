@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/insight/featured_playlist.dart';
 import 'package:mihi_app/screens/insight/insight.dart';
 import 'package:mihi_app/screens/insight/single_player_music.dart';
-import '../constants/text_constants.dart';
 
 class PlayerPlaylistScreen extends StatefulWidget {
   const PlayerPlaylistScreen({Key? key}) : super(key: key);
@@ -46,7 +46,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             child: GestureDetector(
                               onTap: () {
                                 Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (BuildContext context) => SinglePlayerScreen()));
+                                    builder: (BuildContext context) => const SinglePlayerScreen()));
                               },
                               child: Image.asset(
                                 MihiAppAssetsPath.backButton,
@@ -288,7 +288,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                     GestureDetector(
                        onTap: () {
                        Navigator.of(context).push(
-                       MaterialPageRoute(builder: (BuildContext context) =>FeaturedPlaylistScreen())
+                       MaterialPageRoute(builder: (BuildContext context) => const FeaturedPlaylistScreen())
                        );
                       },
                       child: Image.asset(

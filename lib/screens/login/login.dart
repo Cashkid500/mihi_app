@@ -88,7 +88,7 @@ class _LoginScreenState extends State<LoginScreen> {
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(MaterialPageRoute(
-                    builder: (BuildContext context) => PersonalizedScreen()));
+                    builder: (BuildContext context) => const PersonalizedScreen()));
               },
               child: Center(
                 child: Container(
@@ -118,7 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (BuildContext context) => SignupScreen()));
+                        builder: (BuildContext context) => const SignupScreen()));
                   },
                   child: RichText(
                     text: TextSpan(

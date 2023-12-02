@@ -59,7 +59,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 onTap: () {
                                       Navigator.of(context).push(
                                           MaterialPageRoute(
-                                              builder: (BuildContext context) =>
+                                              builder: (BuildContext context) => const
                                                   DashboardSearchScreen()));
                                     },
                                 child: Image.asset(MihiAppAssetsPath.searchImage, height: 25,)),
@@ -67,7 +67,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                 onTap: () {
                                       Navigator.of(context).push(
                                           MaterialPageRoute(
-                                              builder: (BuildContext context) =>
+                                              builder: (BuildContext context) => const
                                                   DashboardNotificationScreen()));
                                     },
                                 child: Image.asset(MihiAppAssetsPath.notificationImage, height: 25,)),

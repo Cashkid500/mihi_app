@@ -117,7 +117,7 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
                                         GestureDetector(
                                           onTap: () {
                                         Navigator.of(context).push(
-                                        MaterialPageRoute(builder: (BuildContext context) =>Personalized2Screen())
+                                        MaterialPageRoute(builder: (BuildContext context) => const Personalized2Screen())
                                         );
                                         },
                                           child: Container(

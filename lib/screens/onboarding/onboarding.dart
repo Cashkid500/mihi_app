@@ -276,7 +276,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           GestureDetector(
           onTap: () {
             Navigator.of(context).push(
-              MaterialPageRoute(builder: (BuildContext context) =>SignupScreen())
+              MaterialPageRoute(builder: (BuildContext context) => const SignupScreen())
             );
           },
           child: SafeArea(

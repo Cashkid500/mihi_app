@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: SplashScreen(), // Use SplashScreen as the initial screen
+          home: SplashScreen(), 
         );
       }
   }
@@ -27,13 +27,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Add a delay of 3 seconds and then navigate to the next screen
     Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-            builder: (context) =>
-                OnboardingScreen()), // Replace NextScreen with the screen you want to navigate to
+            builder: (context) => const
+                OnboardingScreen()),
       );
     });
   }
@@ -92,7 +91,8 @@ class _SplashScreenState extends State<SplashScreen> {
                     decoration: BoxDecoration(
                         image: DecorationImage(
                       image: AssetImage(MihiAppAssetsPath.mihiapplogo),
-                    )),
+                    ),
+                    ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [

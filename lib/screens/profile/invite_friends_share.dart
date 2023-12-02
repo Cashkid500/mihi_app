@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/profile/invite_friends.dart';
-import '../constants/text_constants.dart';
 
 class InviteFriendShareScreen extends StatefulWidget {
   const InviteFriendShareScreen({Key? key}) : super(key: key);
@@ -27,6 +27,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
               topRight: Radius.circular(32),
             ),
           ),
+          
           // Content of the bottom sheet
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -234,7 +235,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                   child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => InviteFriendsScreen()));
+                          builder: (BuildContext context) => const InviteFriendsScreen()));
                     },
                     child: Image.asset(
                       MihiAppAssetsPath.backButton,

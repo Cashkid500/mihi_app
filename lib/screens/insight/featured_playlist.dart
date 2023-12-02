@@ -31,7 +31,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                   GestureDetector(
                   onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) => PlayerPlaylistScreen()));
+                            builder: (BuildContext context) => const PlayerPlaylistScreen()));
                       },
                   child: Image.asset(MihiAppAssetsPath.backButton, height: 25)),
                   SizedBox(
@@ -221,7 +221,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                               GestureDetector(
                                 onTap: () {
                                   Navigator.of(context).push(MaterialPageRoute(
-                                      builder: (BuildContext context) =>
+                                      builder: (BuildContext context) => const
                                           PlayerWithPlaylistScreen()));
                                 },
                                 child: Text(

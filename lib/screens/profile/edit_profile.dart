@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/profile/profile_settings.dart';
-import '../constants/text_constants.dart';
 
 class EditProfileScreen extends StatefulWidget {
   const EditProfileScreen({Key? key}) : super(key: key);
@@ -27,6 +27,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               topRight: Radius.circular(32),
             ),
           ),
+          
           // Content of the bottom sheet
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -127,7 +128,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   child: GestureDetector(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) =>
+                            builder: (BuildContext context) => const
                                 ProfileSettingsScreen()));
                       },
                       child: Image.asset(

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/dashboard/dashboard.dart';
 import 'package:mihi_app/screens/insight/single_player_music.dart';
-import '../constants/text_constants.dart';
 
 class InsightScreen extends StatefulWidget {
   const InsightScreen({Key? key}) : super(key: key);
@@ -26,6 +26,7 @@ class _InsightScreenState extends State<InsightScreen> {
               topRight: Radius.circular(52),
             ),
           ),
+          
           // Content of the bottom sheet
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -184,7 +185,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             child: GestureDetector(
                               onTap: () {
                                 Navigator.of(context).push(MaterialPageRoute(
-                                    builder: (BuildContext context) =>
+                                    builder: (BuildContext context) => const
                                         DashboardScreen()));
                               },
                               child: Image.asset(
@@ -397,7 +398,7 @@ class Playlist1 extends StatelessWidget {
                 GestureDetector(
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (BuildContext context) =>
+                        builder: (BuildContext context) => const
                             SinglePlayerScreen()));
                   },
                   child: Text(

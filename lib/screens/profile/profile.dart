@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/profile/invite_friends.dart';
 import 'package:mihi_app/screens/profile/profile_sessions.dart';
 import 'package:mihi_app/screens/profile/profile_settings.dart';
-import '../constants/text_constants.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -55,7 +55,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) =>
+                          builder: (BuildContext context) => const
                               ProfileSettingsScreen()));
                     },
                     child: Container(
@@ -143,7 +143,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         children: [
                           Image.asset(MihiAppAssetsPath.group),
                           SizedBox(height: 10.0),
-                          Text(MihiAppText.groups, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
+                          Text(MihiAppText.groups, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),
+                          ),
                         ]
                       ),
                   ),
@@ -154,7 +155,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => ProfileSessionsScreen()));
+                          builder: (BuildContext context) => const ProfileSessionsScreen()));
                     },
                     child: Container(
                       height: 90,
@@ -182,7 +183,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   child: GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (BuildContext context) => InviteFriendsScreen()));
+                          builder: (BuildContext context) => const InviteFriendsScreen()));
                     },
                     child: Container(
                       height: 90,
@@ -198,7 +199,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           children: [
                             Image.asset(MihiAppAssetsPath.invite),
                             SizedBox(height: 10.0),
-                            Text(MihiAppText.invite, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
+                            Text(MihiAppText.invite, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),
+                            ),
                           ]
                         ),
                     ),
