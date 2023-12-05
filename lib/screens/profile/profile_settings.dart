@@ -59,7 +59,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 60.0,
             ),
             Row(
@@ -72,7 +72,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                     height: 80.0,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20.0,
                 ),
                 Column(
@@ -88,7 +88,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                             color: sundayNiqab),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10.0,
                     ),
                     Text(
@@ -112,7 +112,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
             Padding(
@@ -125,7 +125,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                     color: mithril),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Row(
@@ -138,7 +138,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                 Image.asset(MihiAppAssetsPath.hug5),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             ),
             Padding(
@@ -151,7 +151,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                     color: mithril),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Row(
@@ -161,7 +161,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                   padding: const EdgeInsets.only(left: 10.0),
                   child: Image.asset(MihiAppAssetsPath.payment),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20.0,
                 ),
                 Text(
@@ -177,14 +177,14 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
               child: Divider(
                 thickness: 1.0,
                 color: Colors.grey,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             Row(
@@ -194,7 +194,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                   padding: const EdgeInsets.only(left: 10.0),
                   child: Image.asset(MihiAppAssetsPath.notification2),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20.0,
                 ),
                 Text(
@@ -204,7 +204,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                       fontWeight: FontWeight.w400,
                       color: blackText),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 150,
                 ),
                 Container(
@@ -224,14 +224,14 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
               child: Divider(
                 thickness: 1.0,
                 color: Colors.grey,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             Row(
@@ -241,7 +241,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                   padding: const EdgeInsets.only(left: 10.0),
                   child: Image.asset(MihiAppAssetsPath.privacy),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20.0,
                 ),
                 Text(
@@ -257,7 +257,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
             Padding(
@@ -271,7 +271,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Padding(
@@ -285,7 +285,7 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Padding(

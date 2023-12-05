@@ -134,7 +134,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                       child: Image.asset(
                         MihiAppAssetsPath.backButton,
                         height: 25.0,
-                      )),
+                      ),
+                    ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 100.0),
@@ -158,7 +159,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 60.0,
             ),
 
@@ -187,7 +188,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20.0,
                 ),
                 Column(
@@ -203,7 +204,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             color: sundayNiqab),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10.0,
                     ),
                     Text(
@@ -217,47 +218,47 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
 
             // Full Name
             TextWidget(textPath2: MihiAppText.fn),
-            SizedBox(
+            const SizedBox(
               height: 5.0,
             ),
             TextField2(hintTextPath: MihiAppText.chrisAni, suffixIconPath: MihiAppAssetsPath.greenTick),
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
 
             // Email Address
             TextWidget2(emailPath: MihiAppText.emailAdress),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
-            SizedBox(
+            const SizedBox(
               height: 2.0,
             ),
             TextField2(
                 hintTextPath: MihiAppText.mail,
                 suffixIconPath: MihiAppAssetsPath.edit2),
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
 
             // Phone Number
             TextWidget2(emailPath: MihiAppText.phoneNumber),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
-            SizedBox(
+            const SizedBox(
               height: 2.0,
             ),
             TextField2(
                 hintTextPath: MihiAppText.number,
                 suffixIconPath: MihiAppAssetsPath.edit2),
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
 
@@ -268,12 +269,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                   style: TextStyle(
                       fontSize: 16.0,
                       fontWeight: FontWeight.w400,
-                      color: mithril)),
+                      color: mithril),
+                      ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
-            SizedBox(
+            const SizedBox(
               height: 2.0,
             ),
             TextField2(

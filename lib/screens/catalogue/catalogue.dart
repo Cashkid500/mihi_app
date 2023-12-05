@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/catalogue/catalogue_therapy.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/dashboard/dashboard_notification.dart';
 import 'package:mihi_app/screens/dashboard/dashboard_search.dart';
-import '../constants/text_constants.dart';
 
 class CatalogueScreen extends StatefulWidget {
   const CatalogueScreen({Key? key}) : super(key: key);
@@ -41,7 +41,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 20.0,
                   ),
                   Row(
@@ -66,7 +66,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                             onTap: () {
                                     Navigator.of(context).push(
                                         MaterialPageRoute(
-                                            builder: (BuildContext context) =>
+                                            builder: (BuildContext context) => const
                                                 DashboardSearchScreen()));
                                   },
                             child: Image.asset(MihiAppAssetsPath.search, height: 25,)),
@@ -74,16 +74,17 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                             onTap: () {
                                     Navigator.of(context).push(
                                         MaterialPageRoute(
-                                            builder: (BuildContext context) =>
+                                            builder: (BuildContext context) => const
                                                 DashboardNotificationScreen()));
                                   },
-                            child: Image.asset(MihiAppAssetsPath.notification, height: 25,)),
+                            child: Image.asset(MihiAppAssetsPath.notification, height: 25,),
+                            ),
                           ],
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20.0,
                   ),
                   SizedBox(
@@ -113,7 +114,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20.0,
                   ),
                   Text(
@@ -123,15 +124,15 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                         fontWeight: FontWeight.w400,
                         color: whiteText),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                   FirstContainer(),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                   FirstContainer(),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                   Container(
@@ -169,7 +170,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40.0,
                   ),
                   GestureDetector(
@@ -186,11 +187,11 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 3.0,
                   ),
                   FirstRow(),
-                  SizedBox(height: 5.0),
+                  const SizedBox(height: 5.0),
                   FirstRow(),
                 ],
               ),
@@ -244,7 +245,7 @@ class FirstRow extends StatelessWidget {
                       crossAxisAlignment:
                           CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Text(
@@ -301,7 +302,7 @@ class FirstRow extends StatelessWidget {
                       crossAxisAlignment:
                           CrossAxisAlignment.start,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Text(

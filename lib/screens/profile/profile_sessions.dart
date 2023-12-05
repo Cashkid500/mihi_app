@@ -48,7 +48,7 @@ class _ProfileSessionsScreenState extends State<ProfileSessionsScreen> {
                 ),
               ],
             ),
-            SizedBox(height: 40.0,),
+            const SizedBox(height: 40.0,),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -65,7 +65,7 @@ class _ProfileSessionsScreenState extends State<ProfileSessionsScreen> {
                     child: Image.asset(MihiAppAssetsPath.notification3),
                   ),
                 ),
-                SizedBox(width: 200.0,),
+                const SizedBox(width: 200.0,),
                 Container(
                   height: 33.0,
                   width: 80.0,
@@ -77,7 +77,7 @@ class _ProfileSessionsScreenState extends State<ProfileSessionsScreen> {
                 ),
               ],
             ),
-            SizedBox(height: 40.0,),
+            const SizedBox(height: 40.0,),
             GestureDetector(
               onTap: () {
                         Navigator.of(context).push(
@@ -100,12 +100,12 @@ class _ProfileSessionsScreenState extends State<ProfileSessionsScreen> {
                     ),
               ),
             ),
-            SizedBox(height: 30.0,),
+            const SizedBox(height: 30.0,),
             Padding(
               padding: const EdgeInsets.only(right :200.0),
               child: Text(MihiAppText.mySchedule, style: TextStyle(color: blackText, fontSize: 18, fontWeight: FontWeight.w600),),
             ),
-            SizedBox(height: 20.0,),
+            const SizedBox(height: 20.0,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

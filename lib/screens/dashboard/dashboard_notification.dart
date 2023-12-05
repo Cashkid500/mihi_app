@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/dashboard/dashboard.dart';
-import '../constants/text_constants.dart';
 
 class DashboardNotificationScreen extends StatefulWidget {
   const DashboardNotificationScreen({Key? key}) : super(key: key);
@@ -80,7 +80,7 @@ class _DashboardNotificationScreenState
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20.0,
                   ),
                   Padding(
@@ -91,7 +91,7 @@ class _DashboardNotificationScreenState
                           TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15.0,
                   ),
                   Padding(
@@ -99,17 +99,17 @@ class _DashboardNotificationScreenState
                     child: Row(
                       children: [
                         Image.asset(MihiAppAssetsPath.woman),
-                        SizedBox(
+                        const SizedBox(
                           width: 10.0,
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(
+                            const SizedBox(
                                 width: 200,
                                 child: Text(
                                     MihiAppText.nextTherapy)),
-                            SizedBox(
+                            const SizedBox(
                               height: 5.0,
                             ),
                             Text(
@@ -137,7 +137,7 @@ class _DashboardNotificationScreenState
                   Today41(),
                   Divide(),
                   Today41(),
-                  SizedBox(
+                  const SizedBox(
                     height: 60.0,
                   ),
                   Padding(
@@ -148,13 +148,13 @@ class _DashboardNotificationScreenState
                           TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20.0,
                   ),
                   YesterdayPath(),
                   Divide(),
                   YesterdayPath(),
-                  SizedBox(
+                  const SizedBox(
                     height: 60.0,
                   ),
                   Padding(
@@ -165,7 +165,7 @@ class _DashboardNotificationScreenState
                           fontSize: 17, fontWeight: FontWeight.w500),
                     ),
                   ),
-                  SizedBox(height: 20.0,),
+                  const SizedBox(height: 20.0,),
                   YesterdayPath(),
                   Divide(),
                   YesterdayPath(),
@@ -192,17 +192,17 @@ class YesterdayPath extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(MihiAppAssetsPath.woman),
-          SizedBox(
+          const SizedBox(
             width: 10.0,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                   width: 200,
                   child: Text(
                       MihiAppText.nextTherapy)),
-              SizedBox(
+              const SizedBox(
                 height: 5.0,
               ),
               Text(
@@ -242,17 +242,17 @@ class Today41 extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(MihiAppAssetsPath.woman),
-          SizedBox(
+          const SizedBox(
             width: 10.0,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                   width: 200,
                   child: Text(
                       MihiAppText.nextTherapy)),
-              SizedBox(
+              const SizedBox(
                 height: 5.0,
               ),
               Text(

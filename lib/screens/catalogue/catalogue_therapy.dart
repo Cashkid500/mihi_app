@@ -47,15 +47,16 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                                   onTap: () {
                                     Navigator.of(context).push(
                                         MaterialPageRoute(
-                                            builder: (BuildContext context) => CatalogueScreen()));
+                                            builder: (BuildContext context) => const CatalogueScreen()));
                                   },
                                   child: Image.asset(
                                     MihiAppAssetsPath.rightArrow2,
                                     height: 25,
                                   ),
-                                )),
+                                ),
+                                ),
                             Text(
-                              "Music Catalogue",
+                              MihiAppText.mc,
                               style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.w400,
@@ -67,7 +68,7 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Padding(
@@ -82,7 +83,7 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                             fontWeight: FontWeight.w500,
                             color: blackText),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Text(
@@ -95,7 +96,7 @@ class _CatalogueTherapyScreenState extends State<CatalogueTherapyScreen> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row1(),

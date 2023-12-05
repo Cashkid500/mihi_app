@@ -35,7 +35,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     MihiAppAssetsPath.queueMusic,
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -58,7 +58,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     MihiAppAssetsPath.share,
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -81,7 +81,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     MihiAppAssetsPath.favorite,
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -104,7 +104,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     MihiAppAssetsPath.addToPlaylist,
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -127,7 +127,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     MihiAppAssetsPath.download,
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -159,7 +159,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
@@ -179,7 +179,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Row(
@@ -214,13 +214,13 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Center(
                       child: Image.asset(MihiAppAssetsPath.happy2),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Center(
@@ -232,7 +232,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 5),
+                    const SizedBox(height: 5),
                     Center(
                       child: Text(
                         MihiAppText.london,
@@ -243,7 +243,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Column(
@@ -266,7 +266,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                                     style: TextStyle(fontSize: 16),
                                   ),
                                   Image.asset(MihiAppAssetsPath.cancer),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 5,
                                   ),
                                   Column(
@@ -282,7 +282,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                                                 fontSize: 14,
                                                 fontWeight: FontWeight.w500),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 10,
                                           ),
                                           Text(
@@ -293,7 +293,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                                               fontWeight: FontWeight.w500,
                                             ),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 130,
                                           ),
                                           Padding(
@@ -319,27 +319,27 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                                   ),
                                 ],
                               ),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                               DividingLine(),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                               SeaSideCafe(list: MihiAppText.two),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                               DividingLine(),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                               SeaSideCafe(list: MihiAppText.three),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                               DividingLine(),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                               FirstRowDetails(listpath: MihiAppText.four),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                               DividingLine(),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                               FirstRowDetails(listpath: MihiAppText.five),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                               DividingLine(),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                               FirstRowDetails(listpath: MihiAppText.six),
-                              SizedBox(height: 5,),
+                              const SizedBox(height: 5,),
                             ],
                           ),
                         ),
@@ -359,7 +359,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                           ),
                           child: Column(
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               Row(
@@ -371,7 +371,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                                     MihiAppAssetsPath.addToPlaylist,
                                     MihiAppAssetsPath.share,
                                   ]),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                               Row(
@@ -407,7 +407,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                                           color: Color(0xff000000)),
                                     ),
                                   ]),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               Row(
@@ -435,7 +435,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                                   )
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                               Padding(
@@ -469,7 +469,7 @@ class _PlayerWithPlaylistScreenState extends State<PlayerWithPlaylistScreen> {
                                   ],
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
                               Row(
@@ -516,7 +516,7 @@ class SeaSideCafe extends StatelessWidget {
           style: TextStyle(fontSize: 16),
         ),
         Image.asset(MihiAppAssetsPath.cancer),
-        SizedBox(
+        const SizedBox(
           width: 5,
         ),
         Column(
@@ -532,7 +532,7 @@ class SeaSideCafe extends StatelessWidget {
                       fontSize: 14,
                       fontWeight: FontWeight.w500),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Text(
@@ -543,7 +543,7 @@ class SeaSideCafe extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 130,
                 ),
                 Padding(

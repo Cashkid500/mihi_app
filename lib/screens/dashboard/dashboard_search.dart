@@ -187,7 +187,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20.0,
                   ),
                   Padding(
@@ -198,7 +198,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                           TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: blackText),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 25.0,
                   ),
                   Padding(
@@ -234,13 +234,13 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10.0,
                           ),
                           Column(
                             children: [
                               Image.asset(MihiAppAssetsPath.piano2),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10.0,
                               ),
                               Row(
@@ -249,24 +249,26 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                                       style: TextStyle(
                                           fontSize: 9,
                                           fontWeight: FontWeight.w500,
-                                          color: Brilliant)),
+                                          color: Brilliant),
+                                  ),
                                   Text(MihiAppText.anthem,
                                       style: TextStyle(
                                           fontSize: 7,
                                           fontWeight: FontWeight.w400,
                                           fontStyle: FontStyle.italic,
-                                          color: blackText))
+                                          color: blackText),
+                                  )
                                 ],
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10.0,
                           ),
                           Column(
                             children: [
                               Image.asset(MihiAppAssetsPath.backTeraphy),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10.0,
                               ),
                               Row(
@@ -275,25 +277,27 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                                       style: TextStyle(
                                           fontSize: 9,
                                           fontWeight: FontWeight.w500,
-                                          color: Brilliant)),
+                                          color: Brilliant),
+                                  ),
                                   Text(MihiAppText.anthem,
                                       style: TextStyle(
                                           fontSize: 7,
                                           fontWeight: FontWeight.w400,
                                           fontStyle: FontStyle.italic,
-                                          color: blackText))
+                                          color: blackText),
+                                  )
                                 ],
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 20.0,
                           ),
                         ],
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30.0,
                   ),
                   GestureDetector(
@@ -310,7 +314,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 25.0,
                   ),
                   Padding(
@@ -320,7 +324,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                         Image.asset(
                           MihiAppAssetsPath.happy,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10.0,
                         ),
                         Column(
@@ -331,7 +335,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500,
                                     color: blackText)),
-                            SizedBox(
+                            const SizedBox(
                               height: 5.0,
                             ),
                             Text(
@@ -358,7 +362,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                   Padding(
@@ -368,7 +372,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                         Image.asset(
                           MihiAppAssetsPath.singer,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10.0,
                         ),
                         Column(
@@ -381,7 +385,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                                   fontWeight: FontWeight.w500,
                                   color: blackText),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5.0,
                             ),
                             Text(
@@ -408,7 +412,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                   Padding(
@@ -418,7 +422,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                         Image.asset(
                           MihiAppAssetsPath.pianist,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10.0,
                         ),
                         Column(
@@ -431,7 +435,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                                   fontWeight: FontWeight.w500,
                                   color: blackText),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5.0,
                             ),
                             Text(
@@ -446,7 +450,7 @@ class _DashboardSearchScreenState extends State<DashboardSearchScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 50.0,
                   )
                 ],

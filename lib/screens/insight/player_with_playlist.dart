@@ -69,7 +69,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Padding(
@@ -82,7 +82,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                             fontSize: 24),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Padding(
@@ -90,19 +90,19 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                       child: Row(
                         children: [
                           RowWidget(rowTextPath: MihiAppText.songs),
-                          SizedBox(
+                          const SizedBox(
                             width: 30,
                           ),
                           RowWidget(rowTextPath: MihiAppText.videoText),
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
                           RowWidget(rowTextPath: MihiAppText.playlist),
-                          SizedBox(
+                          const SizedBox(
                             width: 30,
                           ),
                           RowWidget(rowTextPath: MihiAppText.artists),
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
                           RowWidget(rowTextPath: MihiAppText.album),
@@ -134,7 +134,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                   Playlist1(numberpath: MihiAppText.one),
@@ -153,14 +153,14 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                   padding: const EdgeInsets.only(left: 15),
                                   child:
                                       Image.asset(MihiAppAssetsPath.pianos)),
-                              SizedBox(
+                              const SizedBox(
                                 width: 10,
                               ),
                               Image.asset(MihiAppAssetsPath.cancer),
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Column(
@@ -175,7 +175,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 10,
                                 ),
                                 Text(
@@ -186,7 +186,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                     fontWeight: FontWeight.w500,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 120,
                                 ),
                                 Padding(
@@ -195,7 +195,7 @@ class _PlayerPlaylistScreenState extends State<PlayerPlaylistScreen> {
                                 )
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 1,
                             ),
                             Text(

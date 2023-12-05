@@ -55,9 +55,9 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                 ),
               ],
             ),
-            SizedBox(height: 80.0),
+            const SizedBox(height: 80.0),
             Image.asset(MihiAppAssetsPath.chrisFriend),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             Text(
               MihiAppText.invite2,
               style: TextStyle(
@@ -65,7 +65,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                   fontWeight: FontWeight.w500,
                   color: blackText),
             ),
-            SizedBox(height: 15.0),
+            const SizedBox(height: 15.0),
             Align(
               alignment: Alignment.center,
               child: Padding(
@@ -79,7 +79,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             GestureDetector(
               onTap: () {
                         Navigator.of(context).push(
@@ -94,7 +94,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                     color: blackText),
               ),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Container(
               height: 63,
               width: 300,
@@ -135,7 +135,7 @@ class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 40.0),
+            const SizedBox(height: 40.0),
             Container(
               height: 50,
               width: 50,

@@ -18,16 +18,16 @@ class _SignupScreenState extends State<SignupScreen> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
+        child:  Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 60.0,
             ),
             Container(
               child: Center(child: Image.asset(MihiAppAssetsPath.signupimage)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Center(
@@ -39,7 +39,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     color: sundayNiqab),
               ),
             ),
-            SizedBox(
+             const SizedBox(
               height: 10.0,
             ),
             Center(
@@ -51,37 +51,37 @@ class _SignupScreenState extends State<SignupScreen> {
                     color: mithril),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
 
             // Enter your full name here
             Text1(textPath: MihiAppText.fn),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             TextField1(
                 hintTextPath: MihiAppText.eynh,
                 prefixIconPath: MihiAppAssetsPath.signupprefix1),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
 
             // Enter your email address
             Text1(textPath: MihiAppText.email),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             TextField1(
                 hintTextPath: MihiAppText.eyeh,
                 prefixIconPath: MihiAppAssetsPath.signupprefix2),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
 
             // Enter your password
             Text1(textPath: MihiAppText.password),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             PasswordField(
@@ -92,7 +92,7 @@ class _SignupScreenState extends State<SignupScreen> {
               },
               passwordObscured: passwordObscured,
             ),
-            SizedBox(
+            const SizedBox(
               height: 60.0,
             ),
             GestureDetector(

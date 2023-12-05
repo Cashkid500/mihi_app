@@ -40,7 +40,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(height: 40.0),
+                      const SizedBox(height: 40.0),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -49,7 +49,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             fontSize: 18.0,
                             fontWeight: FontWeight.w500,
                             color: whiteText
-                          ),),
+                          ),
+                          ),
                           SizedBox(
                             width: 85.0,
                             child: Row(
@@ -76,7 +77,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           ),
                         ],
                       ),
-                     SizedBox(height: 300.0),
+                     const SizedBox(height: 300.0),
                       Padding(
                         padding: const EdgeInsets.only(left: 10.0),
                         child: Text(MihiAppText.popular,
@@ -90,11 +91,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Image.asset(MihiAppAssetsPath.ambImage, width: 180,),
-                          SizedBox(width: 10.0),
+                          const SizedBox(width: 10.0),
                           Image.asset(MihiAppAssetsPath.pianoImage, width: 170,),
                         ],
                       ),
-                      SizedBox(height: 5.0,),
+                      const SizedBox(height: 5.0,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -102,20 +103,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding: const EdgeInsets.only(left: 8.0),
                             child: Text(MihiAppText.ambience, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: whiteText),),
                           ),
-                          SizedBox(width: 10.0),
+                          const SizedBox(width: 10.0),
                           Text(MihiAppText.soft, style: TextStyle(fontSize: 9, fontWeight: FontWeight.w300, color: whiteText, fontStyle: FontStyle.italic),),
-                          SizedBox(width: 26.0),
+                          const SizedBox(width: 26.0),
                           Text(MihiAppText.piano, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: whiteText),),
-                          SizedBox(width: 10.0,),
+                          const SizedBox(width: 10.0,),
                           Text(MihiAppText.soft, style: TextStyle(fontSize: 9, fontWeight: FontWeight.w300, color: whiteText, fontStyle: FontStyle.italic),),
                         ],
                       ),
-                      SizedBox(height: 50),
+                      const SizedBox(height: 50),
                       Padding(
                         padding: const EdgeInsets.only(left: 8.0),
                         child: Text(MihiAppText.recommended2,  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: whiteText),),
                       ),
-                      SizedBox(height: 25.0),
+                      const SizedBox(height: 25.0),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -123,16 +124,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding: const EdgeInsets.only(left: 8.0),
                             child: Image(image: AssetImage(MihiAppAssetsPath.happy),),
                           ),
-                          SizedBox(width: 10.0,),
+                          const SizedBox(width: 10.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(MihiAppText.happy, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
-                              SizedBox(height: 10.0,),
+                              const SizedBox(height: 10.0,),
                               Text(MihiAppText.lullaby, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
-                          SizedBox(width: 15.0,),
+                          const SizedBox(width: 15.0,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -140,12 +141,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding: const EdgeInsets.only(left: 8.0),
                             child: Image(image: AssetImage(MihiAppAssetsPath.cancer),),
                           ),
-                          SizedBox(width: 3.0,),
+                          const SizedBox(width: 3.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(MihiAppText.cancer, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
-                              SizedBox(height: 10.0,),
+                              const SizedBox(height: 10.0,),
                               Text(MihiAppText.lullaby, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
@@ -153,7 +154,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           )
                         ],
                       ),
-                      SizedBox(height: 5.0),
+                      const SizedBox(height: 5.0),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -161,16 +162,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding: const EdgeInsets.only(left: 8.0),
                             child: Image(image: AssetImage(MihiAppAssetsPath.singer),),
                           ),
-                          SizedBox(width: 10.0,),
+                          const SizedBox(width: 10.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(MihiAppText.timeless, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
-                              SizedBox(height: 10.0,),
+                              const SizedBox(height: 10.0,),
                               Text(MihiAppText.timelessTime, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
-                          SizedBox(width: 34.0,),
+                          const SizedBox(width: 34.0,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -178,12 +179,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding: const EdgeInsets.only(left: 8.0),
                             child: Image(image: AssetImage(MihiAppAssetsPath.therapy),),
                           ),
-                          SizedBox(width: 3.0,),
+                          const SizedBox(width: 3.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(MihiAppText.mihi, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
-                              SizedBox(height: 10.0,),
+                              const SizedBox(height: 10.0,),
                               Text(MihiAppText.lullaby, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
@@ -191,7 +192,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           )
                         ],
                       ),
-                      SizedBox(height: 5.0,),
+                      const SizedBox(height: 5.0,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -199,16 +200,16 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding: const EdgeInsets.only(left: 8.0),
                             child: Image(image: AssetImage(MihiAppAssetsPath.pianist),),
                           ),
-                          SizedBox(width: 10.0,),
+                          const SizedBox(width: 10.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(MihiAppText.ambiance, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
-                              SizedBox(height: 10.0,),
+                              const SizedBox(height: 10.0,),
                               Text(MihiAppText.ambianceTime, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),
-                          SizedBox(width: 31.0,),
+                          const SizedBox(width: 31.0,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -216,12 +217,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
                             padding: const EdgeInsets.only(left: 8.0),
                             child: Image(image: AssetImage(MihiAppAssetsPath.femaleSinger),),
                           ),
-                          SizedBox(width: 3.0,),
+                          const SizedBox(width: 3.0,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(MihiAppText.sleep, style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: whiteText),),
-                              SizedBox(height: 10.0,),
+                              const SizedBox(height: 10.0,),
                               Text(MihiAppText.lullaby, style: TextStyle(fontSize: 7, fontWeight: FontWeight.w400, color: whiteText,),),
                             ],
                           ),

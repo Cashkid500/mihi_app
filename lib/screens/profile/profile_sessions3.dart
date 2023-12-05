@@ -55,7 +55,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
             Padding(
@@ -68,7 +68,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                     color: mithril),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             SizedBox(
@@ -94,7 +94,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
             Padding(
@@ -107,7 +107,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                     color: mithril),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             SizedBox(
@@ -134,7 +134,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
             Padding(
@@ -147,7 +147,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                     color: mithril),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Row(
@@ -185,7 +185,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Row(
@@ -224,7 +224,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Padding(
@@ -262,7 +262,7 @@ class _ProfileSessions3ScreenState extends State<ProfileSessions3Screen> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 60.0,
             ),
             Container(

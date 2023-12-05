@@ -23,13 +23,13 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 60.0,
             ),
             Container(
               child: Center(child: Image.asset(MihiAppAssetsPath.signupimage)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Center(
@@ -41,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     color: sundayNiqab),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             Center(
@@ -53,25 +53,25 @@ class _LoginScreenState extends State<LoginScreen> {
                     color: mithril),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
 
             // Enter your email address
             Text1(textPath: MihiAppText.email),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             TextField1(
                 hintTextPath: MihiAppText.eyeh,
                 prefixIconPath: MihiAppAssetsPath.signupprefix2),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
 
             // Enter your password
             Text1(textPath: MihiAppText.password),
-            SizedBox(
+            const SizedBox(
               height: 10.0,
             ),
             PasswordField(
@@ -82,7 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
               },
               passwordObscured: passwordObscured,
             ),
-            SizedBox(
+            const SizedBox(
               height: 60.0,
             ),
             GestureDetector(

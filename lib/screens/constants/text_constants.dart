@@ -182,6 +182,7 @@ class MihiAppText {
   static const rateUs = "Rate us";
   static const String lorem3b =
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+  static const String on = "on";
 
   // Profile Texts
   static const String chrisAni = 'Chris Aniedi';
@@ -240,4 +241,10 @@ class MihiAppText {
   static const String myAccount = "My Account";
   static const String switch2 = "Switch to other account";
   static const String logout = "Logout";
+
+  // Navigation Bar Texts
+  static const String home = "Home";
+  static const String catalogue = "Catalogue";
+  static const String profile = "Profile";
+  static const String insight = "Insight";
 }

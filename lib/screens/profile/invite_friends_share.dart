@@ -52,7 +52,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 10.0),
+                    const SizedBox(width: 10.0),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -67,7 +67,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                                 color: blackText),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 2.0,
                         ),
                         Text(
@@ -79,7 +79,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                         ),
                       ],
                     ),
-                    SizedBox(width: 20.0),
+                    const SizedBox(width: 20.0),
                     Padding(
                       padding: const EdgeInsets.only(top: 10.0),
                       child: Image.asset(MihiAppAssetsPath.leftArrow),
@@ -111,7 +111,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 10.0),
+                    const SizedBox(width: 10.0),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -126,7 +126,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                                 color: blackText),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 2.0,
                         ),
                         Text(
@@ -138,7 +138,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 18.0,
                     ),
                     Padding(
@@ -172,7 +172,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 10.0),
+                    const SizedBox(width: 10.0),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -187,7 +187,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                                 color: blackText),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 2.0,
                         ),
                         Text(
@@ -199,7 +199,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10.0,
                     ),
                     Padding(
@@ -262,9 +262,9 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                 ),
               ],
             ),
-            SizedBox(height: 80.0),
+            const SizedBox(height: 80.0),
             Image.asset(MihiAppAssetsPath.chrisFriend),
-            SizedBox(height: 154.0),
+            const SizedBox(height: 154.0),
             Text(
               MihiAppText.referral,
               style: TextStyle(
@@ -272,7 +272,7 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                   fontWeight: FontWeight.w400,
                   color: blackText),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Container(
               height: 63,
               width: 300,
@@ -307,12 +307,13 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
                                 fontWeight: FontWeight.w400,
                                 color: whiteText),
                           ),
-                        )),
+                        ),
+                      ),
                   ],
                 ),
               ),
             ),
-            SizedBox(height: 40.0),
+            const SizedBox(height: 40.0),
             GestureDetector(
               onTap: () {
                 _showBottomSheet(context);

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/catalogue/catalogue_therapy.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
 import 'package:mihi_app/screens/constants/color_constants.dart';
-import '../constants/text_constants.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 
 class CatalogueTherapy2Screen extends StatefulWidget {
   const CatalogueTherapy2Screen({Key? key}) : super(key: key);
@@ -78,7 +78,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                               )
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           Text(
@@ -112,7 +112,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                     fontWeight: FontWeight.w500,
                                     color: whiteText),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                               Row(
@@ -131,7 +131,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 55,
                           ),
                           Column(
@@ -143,7 +143,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                     fontWeight: FontWeight.w500,
                                     color: whiteText),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                               Text(
@@ -153,12 +153,12 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                     fontWeight: FontWeight.w500,
                                     color: whiteText),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 55,
                           ),
                           Column(
@@ -170,7 +170,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                     fontWeight: FontWeight.w500,
                                     color: whiteText),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                               Text(
@@ -180,7 +180,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                     fontWeight: FontWeight.w500,
                                     color: whiteText),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                             ],
@@ -203,7 +203,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                   fontWeight: FontWeight.w400,
                                   color: whiteText),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             SizedBox(
@@ -217,7 +217,8 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                       color: alpineGoat,
                                       ),
                                        textAlign: TextAlign.justify,
-                                ),),
+                                ),
+                            ),
                           ],
                         ),
                       ),
@@ -243,7 +244,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Padding(
@@ -256,7 +257,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                     fontWeight: FontWeight.w500),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 7,
                             ),
                             Padding(
@@ -270,7 +271,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Row(
@@ -298,7 +299,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                 )
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
                             Padding(
@@ -331,7 +332,7 @@ class _CatalogueTherapy2ScreenState extends State<CatalogueTherapy2Screen> {
                                 ],
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
                             Row(

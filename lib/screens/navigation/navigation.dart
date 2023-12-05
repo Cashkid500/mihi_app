@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mihi_app/screens/catalogue/catalogue.dart';
 import 'package:mihi_app/screens/constants/asset_path.dart';
+import 'package:mihi_app/screens/constants/text_constants.dart';
 import 'package:mihi_app/screens/dashboard/dashboard.dart';
 import 'package:mihi_app/screens/insight/insight.dart';
 import 'package:mihi_app/screens/profile/profile.dart';
@@ -39,23 +40,23 @@ class _NavigationScreenState extends State<NavigationScreen> {
           BottomNavigationBarItem(
             backgroundColor: Colors.white,
             icon: Image.asset(MihiAppAssetsPath.homeIcon),
-            label: 'Home',
+            label: MihiAppText.home,
           ),
           BottomNavigationBarItem(
             icon: Image.asset(MihiAppAssetsPath.profileIcon),
-            label: 'Profile',
+            label: MihiAppText.profile,
           ),
           BottomNavigationBarItem(
             icon: Image.asset(MihiAppAssetsPath.catalogueIcon),
-            label: 'Catalogue',
+            label: MihiAppText.catalogue,
           ),
           BottomNavigationBarItem(
             icon: Image.asset(MihiAppAssetsPath.insightIcon),
-            label: 'Insight',
+            label: MihiAppText.insight,
           ),
           BottomNavigationBarItem(
             icon: Image.asset(MihiAppAssetsPath.settingsIcon),
-            label: 'Settings',
+            label: MihiAppText.settings,
           ),
         ],
       ),

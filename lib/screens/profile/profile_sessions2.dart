@@ -55,7 +55,7 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
             Padding(
@@ -68,17 +68,17 @@ class _ProfileSessions2ScreenState extends State<ProfileSessions2Screen> {
                     color: blackText),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             ),
             Container1(),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Container2(),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Container1(),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Container2(),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             GestureDetector(
               onTap: () {
               Navigator.of(context).push(
@@ -125,7 +125,7 @@ class Container2 extends StatelessWidget {
               child: Image.asset(MihiAppAssetsPath.coil),
             ),
           ),
-          SizedBox(width: 5.0),
+          const SizedBox(width: 5.0),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -139,7 +139,7 @@ class Container2 extends StatelessWidget {
                       color: blackText),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5.0,
               ),
               Padding(
@@ -154,7 +154,7 @@ class Container2 extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             width: 70.0,
           ),
           Padding(
@@ -206,7 +206,7 @@ class Container1 extends StatelessWidget {
               child: Image.asset(MihiAppAssetsPath.coil),
             ),
           ),
-          SizedBox(width: 5.0),
+          const SizedBox(width: 5.0),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -220,7 +220,7 @@ class Container1 extends StatelessWidget {
                       color: blackText),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5.0,
               ),
               Padding(
@@ -235,7 +235,7 @@ class Container1 extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             width: 70.0,
           ),
           Padding(

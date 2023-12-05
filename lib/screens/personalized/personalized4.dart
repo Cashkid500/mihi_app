@@ -45,11 +45,12 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                   ),
                   SizedBox(
                       height: 38.0,
-                      child: Image.asset(MihiAppAssetsPath.signupimage))
+                      child: Image.asset(MihiAppAssetsPath.signupimage),
+                  )
                 ],
               ),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Center(
               child: Container(
                 width: 340.0,
@@ -90,7 +91,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
             Padding(
@@ -111,7 +112,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                       child: Text(MihiAppText.how,
                       style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500, color: sundayNiqab, height: 1.2),),
                     ),
-                    SizedBox(height: 20.0),
+                    const SizedBox(height: 20.0),
                     Container(
                       width: 300,
                       height: 60,
@@ -127,18 +128,18 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                           child: Text(MihiAppText.based,
                           style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
                         ),
-                        SizedBox(width: 1.0),
+                        const SizedBox(width: 1.0),
                         Image.asset(MihiAppAssetsPath.dropDown),
                         ],
                     ),
                     ),
-                    SizedBox(height: 10.0),
+                    const SizedBox(height: 10.0),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(MihiAppText.enter,
                         style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril,),),
-                        SizedBox(height: 2.0,),
+                        const SizedBox(height: 2.0,),
                         Container(
                           width: 300,
                           height: 90,
@@ -153,18 +154,20 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                               Padding(
                               padding: const EdgeInsets.only(top: 0.0, right: 6.0, left: 15.0),
                               child: Text(MihiAppText.enter2,
-                              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
+                              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),
+                              ),
                             ),
                             ],
                           ),
                         ),
-                        SizedBox(height: 10.0,),
+                        const SizedBox(height: 10.0,),
                         Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                         Text(MihiAppText.select,
-                        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril,),),
-                        SizedBox(height: 5.0,),
+                        style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: mithril,),
+                        ),
+                        const SizedBox(height: 5.0,),
                         Container(
                           width: 300,
                           height: 60,
@@ -179,7 +182,8 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                               Padding(
                               padding: const EdgeInsets.only(top: 0.0, right: 6.0, left: 15.0),
                               child: Text(MihiAppText.select2,
-                              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
+                              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),
+                              ),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(top: 10.0, left: 30.0),
@@ -188,7 +192,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                             ],
                           ),
                         ),
-                        SizedBox(height: 40.0,),
+                        const SizedBox(height: 40.0,),
                             Container(
                       width: 300,
                       height: 60,
@@ -202,7 +206,8 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                         Padding(
                           padding: const EdgeInsets.only(top: 0.0, right: 6.0, left: 10.0),
                           child: Text(MihiAppText.medical,
-                          style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),),
+                          style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w400, color: sundayNiqab,),
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(top: 10.0, left: 20.0),
@@ -215,7 +220,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                     )
                       ],
                     ),
-                    SizedBox(height: 30.0),
+                    const SizedBox(height: 30.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
@@ -257,7 +262,7 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                             ),
                           ),
                           ),
-                         SizedBox(width: 30.0),
+                         const SizedBox(width: 30.0),
                          Container(
                           height: 64,
                           width: 103,
@@ -267,7 +272,8 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
                          border: Border.all(color: caribbeanSea,style: BorderStyle.solid),
                          ),
                          child:Center(
-                          child: Text(MihiAppText.skip, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Brilliant),))
+                          child: Text(MihiAppText.skip, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Brilliant),),
+                          ),
                          ),
                       ],
                     )

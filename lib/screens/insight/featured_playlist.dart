@@ -20,7 +20,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Padding(
@@ -34,7 +34,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                             builder: (BuildContext context) => const PlayerPlaylistScreen()));
                       },
                   child: Image.asset(MihiAppAssetsPath.backButton, height: 25)),
-                  SizedBox(
+                  const SizedBox(
                     width: 48,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -47,7 +47,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
@@ -84,7 +84,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                             color: blackText,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Text(
@@ -98,7 +98,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                         Row(
                           children: [
                             MihiAppAssetsPath.headset,
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -109,7 +109,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                 color: blackText,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             Text(
@@ -169,7 +169,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Container(
@@ -197,7 +197,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(
@@ -215,7 +215,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               MihiAppAssetsPath.playGrey,
-                              SizedBox(
+                              const SizedBox(
                                 width: 5,
                               ),
                               GestureDetector(
@@ -241,20 +241,20 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 30,
                           ),
                           FirstRowDetails(listpath: MihiAppText.one),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           DividingLine(),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Row(
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
                               Text(
@@ -262,7 +262,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                 style: TextStyle(fontSize: 16),
                               ),
                               Image.asset(MihiAppAssetsPath.cancer),
-                              SizedBox(
+                              const SizedBox(
                                 width: 5,
                               ),
                               Column(
@@ -277,7 +277,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                             fontSize: 14,
                                             fontWeight: FontWeight.w500),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 10,
                                       ),
                                       Text(
@@ -288,7 +288,7 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                                           fontWeight: FontWeight.w500,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 130,
                                       ),
                                       Padding(
@@ -308,29 +308,29 @@ class _FeaturedPlaylistScreenState extends State<FeaturedPlaylistScreen> {
                               )
                             ],
                           ),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           DividingLine(),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           FirstRowDetails(listpath: MihiAppText.three),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           DividingLine(),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           FirstRowDetails(listpath: MihiAppText.four),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           DividingLine(),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           FirstRowDetails(listpath: MihiAppText.five),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           DividingLine(),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           FirstRowDetails(listpath: MihiAppText.six),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           DividingLine(),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           FirstRowDetails(listpath: MihiAppText.seven),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           DividingLine(),
-                          SizedBox(height: 5,),
+                          const SizedBox(height: 5,),
                           FirstRowDetails(listpath: MihiAppText.eight),
                         ],
                       ),
@@ -378,7 +378,7 @@ class FirstRowDetails extends StatelessWidget {
           style: TextStyle(fontSize: 16),
         ),
         Image.asset(MihiAppAssetsPath.cancer),
-        SizedBox(
+        const SizedBox(
           width: 5,
         ),
         Column(
@@ -393,7 +393,7 @@ class FirstRowDetails extends StatelessWidget {
                       fontSize: 14,
                       fontWeight: FontWeight.w500),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 Text(
@@ -404,7 +404,7 @@ class FirstRowDetails extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 130,
                 ),
                 Padding(

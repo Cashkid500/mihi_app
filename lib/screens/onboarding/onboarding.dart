@@ -64,6 +64,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ),
                   ),
                 ),
+                
                 // 30Days Box
                 Positioned(
                   bottom: 40,
@@ -79,7 +80,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           end: Alignment.bottomLeft,
                           colors: [whiteText, crowberryBlue],
                           stops: [0.53, 2.0],
-                        )),
+                        ),
+                      ),
                   ),
                 ),
                 Positioned(
@@ -107,7 +109,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             color: abyssopelagicWater,
                             fontSize: 15.0,
                             fontWeight: FontWeight.w400),
-                      )),
+                      ),
+                    ),
                 ),
                   Padding(
                       padding:
@@ -137,9 +140,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                 fontSize: 17,
                                 fontWeight: FontWeight.w600,
                                 color: blackText),
-                          )),
+                          ),
                         ),
-                      )
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -191,6 +195,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ),
                   ),
                 ),
+                
                 // Choose your top goal Box
                 Positioned(
                   bottom: 40,
@@ -206,7 +211,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           end: Alignment.bottomLeft,
                           colors: [whiteText, crowberryBlue],
                           stops: [0.53, 2.0],
-                        )),
+                        ),
+                        ),
                   ),
                 ),
                 Positioned(
@@ -234,7 +240,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             color: abyssopelagicWater,
                             fontSize: 15.0,
                             fontWeight: FontWeight.w400),
-                      )),
+                      ),
+                      ),
                 ),
                   Padding(
                       padding:
@@ -264,7 +271,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                 fontSize: 17,
                                 fontWeight: FontWeight.w600,
                                 color: blackText),
-                          )),
+                          ),
+                          ),
                         ),
                       )
                     ],
@@ -338,7 +346,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           end: Alignment.bottomLeft,
                           colors: [whiteText, crowberryBlue],
                           stops: [0.53, 2.0],
-                        )),
+                        ),
+                        ),
                   ),
                 ),
                 Positioned(
@@ -366,7 +375,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             color: abyssopelagicWater,
                             fontSize: 15.0,
                             fontWeight: FontWeight.w400),
-                      )),
+                      ),
+                    ),
                 ),
                    Padding(
           padding: const EdgeInsets.only(top: 470.0,right: 35, left: 5),

@@ -23,7 +23,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                     height: 30,
                   ),
                   Row(
@@ -43,7 +43,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                         },
                         child: Image.asset(MihiAppAssetsPath.rightArrow)),
                       ),
-                      Center(
+                      const Center(
                         child: Text(MihiAppText.about,
                         style: TextStyle(
                           fontSize: 18,
@@ -51,12 +51,12 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                         ),
                       ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30.0,
                   ),
                   Text(MihiAppText.about,style: 
@@ -65,7 +65,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                     fontWeight: FontWeight.w500,
                   ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
                   Container(
@@ -101,13 +101,13 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10.0,
                   ),
-                  SizedBox(
+                  const SizedBox(
                 height: 20.0,
               ),
-              Center(
+              const Center(
                 child: Text(MihiAppText.counselling,style: 
                 TextStyle(
                   fontSize: 16,
@@ -115,7 +115,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                 ),
               ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Text(MihiAppText.what,
@@ -126,7 +126,7 @@ class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
                 letterSpacing: 0.2,
               ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
                   Text(MihiAppText.longLorem1,

@@ -50,7 +50,7 @@ class _DashboardSearchResultScreenState
                             Row(
                               children: [
                                 Image.asset(MihiAppAssetsPath.happy),
-                                SizedBox(
+                                const SizedBox(
                                   width: 10.0,
                                 ),
                                 Column(
@@ -61,7 +61,7 @@ class _DashboardSearchResultScreenState
                                             fontSize: 14,
                                             fontWeight: FontWeight.w500,
                                             color: blackText)),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 5.0,
                                     ),
                                     Text(
@@ -99,7 +99,7 @@ class _DashboardSearchResultScreenState
                     child: Row(
                       children: [
                         MihiAppAssetsPath.share,
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Text(MihiAppText.share, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
@@ -117,7 +117,7 @@ class _DashboardSearchResultScreenState
                     child: Row(
                       children: [
                         MihiAppAssetsPath.favorite,
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Text(MihiAppText.fav, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
@@ -135,7 +135,7 @@ class _DashboardSearchResultScreenState
                     child: Row(
                       children: [
                         MihiAppAssetsPath.addToPlaylist,
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Text(MihiAppText.atp, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
@@ -153,7 +153,7 @@ class _DashboardSearchResultScreenState
                     child: Row(
                       children: [
                         MihiAppAssetsPath.comment,
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Text(MihiAppText.comment, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
@@ -171,7 +171,7 @@ class _DashboardSearchResultScreenState
                     child: Row(
                       children: [
                         MihiAppAssetsPath.download,
-                        SizedBox(
+                        const SizedBox(
                           width: 15,
                         ),
                         Text(MihiAppText.download, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
@@ -189,7 +189,7 @@ class _DashboardSearchResultScreenState
                     child: Row(
                       children: [
                         Image.asset(MihiAppAssetsPath.playNext),
-                        SizedBox(
+                        const SizedBox(
                           width: 23,
                         ),
                         Text(MihiAppText.pn, style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w500, color: blackText),)
@@ -302,7 +302,9 @@ class _DashboardSearchResultScreenState
                                               builder: (BuildContext context) => const
                                                   DashboardSearchResultScreen()));
                                     },
-                                child: Icon(Icons.close))),
+                                child: Icon(Icons.close),
+                                ),
+                                ),
                           ),
                         ),
                         Padding(
@@ -372,7 +374,7 @@ class _DashboardSearchResultScreenState
                               fontWeight: FontWeight.w400,
                               color: blackText)),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
                     Padding(
@@ -386,7 +388,7 @@ class _DashboardSearchResultScreenState
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30.0,
                     ),
                     Padding(
@@ -422,7 +424,7 @@ class _DashboardSearchResultScreenState
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
                     Padding(
@@ -430,7 +432,7 @@ class _DashboardSearchResultScreenState
                       child: Row(
                         children: [
                           Image.asset(MihiAppAssetsPath.happy),
-                          SizedBox(
+                          const SizedBox(
                             width: 10.0,
                           ),
                           Column(
@@ -441,7 +443,7 @@ class _DashboardSearchResultScreenState
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                       color: blackText)),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5.0,
                               ),
                               Text(
@@ -458,7 +460,7 @@ class _DashboardSearchResultScreenState
                             child: Row(
                               children: [
                                 Icon(Icons.arrow_circle_down),
-                                SizedBox(
+                                const SizedBox(
                                   width: 2.0,
                                 ),
                                 Icon(Icons.more_vert),
@@ -485,7 +487,7 @@ class _DashboardSearchResultScreenState
                       child: Row(
                         children: [
                           Image.asset(MihiAppAssetsPath.singer),
-                          SizedBox(
+                          const SizedBox(
                             width: 10.0,
                           ),
                           Column(
@@ -496,7 +498,7 @@ class _DashboardSearchResultScreenState
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                       color: blackText)),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5.0,
                               ),
                               Text(
@@ -513,7 +515,7 @@ class _DashboardSearchResultScreenState
                             child: Row(
                               children: [
                                 MihiAppAssetsPath.checkCircleOutline,
-                                SizedBox(
+                                const SizedBox(
                                   width: 2.0,
                                 ),
                                 MihiAppAssetsPath.more,
@@ -540,7 +542,7 @@ class _DashboardSearchResultScreenState
                       child: Row(
                         children: [
                           Image.asset(MihiAppAssetsPath.pianist),
-                          SizedBox(
+                          const SizedBox(
                             width: 10.0,
                           ),
                           Column(
@@ -551,7 +553,7 @@ class _DashboardSearchResultScreenState
                                       fontSize: 14,
                                       fontWeight: FontWeight.w500,
                                       color: blackText)),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5.0,
                               ),
                               Text(
@@ -568,7 +570,7 @@ class _DashboardSearchResultScreenState
                             child: Row(
                               children: [
                                 MihiAppAssetsPath.arrowCircleDown,
-                                SizedBox(
+                                const SizedBox(
                                   width: 2.0,
                                 ),
                                 MihiAppAssetsPath.more,
@@ -578,13 +580,13 @@ class _DashboardSearchResultScreenState
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 35.0,
                     ),
                     Center(
                       child: Image.asset(MihiAppAssetsPath.dots),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30.0,
                     ),
                     Padding(
@@ -622,7 +624,7 @@ class _DashboardSearchResultScreenState
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30.0,
                     ),
                     Padding(
@@ -633,22 +635,22 @@ class _DashboardSearchResultScreenState
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             BottomImage(),
-                            SizedBox(width: 20.0,),
+                            const SizedBox(width: 20.0,),
                             BottomImage(),
-                            SizedBox(width: 20.0,),
+                            const SizedBox(width: 20.0,),
                             BottomImage(),
-                            SizedBox(width: 20.0,),
+                            const SizedBox(width: 20.0,),
                             BottomImage(),
-                            SizedBox(width: 20.0,),
+                            const SizedBox(width: 20.0,),
                             BottomImage(),
-                            SizedBox(
+                            const SizedBox(
                               width: 20.0,
                             ),
                           ],
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 40.0,
                     ),
                   ],
@@ -702,11 +704,11 @@ class Container1 extends StatelessWidget {
           borderRadius: BorderRadius.circular(12)),
       child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 15.0,
           ),
           Image.asset(MihiAppAssetsPath.happy),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(

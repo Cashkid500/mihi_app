@@ -36,7 +36,7 @@ class _InsightScreenState extends State<InsightScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     MihiAppAssetsPath.queueMusic,
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -59,7 +59,7 @@ class _InsightScreenState extends State<InsightScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     MihiAppAssetsPath.share,
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -82,7 +82,7 @@ class _InsightScreenState extends State<InsightScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     MihiAppAssetsPath.favorite,
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -105,7 +105,7 @@ class _InsightScreenState extends State<InsightScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     MihiAppAssetsPath.addToPlaylist,
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -128,7 +128,7 @@ class _InsightScreenState extends State<InsightScreen> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     MihiAppAssetsPath.download,
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Text(
@@ -213,7 +213,7 @@ class _InsightScreenState extends State<InsightScreen> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Padding(
@@ -226,7 +226,7 @@ class _InsightScreenState extends State<InsightScreen> {
                             fontSize: 24),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Padding(
@@ -234,19 +234,19 @@ class _InsightScreenState extends State<InsightScreen> {
                       child: Row(
                         children: [
                           RowWidget(rowTextPath: MihiAppText.songs),
-                          SizedBox(
+                          const SizedBox(
                             width: 30,
                           ),
                           RowWidget(rowTextPath: MihiAppText.videoText),
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
                           RowWidget(rowTextPath: MihiAppText.playlist),
-                          SizedBox(
+                          const SizedBox(
                             width: 30,
                           ),
                           RowWidget(rowTextPath: MihiAppText.artists),
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
                           RowWidget(rowTextPath: MihiAppText.album),
@@ -278,7 +278,7 @@ class _InsightScreenState extends State<InsightScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Playlist1(numberpath: MihiAppText.one),
@@ -377,7 +377,7 @@ class Playlist1 extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Column(
@@ -392,7 +392,7 @@ class Playlist1 extends StatelessWidget {
                       fontSize: 14,
                       fontWeight: FontWeight.w500),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
                 GestureDetector(
@@ -410,7 +410,7 @@ class Playlist1 extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 120,
                 ),
                 Padding(
@@ -419,7 +419,7 @@ class Playlist1 extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 1,
             ),
             Text(

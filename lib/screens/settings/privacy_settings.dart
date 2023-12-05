@@ -58,10 +58,10 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
                         color: mithril),
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
               ],
             ),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             Padding(
               padding: const EdgeInsets.only(left: 10.0),
               child: Center(
@@ -74,7 +74,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Padding(
@@ -89,7 +89,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Padding(
@@ -102,7 +102,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
                     color: Brilliant),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Padding(
@@ -112,7 +112,7 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
                 style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w500),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40.0,
             ),
             GestureDetector(

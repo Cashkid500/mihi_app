@@ -30,7 +30,8 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(height: 25.0,
-                    child: Image.asset(MihiAppAssetsPath.humanLogo)),
+                    child: Image.asset(MihiAppAssetsPath.humanLogo),
+                  ),
                   Padding(
                     padding: const EdgeInsets.only(right: 160.0),
                     child: Text(
@@ -66,13 +67,13 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(MihiAppAssetsPath.starSymbol),
-                SizedBox(width: 5.0),
+                const SizedBox(width: 5.0),
                 Text(MihiAppText.trusted,
                 style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.w400, color: sundayNiqab),),
               ],
             ),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
                 Padding(
                   padding: const EdgeInsets.only(left: 10.0),
                   child: Container(
@@ -149,7 +150,7 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
                                           borderRadius: BorderRadius.circular(10)),
                                                               ),
                                         ),
-                                      SizedBox(width: 30.0),
+                                      const SizedBox(width: 30.0),
                                       Container(
                                        height: 64,
                                         width: 103,

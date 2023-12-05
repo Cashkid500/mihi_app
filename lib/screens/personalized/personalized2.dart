@@ -31,7 +31,8 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                 children: [
                   SizedBox(
                       height: 25.0,
-                      child: Image.asset(MihiAppAssetsPath.humanLogo)),
+                      child: Image.asset(MihiAppAssetsPath.humanLogo),
+                    ),
                   Padding(
                     padding: const EdgeInsets.only(right: 160.0),
                     child: Text(
@@ -45,11 +46,12 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                   ),
                   SizedBox(
                       height: 38.0,
-                      child: Image.asset(MihiAppAssetsPath.signupimage))
+                      child: Image.asset(MihiAppAssetsPath.signupimage),
+                      )
                 ],
               ),
             ),
-            SizedBox(height: 20.0),
+            const SizedBox(height: 20.0),
             Center(
               child: Container(
                 width: 340.0,
@@ -90,7 +92,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15.0,
             ),
             Padding(
@@ -111,7 +113,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                       child: Text(MihiAppText.how,
                       style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500, color: sundayNiqab, height: 1.2),),
                     ),
-                    SizedBox(height: 20.0),
+                    const SizedBox(height: 20.0),
                     Container(
                       width: 300,
                       height: 160,
@@ -132,7 +134,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                           child: Text(MihiAppText.lorem3,
                           style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400, color: mithril, height: 1.3),),
                         ),
-                        SizedBox(height: 20.0),
+                        const SizedBox(height: 20.0),
                         Container(
                           width: 300,
                           height: 54,
@@ -150,7 +152,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                         ],
                     ),
                     ),
-                    SizedBox(height: 20.0),
+                    const SizedBox(height: 20.0),
                     Container(
                       width: 300,
                       height: 160,
@@ -171,7 +173,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                           child: Text(MihiAppText.lorem3,
                           style: TextStyle(fontSize: 12.0, fontWeight: FontWeight.w400, color: mithril, height: 1.3),),
                         ),
-                        SizedBox(height: 20.0),
+                        const SizedBox(height: 20.0),
                         Container(
                           width: 300,
                           height: 54,
@@ -189,7 +191,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 50.0),
+                    const SizedBox(height: 50.0),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
@@ -231,7 +233,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                             ),
                           ),
                           ),
-                         SizedBox(width: 30.0),
+                         const SizedBox(width: 30.0),
                          Container(
                           height: 64,
                           width: 103,

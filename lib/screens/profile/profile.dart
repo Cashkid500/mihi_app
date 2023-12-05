@@ -31,7 +31,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 10.0),
+            const SizedBox(height: 10.0),
             Text(
               MihiAppText.chrisAni,
               style: TextStyle(
@@ -47,7 +47,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   fontSize: 14.0,
                   fontWeight: FontWeight.w400,)
             ),
-            SizedBox(height: 50.0),
+            const SizedBox(height: 50.0),
             Row(
               children: [
                 Padding(
@@ -71,14 +71,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(MihiAppAssetsPath.settingsImage),
-                            SizedBox(height: 10.0),
+                            const SizedBox(height: 10.0),
                             Text(MihiAppText.settings, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
                           ]
                         ),
                     ),
                   ),
                 ),
-                SizedBox(width: 10.0),
+                const SizedBox(width: 10.0),
                 Padding(
                   padding: const EdgeInsets.only(left: 15.0),
                   child: Container(
@@ -94,13 +94,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset(MihiAppAssetsPath.playlist),
-                          SizedBox(height: 10.0),
+                          const SizedBox(height: 10.0),
                           Text(MihiAppText.myPlaylist, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
                         ]
                       ),
                   ),
                 ),
-                SizedBox(width: 10.0),
+                const SizedBox(width: 10.0),
                 Padding(
                   padding: const EdgeInsets.only(left: 15.0),
                   child: Container(
@@ -116,7 +116,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset(MihiAppAssetsPath.goal),
-                          SizedBox(height: 10.0),
+                          const SizedBox(height: 10.0),
                           Text(MihiAppText.myGoal, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: mithril),),
                         ]
                       ),
@@ -124,7 +124,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ],
             ),
-            SizedBox(height: 15.0),
+            const SizedBox(height: 15.0),
             Row(
               children: [
                 Padding(
@@ -142,14 +142,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset(MihiAppAssetsPath.group),
-                          SizedBox(height: 10.0),
+                          const SizedBox(height: 10.0),
                           Text(MihiAppText.groups, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),
                           ),
                         ]
                       ),
                   ),
                 ),
-                SizedBox(width: 10.0),
+                const SizedBox(width: 10.0),
                 Padding(
                   padding: const EdgeInsets.only(left: 15.0),
                   child: GestureDetector(
@@ -170,14 +170,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(MihiAppAssetsPath.session),
-                            SizedBox(height: 10.0),
+                            const SizedBox(height: 10.0),
                             Text(MihiAppText.session, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),),
                           ]
                         ),
                     ),
                   ),
                 ),
-                SizedBox(width: 10.0),
+                const SizedBox(width: 10.0),
                 Padding(
                   padding: const EdgeInsets.only(left: 15.0),
                   child: GestureDetector(
@@ -198,7 +198,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(MihiAppAssetsPath.invite),
-                            SizedBox(height: 10.0),
+                            const SizedBox(height: 10.0),
                             Text(MihiAppText.invite, style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Color(0xff878787)),
                             ),
                           ]
@@ -208,7 +208,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ],
             ),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             Padding(
               padding: const EdgeInsets.all(0.0),
               child: Image.asset(MihiAppAssetsPath.productivity),

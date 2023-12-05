@@ -73,7 +73,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20.0,
               ),
               Container(
@@ -91,7 +91,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 30.0,
                       ),
 
@@ -103,7 +103,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           fontSize: 20.0,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40.0,
                       ),
                       Container(
@@ -148,7 +148,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40.0,
                       ),
 
@@ -158,7 +158,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.w500),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 40.0,
                       ),
                       Row(
@@ -196,7 +196,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30.0,
                       ),
                       Row(
@@ -215,11 +215,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                             style: TextStyle(
                                 fontSize: 18, fontWeight: FontWeight.w500),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10.0,
                           ),
                           Text(
-                            "on",
+                            MihiAppText.on,
                             style: TextStyle(
                                 fontSize: 14, color: mithril),
                           ),
@@ -240,7 +240,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30.0,
                       ),
                       Row(
@@ -287,7 +287,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 30.0,
                       ),
                       Row(
@@ -301,7 +301,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 color: jocose_jade),
                             child: Image.asset(MihiAppAssetsPath.activity),
                           ),
-                          Padding(
+                          const Padding(
                             padding: const EdgeInsets.only(right: 90.0),
                             child: Text(
                               MihiAppText.activity,

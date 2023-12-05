@@ -79,7 +79,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                           ],
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 450,
                       ),
                       Padding(
@@ -102,7 +102,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               Padding(
@@ -115,7 +115,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                                       fontWeight: FontWeight.w500),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
                               Padding(
@@ -129,7 +129,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                                   ),
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               Row(
@@ -157,7 +157,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                                   )
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 5,
                               ),
                               Row(
@@ -187,7 +187,7 @@ class _SinglePlayerScreenState extends State<SinglePlayerScreen> {
                                   ),
                                 ],
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               Row(
