@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="mihi_app"
+        android:label="MIHI App"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
