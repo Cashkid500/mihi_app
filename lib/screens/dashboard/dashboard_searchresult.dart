@@ -405,7 +405,7 @@ class _DashboardSearchResultScreenState
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               GestureDetector(
-                                 onTap: () {
+                                onTap: () {
                                 _showBottomSheet(context);
                                 },
                                 child: Text(
