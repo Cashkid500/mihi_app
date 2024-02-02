@@ -27,7 +27,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               topRight: Radius.circular(32),
             ),
           ),
-          
+
           // Content of the bottom sheet
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -126,16 +126,16 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 10.0),
                   child: GestureDetector(
-                      onTap: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) => const
-                                ProfileSettingsScreen()));
-                      },
-                      child: Image.asset(
-                        MihiAppAssetsPath.backButton,
-                        height: 25.0,
-                      ),
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              const ProfileSettingsScreen()));
+                    },
+                    child: Image.asset(
+                      MihiAppAssetsPath.backButton,
+                      height: 25.0,
                     ),
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0, left: 100.0),
@@ -168,24 +168,22 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Stack(
+                  alignment: AlignmentDirectional.bottomEnd,
                   children: [
                     CircleAvatar(
                       radius: 50.0,
                       backgroundImage:
                           AssetImage(MihiAppAssetsPath.chrisAniedi),
                     ),
-                    Positioned(
-                      bottom: 8.0,
-                      right: 5.0,
-                      child: GestureDetector(
-                          onTap: () {
-                            _showBottomSheet(context);
-                          },
-                          child: Icon(
-                            Icons.camera_alt,
-                            color: Colors.teal,
-                          )),
-                    )
+                    GestureDetector(
+                      onTap: () {
+                        _showBottomSheet(context);
+                      },
+                      child: Icon(
+                        Icons.camera_alt,
+                        color: Colors.teal,
+                      ),
+                    ),
                   ],
                 ),
                 const SizedBox(
@@ -227,7 +225,9 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             const SizedBox(
               height: 5.0,
             ),
-            TextField2(hintTextPath: MihiAppText.chrisAni, suffixIconPath: MihiAppAssetsPath.greenTick),
+            TextField2(
+                hintTextPath: MihiAppText.chrisAni,
+                suffixIconPath: MihiAppAssetsPath.greenTick),
             const SizedBox(
               height: 25.0,
             ),
@@ -265,12 +265,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             // Address
             Padding(
               padding: const EdgeInsets.only(right: 265.0),
-              child: Text(MihiAppText.addy,
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.w400,
-                      color: mithril),
-                      ),
+              child: Text(
+                MihiAppText.addy,
+                style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.w400,
+                    color: mithril),
+              ),
             ),
             const SizedBox(
               height: 10.0,
@@ -311,9 +312,7 @@ class TextField2 extends StatelessWidget {
             isCollapsed: true,
             hintText: hintTextPath,
             hintStyle: TextStyle(
-                color: mithril,
-                fontSize: 16.0,
-                fontWeight: FontWeight.w400),
+                color: mithril, fontSize: 16.0, fontWeight: FontWeight.w400),
             filled: true,
             fillColor: bleachedSilk,
             enabledBorder: OutlineInputBorder(
