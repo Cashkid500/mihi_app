@@ -15,7 +15,6 @@ class InviteFriendsScreen extends StatefulWidget {
 class _InviteFriendsScreenState extends State<InviteFriendsScreen> {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(

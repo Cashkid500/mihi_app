@@ -15,7 +15,6 @@ class _SignupScreenState extends State<SignupScreen> {
   bool passwordObscured = true;
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child:  Column(

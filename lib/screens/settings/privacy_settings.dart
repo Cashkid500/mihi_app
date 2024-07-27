@@ -17,7 +17,6 @@ class _PrivacySettingsScreenState extends State<PrivacySettingsScreen> {
   
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(

@@ -15,7 +15,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool _switchValue = true;
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(

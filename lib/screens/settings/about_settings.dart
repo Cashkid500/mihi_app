@@ -14,7 +14,6 @@ class AboutSettingsScreen extends StatefulWidget {
 class _AboutSettingsScreenState extends State<AboutSettingsScreen> {
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(

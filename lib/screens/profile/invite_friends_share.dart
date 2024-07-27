@@ -12,217 +12,9 @@ class InviteFriendShareScreen extends StatefulWidget {
 }
 
 class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
-  void _showBottomSheet(BuildContext context) {
-    showModalBottomSheet(
-      backgroundColor: Colors.transparent,
-      isDismissible: false,
-      context: context,
-      builder: (BuildContext context) {
-        return Container(
-          height: 250,
-          decoration: BoxDecoration(
-            color: whiteText,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(32),
-              topRight: Radius.circular(32),
-            ),
-          ),
-          
-          // Content of the bottom sheet
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              ListTile(
-                title: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 30.0, left: 10.0),
-                      child: Container(
-                        height: 42,
-                        width: 42,
-                        decoration: BoxDecoration(
-                          color: icyLilac,
-                          borderRadius: BorderRadius.circular(8),
-                          image: DecorationImage(
-                              image: Image(
-                                      image:
-                                          AssetImage(MihiAppAssetsPath.gmail))
-                                  .image),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 10.0),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Padding(
-                          padding:
-                              const EdgeInsets.only(right: 180.0, top: 20.0),
-                          child: Text(
-                            MihiAppText.gmail,
-                            style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.w400,
-                                color: blackText),
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 2.0,
-                        ),
-                        Text(
-                          MihiAppText.attach,
-                          style: TextStyle(
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.w400,
-                              color: mithril),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(width: 20.0),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0),
-                      child: Image.asset(MihiAppAssetsPath.leftArrow),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  // Handles Option 1
-                  // Navigator.pop(context);
-                },
-              ),
-              ListTile(
-                title: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 30.0, left: 10.0),
-                      child: Container(
-                        height: 42,
-                        width: 42,
-                        decoration: BoxDecoration(
-                          color: icyLilac,
-                          borderRadius: BorderRadius.circular(8),
-                          image: DecorationImage(
-                              image: Image(
-                                      image: AssetImage(
-                                          MihiAppAssetsPath.whatsApp))
-                                  .image),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 10.0),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding:
-                              const EdgeInsets.only(right: 150.0, top: 20.0),
-                          child: Text(
-                            MihiAppText.WhatsApp,
-                            style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.w400,
-                                color: blackText),
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 2.0,
-                        ),
-                        Text(
-                          MihiAppText.attach,
-                          style: TextStyle(
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.w400,
-                              color: mithril),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(
-                      width: 18.0,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0),
-                      child: Image.asset(MihiAppAssetsPath.leftArrow),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  // Handles Option 2
-                  Navigator.pop(context);
-                },
-              ),
-              ListTile(
-                title: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 30.0, left: 10.0),
-                      child: Container(
-                        height: 42,
-                        width: 42,
-                        decoration: BoxDecoration(
-                          color: icyLilac,
-                          borderRadius: BorderRadius.circular(8),
-                          image: DecorationImage(
-                              image: Image(
-                                      image: AssetImage(
-                                          MihiAppAssetsPath.contact))
-                                  .image),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 10.0),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding:
-                              const EdgeInsets.only(right: 150.0, top: 20.0),
-                          child: Text(
-                            MihiAppText.contact,
-                            style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.w400,
-                                color: blackText),
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 2.0,
-                        ),
-                        Text(
-                          MihiAppText.attach,
-                          style: TextStyle(
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.w400,
-                              color: mithril),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(
-                      width: 10.0,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0),
-                      child: Image.asset(MihiAppAssetsPath.leftArrow),
-                    ),
-                  ],
-                ),
-                onTap: () {
-                  // Handles Option 3
-                  Navigator.pop(context);
-                },
-              ),
-            ],
-          ),
-        );
-      },
-    );
-  }
-
+    
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -316,7 +108,19 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
             const SizedBox(height: 40.0),
             GestureDetector(
               onTap: () {
-                _showBottomSheet(context);
+                showModalBottomSheet(
+                  backgroundColor: Colors.transparent,
+                  context: context,
+                  isScrollControlled: true,
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.vertical(
+                      top: Radius.circular(30),
+                    ),
+                  ),
+                  builder: (BuildContext context) {
+                    return InviteFriendsModalWidget();
+                  },
+                );
               },
               child: Container(
                 height: 50,
@@ -332,6 +136,196 @@ class _InviteFriendShareScreenState extends State<InviteFriendShareScreen> {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class InviteFriendsModalWidget extends StatelessWidget {
+  const InviteFriendsModalWidget({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      // height: 250,
+      decoration: BoxDecoration(
+        color: whiteText,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(32),
+          topRight: Radius.circular(32),
+        ),
+      ),
+      
+      // Content of the bottom sheet
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 30.0, left: 10.0),
+                  child: Container(
+                    height: 42,
+                    width: 42,
+                    decoration: BoxDecoration(
+                      color: icyLilac,
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                          image: Image(
+                                  image:
+                                      AssetImage(MihiAppAssetsPath.gmail))
+                              .image),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 10.0),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(right: 180.0, top: 20.0),
+                      child: Text(
+                        MihiAppText.gmail,
+                        style: TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w400,
+                            color: blackText),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 2.0,
+                    ),
+                    Text(
+                      MihiAppText.attach,
+                      style: TextStyle(
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w400,
+                          color: mithril),
+                    ),
+                  ],
+                ),
+                const SizedBox(width: 20.0),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10.0),
+                  child: Image.asset(MihiAppAssetsPath.leftArrow),
+                ),
+              ],
+            ),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 30.0, left: 10.0),
+                  child: Container(
+                    height: 42,
+                    width: 42,
+                    decoration: BoxDecoration(
+                      color: icyLilac,
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                          image: Image(
+                                  image: AssetImage(
+                                      MihiAppAssetsPath.whatsApp))
+                              .image),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 10.0),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(right: 150.0, top: 20.0),
+                      child: Text(
+                        MihiAppText.WhatsApp,
+                        style: TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w400,
+                            color: blackText),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 2.0,
+                    ),
+                    Text(
+                      MihiAppText.attach,
+                      style: TextStyle(
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w400,
+                          color: mithril),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  width: 18.0,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10.0),
+                  child: Image.asset(MihiAppAssetsPath.leftArrow),
+                ),
+              ],
+            ),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 30.0, left: 10.0),
+                  child: Container(
+                    height: 42,
+                    width: 42,
+                    decoration: BoxDecoration(
+                      color: icyLilac,
+                      borderRadius: BorderRadius.circular(8),
+                      image: DecorationImage(
+                          image: Image(
+                                  image: AssetImage(
+                                      MihiAppAssetsPath.contact))
+                              .image),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 10.0),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding:
+                          const EdgeInsets.only(right: 150.0, top: 20.0),
+                      child: Text(
+                        MihiAppText.contact,
+                        style: TextStyle(
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w400,
+                            color: blackText),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 2.0,
+                    ),
+                    Text(
+                      MihiAppText.attach,
+                      style: TextStyle(
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.w400,
+                          color: mithril),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  width: 15.0,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10.0),
+                  child: Image.asset(MihiAppAssetsPath.leftArrow),
+                ),
+              ],
+            ),
+        ],
       ),
     );
   }

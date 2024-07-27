@@ -15,7 +15,6 @@ class ProfileSessionsScreen extends StatefulWidget {
 class _ProfileSessionsScreenState extends State<ProfileSessionsScreen> { 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(

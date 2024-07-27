@@ -16,7 +16,6 @@ class _Personalized4ScreenState extends State<Personalized4Screen> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(

@@ -16,7 +16,6 @@ class _Personalized3ScreenState extends State<Personalized3Screen> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
