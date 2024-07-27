@@ -116,7 +116,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                     const SizedBox(height: 20.0),
                     Container(
                       width: 300,
-                      height: 160,
+                      // height: 160,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
                         border: Border.all(
@@ -155,7 +155,7 @@ class _Personalized2ScreenState extends State<Personalized2Screen> {
                     const SizedBox(height: 20.0),
                     Container(
                       width: 300,
-                      height: 160,
+                      // height: 160,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
                         border: Border.all(

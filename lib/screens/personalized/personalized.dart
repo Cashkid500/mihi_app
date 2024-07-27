@@ -165,6 +165,7 @@ class _PersonalizedScreenState extends State<PersonalizedScreen> {
                                         ],
                                           ),
                                  ),
+                                 const SizedBox(height: 10.0),
                             ],
                           ),
                          ),
