@@ -203,15 +203,9 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                       fontWeight: FontWeight.w400,
                       color: blackText),
                 ),
-                const SizedBox(
-                  width: 150,
-                ),
-                Container(
-                  width: 40,
-                  height: 20,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
+                const Spacer(),
+                Transform.scale(
+                  scale: 0.55,
                   child: Switch(
                     value: _switchValue,
                     onChanged: (value) {
